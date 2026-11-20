@@ -369,8 +369,7 @@
   "container": "Archaeopress (BAR International Series 1913)",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Archaeopress, Oxford",
-  "isbn": "9781407304083"
+  "publisher": "Archaeopress, Oxford"
  },
  {
   "id": "coedes1968",
@@ -382,7 +381,6 @@
   "peer_reviewed": true,
   "open_access": false,
   "publisher": "East-West Center Press, Honolulu",
-  "isbn": "0824803680",
   "note": "Classic (1944 French original). Its 'Indianization' frame is now criticised — see Wolters, Kulke."
  },
  {
@@ -680,8 +678,7 @@
   "container": "Palgrave",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Palgrave, London",
-  "isbn": "9781137605146"
+  "publisher": "Palgrave, London"
  },
  {
   "id": "andaya1993",
@@ -923,8 +920,7 @@
   "container": "Walburg Pers",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Walburg Pers, Zutphen",
-  "isbn": "9057302950"
+  "publisher": "Walburg Pers, Zutphen"
  },
  {
   "id": "tarling1992",
@@ -1020,8 +1016,7 @@
   "container": "RoutledgeCurzon",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "RoutledgeCurzon, London",
-  "isbn": "0700716971"
+  "publisher": "RoutledgeCurzon, London"
  },
  {
   "id": "hagerdal2012",
@@ -1056,8 +1051,7 @@
   "container": "Allen & Unwin",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Allen & Unwin, Sydney",
-  "isbn": "9781742371726"
+  "publisher": "Allen & Unwin, Sydney"
  },
  {
   "id": "ileto1979",
@@ -1079,8 +1073,7 @@
   "container": "Allen & Unwin",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Allen & Unwin / ASAA, Sydney",
-  "isbn": "1863735577"
+  "publisher": "Allen & Unwin / ASAA, Sydney"
  },
  {
   "id": "fasseur1992",
@@ -1091,8 +1084,7 @@
   "container": "Cornell Southeast Asia Program",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Cornell SEAP, Ithaca",
-  "isbn": "0877271240"
+  "publisher": "Cornell SEAP, Ithaca"
  },
  {
   "id": "breman1989",
@@ -1104,7 +1096,6 @@
   "peer_reviewed": true,
   "open_access": false,
   "publisher": "Oxford University Press, Delhi",
-  "isbn": "0195623649",
   "note": "Penal sanction (poenale sanctie) and violence on Deli's tobacco estates."
  },
  {
@@ -1116,8 +1107,7 @@
   "container": "Yale University Press",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Yale University Press, New Haven",
-  "isbn": "0300032803"
+  "publisher": "Yale University Press, New Haven"
  },
  {
   "id": "hoefte1998",
@@ -1128,8 +1118,7 @@
   "container": "University Press of Florida",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "University Press of Florida, Gainesville",
-  "isbn": "0813015944"
+  "publisher": "University Press of Florida, Gainesville"
  },
  {
   "id": "sandhu1969",
@@ -1151,8 +1140,7 @@
   "container": "Palgrave Macmillan",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Palgrave Macmillan, Basingstoke",
-  "isbn": "0333729765"
+  "publisher": "Palgrave Macmillan, Basingstoke"
  },
  {
   "id": "heidhues1992",
@@ -1163,8 +1151,7 @@
   "container": "ISEAS",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Institute of Southeast Asian Studies, Singapore",
-  "isbn": "9813016426"
+  "publisher": "Institute of Southeast Asian Studies, Singapore"
  },
  {
   "id": "heidhues2003",
@@ -1223,7 +1210,6 @@
   "peer_reviewed": true,
   "open_access": false,
   "publisher": "M. E. Sharpe, Armonk NY",
-  "isbn": "1563243333",
   "note": "Romusha forced labour mobilisation."
  },
  {
@@ -1280,8 +1266,7 @@
   "container": "Cambridge University Press",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Cambridge University Press, Cambridge",
-  "isbn": "0521591554"
+  "publisher": "Cambridge University Press, Cambridge"
  },
  {
   "id": "mackie1974",
@@ -1463,8 +1448,7 @@
   "container": "Duke University Press",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Duke University Press, Durham NC",
-  "isbn": "9781478014409"
+  "publisher": "Duke University Press, Durham NC"
  },
  {
   "id": "henley2007",
@@ -1475,8 +1459,7 @@
   "container": "Routledge",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Routledge, London",
-  "isbn": "9780415437386"
+  "publisher": "Routledge, London"
  },
  {
   "id": "burns2004",
@@ -1488,7 +1471,6 @@
   "peer_reviewed": true,
   "open_access": false,
   "publisher": "KITLV Press, Leiden",
-  "isbn": "9067182281",
   "note": "Van Vollenhoven's adat-law school and its colonial uses."
  },
  {
@@ -1562,8 +1544,7 @@
   "container": "Blackwell",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Blackwell, Oxford",
-  "isbn": "0631172289"
+  "publisher": "Blackwell, Oxford"
  },
  {
   "id": "hoskins1993",
@@ -1575,8 +1556,7 @@
   "peer_reviewed": true,
   "open_access": true,
   "publisher": "University of California Press, Berkeley",
-  "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft4199n900",
-  "isbn": "0520080068"
+  "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft4199n900"
  },
  {
   "id": "keane1997",
@@ -1600,8 +1580,7 @@
   "container": "KITLV Press",
   "peer_reviewed": true,
   "open_access": true,
-  "publisher": "KITLV Press, Leiden",
-  "isbn": "9789067183253"
+  "publisher": "KITLV Press, Leiden"
  },
  {
   "id": "dobbin1983",
@@ -1624,8 +1603,7 @@
   "container": "Berg",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Berg, Providence RI",
-  "isbn": "0854968792"
+  "publisher": "Berg, Providence RI"
  },
  {
   "id": "kirksey2012",
@@ -1636,8 +1614,7 @@
   "container": "Duke University Press",
   "peer_reviewed": true,
   "open_access": false,
-  "publisher": "Duke University Press, Durham NC",
-  "isbn": "9780822351337"
+  "publisher": "Duke University Press, Durham NC"
  },
  {
   "id": "schulte2010",

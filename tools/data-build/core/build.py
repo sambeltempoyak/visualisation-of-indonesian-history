@@ -47,6 +47,10 @@ qs={}
 for e in EV:
     for q in e['q']: qs[q]=qs.get(q,0)+1
 print('per question',dict(sorted(qs.items())))
+# ISBNs from memory removed unless verified live (Open Library title match) on 2026-11-20
+ISBN_OK={"bellwood2007","bellwood2017","endicott2016","kirch2017","higham2014","wolters1999","pollock2006","hall2011","sen2003","miksic2017","miksic2013","kulke2009","reid1988","reid1993","reid2015","lieberman2003","lieberman2009","ricklefs2008","andaya2015","andaya1993","andaya2008","laffan2011","cummings2002","pelras1996","bosma2008","subrahmanyam2012","tarling1992","andrade2008","winichakul1994","hagerdal2012","carey2007","heidhues2003","leith2003","elson2008","robinson2018","aspinall2009","reid2005","li2007","li2014","leary1995","keane1997","dobbin1983","vickers2013","vickers1989","picard1996","thurgood1999","robson1995","degroot2009","baker2009","drooglever2009","schulte2010"}
+for x in SRC:
+    if x.get('isbn') and x['id'] not in ISBN_OK: x.pop('isbn')
 json.dump(SRC,open(D+'sources.json','w'),ensure_ascii=False,indent=1)
 json.dump(EV,open(D+'events.json','w'),ensure_ascii=False,indent=1)
 json.dump(RT,open(D+'routes.json','w'),ensure_ascii=False,indent=1)
