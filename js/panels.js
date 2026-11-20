@@ -104,7 +104,7 @@ export function openAbout(D) {
     el('h3', { class: 'sec-h' }, 'Method'),
     el('p', {}, 'The map is a standard web map built with Leaflet, with a Bhumi-style layer manager and GIS tools (Leaflet-Geoman for drawing, Turf for analysis, leaflet.heat for density, esri-leaflet for ArcGIS services, shpjs and togeojson for uploads). Historical layers follow the timeline; every card cites its sources and carries a certainty flag (Established, Debated, Estimate). The 633 ethnic groups are those of the 2010 census as listed by Ananta et al. (2014); each is placed with the honest precision it allows (point, district, province, island) and the method is stated in its popup. The Kartapranata map is georeferenced by a least-squares fit on 17 control points (rms ≈ 0.22°). “Language areas” are Voronoi cells of Glottolog points clipped to land — indicative, not historical territories.'),
     el('h3', { class: 'sec-h' }, 'Data & basemap credits'),
-    el('ul', {}, el('li', {}, 'Basemaps: © OpenStreetMap contributors, © CARTO (Positron / Dark Matter), Esri (World Shaded Relief, World Imagery). “Ejak (palette)” is CARTO Positron recoloured in the browser.'),
+    el('ul', {}, el('li', {}, 'Basemaps: Esri (World Light/Dark Gray Canvas, World Topographic, World Shaded Relief, World Imagery), © OpenStreetMap contributors. “Ejak (palette)” is Esri Light Gray Canvas recoloured in the browser.'),
       el('li', {}, 'Natural Earth — coastlines, countries, rivers (public domain); also the offline fallback map.'),
       el('li', {}, 'Glottolog 5.4 — language locations and families (CC BY 4.0).'),
       el('li', {}, 'Ananta, Utami, Handayani & Arifin (2014/2015) — the 633 ethnic groups of Indonesia, 2010 census.'),

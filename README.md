@@ -12,7 +12,7 @@ An interactive Leaflet web map (v2, with GIS-style layers, analysis and stories)
 | Peoples | `data/peoples.json` — ethnolinguistic groups located by Glottolog, with an impacts timeline |
 | Sources | `data/sources.json` — the single bibliography; mostly peer-reviewed journals and university-press monographs, with DOI/ISBN/URL |
 | Languages | `data/languages.json` — 3,205 language points from Glottolog 5.4, used to generate the language-territory layer |
-| Map | `data/geo/` — Natural Earth 1:50m countries and rivers (public domain), used as the offline vector fallback and reference layers; basemaps via CARTO/OSM/Esri tiles |
+| Map | `data/geo/` — Natural Earth 1:50m countries and rivers (public domain), used as the offline vector fallback and reference layers; basemaps via Esri and OSM tiles |
 | Notes | `data/notes.json` — additions and comments |
 
 Every source can be checked from the app: **Verify** queries Crossref and OpenAlex for the DOI (title match, citation count) or Open Library for the ISBN.
