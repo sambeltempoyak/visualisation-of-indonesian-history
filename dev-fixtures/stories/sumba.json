@@ -1,0 +1,118 @@
+{
+ "id": "sumba",
+ "title": "Sumba: fixture story",
+ "intro": "Development fixture with three chapters.",
+ "chapters": [
+  {
+   "id": "c01",
+   "title": "An island of stone and horses",
+   "period": {
+    "start": -3000,
+    "end": 0,
+    "label": "c. 3000 BCE – 0"
+   },
+   "text": "First paragraph of the fixture chapter, in Claude's own words.\n\nSecond paragraph about early settlement and megaliths.",
+   "camera": {
+    "center": [
+     -9.65,
+     119.9
+    ],
+    "zoom": 8
+   },
+   "places": [
+    {
+     "name": "Kodi",
+     "lat": -9.56,
+     "lon": 119.03,
+     "note": "West Sumba"
+    },
+    {
+     "name": "Waingapu",
+     "lat": -9.66,
+     "lon": 120.26,
+     "note": "East Sumba port"
+    }
+   ],
+   "events": [
+    "S001"
+   ],
+   "map_events": [],
+   "layers": {
+    "on": [
+     "ethnic-groups"
+    ],
+    "off": []
+   },
+   "citations": [
+    {
+     "cite": "Hoskins, 1993, p. 45",
+     "source_id": "hoskins1993"
+    }
+   ]
+  },
+  {
+   "id": "c02",
+   "title": "Slaves, sandalwood and the VOC",
+   "period": {
+    "start": 1600,
+    "end": 1800,
+    "label": "1600–1800"
+   },
+   "text": "Fixture chapter two.\n\nMore text here that scrolls.",
+   "camera": {
+    "center": [
+     -9.5,
+     119.5
+    ],
+    "zoom": 9
+   },
+   "places": [
+    {
+     "name": "Anakalang",
+     "lat": -9.55,
+     "lon": 119.5,
+     "note": "Highland"
+    }
+   ],
+   "events": [
+    "S012"
+   ],
+   "map_events": [
+    "sumba-slaves"
+   ],
+   "layers": {
+    "on": [],
+    "off": [
+     "ethnic-groups"
+    ]
+   },
+   "citations": []
+  },
+  {
+   "id": "c03",
+   "title": "Colonial rule and the Dutch mission",
+   "period": {
+    "start": 1900,
+    "end": 1942,
+    "label": "1900–1942"
+   },
+   "text": "Fixture chapter three.",
+   "camera": {
+    "center": [
+     -9.7,
+     120.0
+    ],
+    "zoom": 8
+   },
+   "places": [],
+   "events": [
+    "S020"
+   ],
+   "map_events": [
+    "sumba-pacification"
+   ],
+   "layers": {},
+   "citations": []
+  }
+ ]
+}

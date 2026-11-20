@@ -1,95 +1,111 @@
-// main.js — boots the app: loads data, builds the map, overlays, timeline, panels and wires interactions.
-import { $, $$, el, clamp, createState, isMobile, reducedMotion, formatRange } from './util.js';
+// main.js — boots the app: loads data, builds the Leaflet map, registers layers, and wires timeline, cards,
+// layer manager, analysis, stories, search and the questions tour.
+import { $, $$, el, clamp, createState, isMobile } from './util.js';
 import { loadAll } from './data.js';
 import { createMap } from './map.js';
-import { createOverlays } from './overlays.js';
+import { createRegistry } from './layers.js';
+import { createHistorical } from './historical.js';
+import { createEthno } from './ethno.js';
+import { createDataLayers } from './datalayers.js';
+import { createLayerPanel } from './layerpanel.js';
+import { createAnalysis } from './analysis.js';
+import { createStories } from './story.js';
+import { createDeclutter } from './declutter.js';
 import { createTimeline, makeScale } from './timeline.js';
-import { createCards, openModal, closeModal, modalOpen, sourcesPanel } from './cards.js';
-import { createLayers, createSearch, createTour, openAbout } from './panels.js';
+import { createCards, openModal, closeModal, modalOpen, sourcesPanel, sourceItem } from './cards.js';
+import { createSearch, createTour, openAbout } from './panels.js';
 import { notesPanel } from './notes.js';
 import { verifyAll } from './verify.js';
 
-// ---------------------------------------------------------------- tooltip
+// ---------------------------------------------------------------- tooltip (hover cards for map features)
 const tipEl = $('#tooltip');
 const tip = {
   sticky: false,
-  show(html, ev) { if (tip.sticky) return; tipEl.innerHTML = html; tipEl.hidden = false; tipEl.classList.remove('sticky'); tip.move(ev); },
+  show(html, ev) { if (tip.sticky) return; tipEl.innerHTML = html; tipEl.hidden = false; tip.move(ev); },
   move(ev) {
-    if (tip.sticky || tipEl.hidden) return;
+    if (tip.sticky || tipEl.hidden || !ev) return;
     const w = tipEl.offsetWidth, h = tipEl.offsetHeight;
     tipEl.style.left = clamp(ev.clientX + 14, 8, innerWidth - w - 8) + 'px';
     tipEl.style.top = clamp(ev.clientY - h - 14 < 8 ? ev.clientY + 18 : ev.clientY - h - 14, 8, innerHeight - h - 8) + 'px';
   },
   hide() { if (!tip.sticky) tipEl.hidden = true; },
-  pin(html, ev) { tipEl.innerHTML = html; tipEl.hidden = false; tipEl.classList.add('sticky'); tip.sticky = true; tipEl.style.left = clamp(ev.clientX + 12, 8, innerWidth - 280) + 'px'; tipEl.style.top = clamp(ev.clientY + 12, 8, innerHeight - 120) + 'px'; },
-  unpin() { tip.sticky = false; tipEl.hidden = true; tipEl.classList.remove('sticky'); }
+  unpin() { tip.sticky = false; tipEl.hidden = true; }
 };
 
+function toast(msg) {
+  const t = el('div', { class: 'toast', role: 'status' }, msg); document.body.append(t);
+  requestAnimationFrame(() => t.classList.add('on')); setTimeout(() => { t.classList.remove('on'); setTimeout(() => t.remove(), 400); }, 4200);
+}
+
 async function boot() {
+  if (new URLSearchParams(location.search).has('mocktiles')) await (await import('./devtiles.js')).installMockTiles();
   const D = await loadAll();
   const allThemes = new Set(D.themes.map(t => t.id));
   const startEra = D.eraById.get('commerce') || D.eras[Math.min(3, D.eras.length - 1)];
-  const state = createState({
-    window: [startEra.start, startEra.end], cumulative: false, themesOn: allThemes, selection: null,
-    layers: { peoples: true, routes: true, languages: false, dots: false, rivers: true, borders: false, labels: true }
-  });
+  const state = createState({ window: [startEra.start, startEra.end], cumulative: false, themesOn: allThemes, selection: null });
 
-  const map = createMap({ D, state });
-  let tl, tour, cards;
+  const map = createMap({ D, state }), lmap = map.map;
+  const reg = createRegistry({ map });
+  const ctx = {
+    toast,
+    openSource(id, cite) {
+      const s = id && D.sourceById.get(id);
+      openModal('Source', el('div', { class: 'panel-body' }, s ? el('ol', { class: 'sources one' }, sourceItem(D, { id }, 0)) : el('p', {}, cite ? `“${cite}” is not in the bibliography yet.` : `Source “${id}” is not in the bibliography yet.`)));
+    },
+    updateInsets: () => updateInsets()
+  };
+  let tl, tour, cards, stories;
   const scale = makeScale(D.eras);
 
-  // ---- insets: where the "free" map area is (for fit/fly) ----
+  // ---- insets: the free map area, for fly-to / fit ----
   const tlH = () => $('#timeline').offsetHeight + 12;
   function updateInsets() {
-    const mob = isMobile(), open = $('#card').classList.contains('open');
-    map.setInsets({ top: mob ? 56 : 72, left: 0, right: !mob && open ? 452 : 0, bottom: mob ? (open ? innerHeight * 0.56 : tlH() + 60) : tlH() });
+    const mob = isMobile(), open = $('#card').classList.contains('open'), story = document.body.classList.contains('story-mode');
+    map.setInsets({ top: mob ? 108 : 72, left: !mob && story ? 440 : (!mob && $('#layers') && !$('#layers').hidden && $('#layers').offsetWidth ? $('#layers').offsetWidth + 24 : 0), right: !mob && open ? 452 : 0, bottom: mob ? (open || story ? innerHeight * 0.5 : tlH() + 60) : tlH() });
+    document.body.classList.toggle('card-open', open);
   }
 
   // ---- selection / navigation ----
   let stack = [], current = null;
   const sameSel = (a, b) => a && b && a.type === b.type && a.id === b.id;
-  const evMid = e => e.start;
-
-  const overlays = createOverlays({
-    D, map, state, tip,
-    onSelect: (type, id) => {
-      if (type === 'route') { const r = D.routeById.get(id); if (r?.event && D.eventById.has(r.event)) return actions.select('event', r.event, { route: id }); }
-      actions.select(type, id);
-    }
-  });
+  const onSelect = (type, id) => {
+    if (type === 'route') { const r = D.routeById.get(id); if (r?.event && D.eventById.has(r.event)) return actions.select('event', r.event, { route: id }); }
+    actions.select(type, id);
+  };
+  const historical = createHistorical({ D, map, reg, state, tip, onSelect });
+  const ethno = createEthno({ D, map, reg, tip, ctx });
+  const dl = createDataLayers({ D, map, reg, tip, ctx });
+  reg.arrange(['wm-suku-map', 'language-areas', 'rivers', 'borders', 'place-names', 'languages', 'ethnic-groups', 'wm-suku-labels', 'routes', 'peoples', 'events']);
+  dl.applyCatalogue();
+  const flyPts = (pts, o = {}) => (pts.length === 1 ? map.flyToView(pts[0], Math.max(lmap.getZoom(), o.zoom || 7.5), { duration: 1.2 }) : map.flyToBounds(pts, { pad: 70, maxZoom: 8, minZoom: 2, duration: 1.3 }));
 
   const actions = {
     select(type, id, opt = {}) {
-      if (!opt.keepStack && current && !sameSel(current, { type, id }) && !opt.tour && !opt.reset) { if (['people'].includes(type) || ['people'].includes(current.type)) stack.push(current); else stack = []; }
+      if (!opt.keepStack && current && !sameSel(current, { type, id }) && !opt.tour && !opt.reset) { if (type === 'people' || current.type === 'people') stack.push(current); else stack = []; }
       if (opt.tour || opt.reset) stack = [];
       current = { type, id };
       state.set({ selection: { type, id, route: opt.route || null } });
-      updateInsetsBeforeOpen();
+      $('#card').classList.add('open');
       if (type === 'event') {
         const e = D.eventById.get(id); if (!e) return;
         tl.ensureVisible(e.start, e.end ?? e.start);
         cards.openEvent(id); updateInsets();
-        const pts = overlays.eventPoints(e);
-        if (pts.length === 1) { const k = clamp(Math.max(map.transform().k, 3.2), 3.2, 6); map.flyToPoints([pts[0], pts[0]], { maxK: k, minK: k }); }
-        else map.flyToPoints(pts, { pad: 80, maxK: 7, minK: 0.6 });
+        flyPts(historical.eventPoints(e));
+        setTimeout(() => historical.zoomToEventMarker(id), 1500);
       } else if (type === 'people') {
         const p = D.peopleById.get(id); if (!p) return;
-        cards.openPeople(id); updateInsets();
-        const pt = map.project(p.lon, p.lat), k = clamp(Math.max(map.transform().k, 3), 3, 6);
-        map.flyToPoints([pt, pt], { maxK: k, minK: k });
+        cards.openPeople(id); updateInsets(); flyPts([[p.lat, p.lon]], { zoom: 7 });
       } else if (type === 'route') {
-        cards.openRoute(id); updateInsets(); map.flyToPoints(overlays.routePoints(id), { pad: 80, maxK: 7, minK: 0.6 });
+        cards.openRoute(id); updateInsets(); flyPts(historical.routePoints(id));
       }
     },
     flyRoute(id) {
       const r = D.routeById.get(id); if (!r) return;
       tl.ensureVisible(r.start, r.end ?? r.start);
       state.set({ selection: { ...state.get().selection, route: id } });
-      map.flyToPoints(overlays.routePoints(id), { pad: 80, maxK: 7, minK: 0.6 });
+      flyPts(historical.routePoints(id));
     },
-    close() {
-      tour?.stop(); cards.close(); stack = []; current = null; state.set({ selection: null }); updateInsets();
-    },
+    close() { tour?.stop(); cards.close(); stack = []; current = null; state.set({ selection: null }); $('#card').classList.remove('open'); updateInsets(); },
     canBack: () => stack.length > 0,
     back() { const prev = stack.pop(); if (prev) actions.select(prev.type, prev.id, { keepStack: true, reset: false }); },
     step(dir) {
@@ -106,54 +122,47 @@ async function boot() {
     openSources(query = '') { openModal('Sources', sourcesPanel(D, { actions, query }), { wide: true }); },
     openNotes() { openModal('Notes', notesPanel(D)); }
   };
-  function updateInsetsBeforeOpen() { $('#card').classList.add('open'); }
 
   cards = createCards({ D, state, actions });
   $('#card').classList.remove('open');
 
-  // ---- timeline ----
+  // ---- timeline, tour, panels ----
   tl = createTimeline({ D, state, scale, tip, onSelectEvent: id => actions.select('event', id, { reset: true }), onStep: d => actions.step(d) });
   tour = createTour({ D, actions });
-  createLayers({ D, state, map });
-  const search = createSearch({ D, actions });
+  const layerPanel = createLayerPanel({ D, map, reg, state, dl, ctx });
+  const analysis = createAnalysis({ D, map, reg, dl, state, tip, ctx });
+  stories = createStories({ D, map, reg, state, historical, ctx });
+  createDeclutter(lmap);
+  ctx.beforeStory = () => { analysis.close(); $('#layers').classList.remove('sheet-open'); };
+  const search = createSearch({ D, actions, reg, ethno, map, ctx });
 
   // ---- map init ----
   updateInsets();
   map.init();
-  state.on((s, p) => {
-    if (s.layers !== p.layers) { map.syncLanguages(); map.updateLayers(); map.redraw(); overlays.settle(); }
-    if (s.window !== p.window) map.updateLayers();
-  });
-  map.onZoomEnd(() => overlays.settle());
-  overlays.applyState(); overlays.layoutZoom();
-  window.addEventListener('resize', () => { updateInsets(); tl.redraw(); overlays.settle(); });
-
-  // ---- language dot hover / click ----
-  const svg = $('#svg');
-  svg.addEventListener('pointermove', ev => {
-    if (ev.target.closest('.badge, .banner, .r-hit')) return;
-    const r = svg.getBoundingClientRect(), p = map.nearestLang?.(ev.clientX - r.left, ev.clientY - r.top);
-    if (p && !tip.sticky) { tip.show(`<b>${p.name}</b><br><span>${p.code} · ${p.family}</span>`, ev); }
-    else if (!p && !tip.sticky) { if (!ev.target.closest('.tick')) tip.hide(); }
-  });
-  svg.addEventListener('click', ev => {
-    if (tip.sticky) tip.unpin();
-    if (ev.target.closest('.badge, .banner, .r-hit')) return;
-    const r = svg.getBoundingClientRect(), p = map.nearestLang?.(ev.clientX - r.left, ev.clientY - r.top, 12);
-    if (p) { tip.sticky = false; tip.pin(`<b>${p.name}</b><br><span>${p.code} · ${p.family}</span><br><a href="https://glottolog.org/resource/languoid/id/${p.code}" target="_blank" rel="noopener">Glottolog ↗</a>`, ev); }
-  });
-  document.addEventListener('pointerdown', ev => { if (tip.sticky && !ev.target.closest('#tooltip') && !ev.target.closest('#svg')) tip.unpin(); });
+  window.addEventListener('resize', () => { updateInsets(); tl.redraw(); });
+  dl.restore();
+  lmap.on('click', () => { $('#layers').classList.remove('sheet-open'); });
 
   // ---- top bar / tabs ----
+  const showMore = anchor => {
+    const pop = $('#popover');
+    if (!pop.hidden) { pop.hidden = true; return; }
+    pop.replaceChildren(el('div', { class: 'pop-h' }, 'More'), el('div', { class: 'more-list' },
+      ...[['Questions (guided tour)', () => tour.togglePopover($('#tabbar'))], ['Notes', () => actions.openNotes()], ['About', () => openAbout(D)]].map(([t, f]) => el('button', { class: 'btn', onclick: () => { pop.hidden = true; f(); } }, t))));
+    pop.hidden = false;
+  };
   $$('[data-open]').forEach(b => b.addEventListener('click', () => {
     const what = b.dataset.open;
     if (what === 'questions') tour.togglePopover(isMobile() ? $('#tabbar') : b);
     else if (what === 'sources') actions.openSources();
     else if (what === 'notes') actions.openNotes();
     else if (what === 'about') openAbout(D);
+    else if (what === 'stories') stories.openPicker();
+    else if (what === 'analyse') { analysis.toggle(); $('#layers').classList.remove('sheet-open'); }
+    else if (what === 'more') showMore(b);
   }));
-  $('#btnHome').addEventListener('click', () => { map.home(); });
-  $('[data-tab="layers"]').addEventListener('click', () => $('#layers').classList.toggle('sheet-open'));
+  $('#btnHome').addEventListener('click', () => map.home());
+  $('[data-tab="layers"]').addEventListener('click', () => { analysis.close(); $('#layers').classList.toggle('sheet-open'); });
   $('.modal-backdrop').addEventListener('click', () => closeModal());
 
   // ---- keyboard ----
@@ -162,26 +171,29 @@ async function boot() {
     if (e.key === 'Escape') {
       if (modalOpen()) return closeModal();
       if (!$('#popover').hidden) { $('#popover').hidden = true; return; }
-      if (tip.sticky) return tip.unpin();
+      if (lmap.pm.globalDrawModeEnabled?.()) { lmap.pm.disableDraw(); return; }
       if ($('#layers').classList.contains('sheet-open')) return $('#layers').classList.remove('sheet-open');
+      if (stories.active()) return stories.exit();
       if (tour.active()) return tour.stop();
       if ($('#card').classList.contains('open')) return actions.close();
+      if (analysis.isOpen()) return analysis.close();
       return;
     }
     if (typing || e.metaKey || e.ctrlKey || e.altKey) return;
     if (e.key === '/') { e.preventDefault(); search.focus(); }
-    else if (e.key === ' ' && !t.closest?.('button, a, [role="button"]')) { e.preventDefault(); tl.toggle(); }
-    else if (e.key === 'ArrowRight' && !t.closest?.('.tl-svg, .band')) { e.preventDefault(); actions.step(1); }
-    else if (e.key === 'ArrowLeft' && !t.closest?.('.tl-svg, .band')) { e.preventDefault(); actions.step(-1); }
+    else if (e.key === ' ' && !t.closest?.('button, a, [role="button"], .leaflet-marker-icon, .story-scroll')) { e.preventDefault(); tl.toggle(); }
+    else if (e.key === 'ArrowRight' && !t.closest?.('.tl-svg, .band, .story-scroll, .leaflet-container')) { e.preventDefault(); actions.step(1); }
+    else if (e.key === 'ArrowLeft' && !t.closest?.('.tl-svg, .band, .story-scroll, .leaflet-container')) { e.preventDefault(); actions.step(-1); }
   });
 
   // ---- hooks for automated audit / debugging ----
   window.vihVerifyAll = () => verifyAll(D.sources, { force: true });
-  window.vih = { D, state, map, actions, overlays, tl, tip };
+  window.vih = { D, state, map, reg, actions, historical, ethno, dl, analysis, stories, layerPanel, tl, tip, ctx };
 
   document.body.classList.add('ready');
   $('#loading').classList.add('done');
   setTimeout(() => $('#loading').remove(), 700);
+  stories.fromHash();
 }
 
 boot().catch(err => {

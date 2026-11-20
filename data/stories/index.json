@@ -1,0 +1,21 @@
+[
+ {
+  "id": "sumba",
+  "title": "Sandalwood Island: Sumba through time",
+  "subtitle": "From Majapahit's claims to the sugarcane permits, in 22 chapters drawn from 120 canvas events",
+  "author": "Ejak (Reza Arlianda), with Claude",
+  "date": "2026-11-20",
+  "file": "sumba.json",
+  "region": [
+   [
+    -10.4,
+    118.8
+   ],
+   [
+    -9.0,
+    120.9
+   ]
+  ],
+  "chapters": 22
+ }
+]

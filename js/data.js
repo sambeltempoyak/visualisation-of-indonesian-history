@@ -18,6 +18,11 @@ async function getJSON(path, fallbackPath) {
   }
 }
 
+/** Optional JSON: data/ first, then dev-fixtures/, else null (never throws). */
+async function optional(path, fallbackPath) {
+  try { return (await getJSON(path, fallbackPath)).json; } catch (e) { return null; }
+}
+
 export async function loadAll() {
   const out = { _from: {} };
   const jobs = [
@@ -26,7 +31,19 @@ export async function loadAll() {
       console.warn(`[data] could not load ${n}.json`, e.message); out[n] = n === 'languages' ? { families: {}, cols: [], rows: [] } : []; })),
     ...GEO.map(n => getJSON(`data/geo/${n}.topo.json`).then(r => { out[n] = r.json; }))
   ];
+  jobs.push(
+    optional('data/ethnic-groups.json', 'dev-fixtures/ethnic-groups.json').then(j => { out.ethnic = j; }),
+    optional('data/wikimedia-suku-labels.json').then(j => { out.suku = j; }),
+    optional('data/layers.json').then(j => { out.catalogue = j || []; }),
+    optional('data/sources-mendeley.json').then(j => { out.sourcesMendeley = j; }),
+    optional('data/stories/index.json', 'dev-fixtures/stories/index.json').then(j => { out.stories = j || []; })
+  );
   await Promise.all(jobs);
+  // merge Mendeley bibliography ("Ejak's library"); entries already in sources.json win but get the badge
+  if (Array.isArray(out.sourcesMendeley)) {
+    const have = new Map(out.sources.map(s => [s.id, s]));
+    for (const m of out.sourcesMendeley) { const x = have.get(m.id); if (x) x.library = x.library || 'mendeley'; else out.sources.push({ library: 'mendeley', ...m }); }
+  }
   return index(out);
 }
 
@@ -106,3 +123,9 @@ export function eraOf(D, year) {
 
 // Target → notes (repo notes). `target` strings are "event:id", "people:id", "general".
 export function notesFor(D, target) { return (D.notes || []).filter(n => n.target === target); }
+
+/** Load one story file (data/stories/<file>, falling back to dev-fixtures/stories/<file>). */
+export async function loadStory(file) {
+  const r = await getJSON(`data/stories/${file}`, `dev-fixtures/stories/${file}`);
+  return r.json;
+}

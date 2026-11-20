@@ -1,0 +1,1092 @@
+{
+"meta": {
+"source": "Kartapranata, Gunawan. Peta Suku Bangsa, Bahasa, dan Aksara di Indonesia (SVG). Wikimedia Commons.",
+"url": "https://commons.wikimedia.org/wiki/File:Peta_Suku_Bangsa,_Bahasa,_dan_Aksara_di_Indonesia.svg",
+"image_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Peta_Suku_Bangsa%2C_Bahasa%2C_dan_Aksara_di_Indonesia.svg",
+"georef": {
+"method": "least-squares linear fit on 17 control labels (towns/islands); rms ≈0.22°",
+"x": "x = 19.202*lon − 1739.53",
+"y": "y = −19.748*lat + 148.88",
+"bounds": {
+"west": 90.591,
+"east": 141.092,
+"north": 7.539,
+"south": -14.831
+},
+"svg_viewbox": [
+0,
+0,
+969.71051,
+441.77857
+]
+},
+"note": "Label positions are where the cartographer placed names, not exact settlement points; script (aksara) legend labels excluded."
+},
+"labels": [
+{
+"label": "JAWA",
+"lon": 105.156,
+"lat": -5.359
+},
+{
+"label": "SUNDA",
+"lon": 107.361,
+"lat": -7.067
+},
+{
+"label": "JAWA",
+"lon": 109.968,
+"lat": -7.177
+},
+{
+"label": "TENGGER",
+"lon": 112.742,
+"lat": -8.185
+},
+{
+"label": "OSING",
+"lon": 113.977,
+"lat": -8.233
+},
+{
+"label": "BAWEAN",
+"lon": 112.786,
+"lat": -6.079
+},
+{
+"label": "TAMBUS",
+"lon": 110.126,
+"lat": -5.401
+},
+{
+"label": "BALI",
+"lon": 115.29,
+"lat": -8.312
+},
+{
+"label": "BETAWI",
+"lon": 106.778,
+"lat": -6.239
+},
+{
+"label": "PADANG",
+"lon": 100.545,
+"lat": -1.493
+},
+{
+"label": "RIAU",
+"lon": 102.116,
+"lat": -0.615
+},
+{
+"label": "SEKAH",
+"lon": 105.329,
+"lat": -1.648
+},
+{
+"label": "SEKAH",
+"lon": 107.608,
+"lat": -2.54
+},
+{
+"label": "SEKAH",
+"lon": 106.725,
+"lat": -3.096
+},
+{
+"label": "SEKAH",
+"lon": 108.176,
+"lat": -3.224
+},
+{
+"label": "BILITON",
+"lon": 107.851,
+"lat": -2.86
+},
+{
+"label": "LOM",
+"lon": 105.743,
+"lat": -2.021
+},
+{
+"label": "DARAT",
+"lon": 105.998,
+"lat": -2.58
+},
+{
+"label": "ORANG LAUT",
+"lon": 104.328,
+"lat": 0.448
+},
+{
+"label": "LINGGA",
+"lon": 104.477,
+"lat": -0.428
+},
+{
+"label": "KUBU",
+"lon": 103.981,
+"lat": -3.666
+},
+{
+"label": "ENGGANO",
+"lon": 102.012,
+"lat": -5.53
+},
+{
+"label": "ABUNG",
+"lon": 104.011,
+"lat": -4.568
+},
+{
+"label": "KOMERING",
+"lon": 104.405,
+"lat": -3.964
+},
+{
+"label": "REJANG",
+"lon": 102.261,
+"lat": -2.982
+},
+{
+"label": "MUSI HULU",
+"lon": 103.602,
+"lat": -3.243
+},
+{
+"label": "JAMBI",
+"lon": 103.227,
+"lat": -1.944
+},
+{
+"label": "PALEMBANG",
+"lon": 104.912,
+"lat": -2.946
+},
+{
+"label": "LAMPUNG",
+"lon": 104.885,
+"lat": -4.581
+},
+{
+"label": "BENGKULU",
+"lon": 103.029,
+"lat": -4.39
+},
+{
+"label": "BADUY",
+"lon": 106.244,
+"lat": -6.776
+},
+{
+"label": "BANTEN",
+"lon": 106.032,
+"lat": -6.113
+},
+{
+"label": "CIREBON",
+"lon": 108.204,
+"lat": -6.582
+},
+{
+"label": "MADURA",
+"lon": 113.105,
+"lat": -6.992
+},
+{
+"label": "SASAK",
+"lon": 116.71,
+"lat": -8.612
+},
+{
+"label": "SUMBAWA",
+"lon": 117.795,
+"lat": -8.49
+},
+{
+"label": "DOMPU",
+"lon": 118.567,
+"lat": -8.423
+},
+{
+"label": "BIMA",
+"lon": 119.067,
+"lat": -8.636
+},
+{
+"label": "DODONGGO",
+"lon": 117.893,
+"lat": -8.9
+},
+{
+"label": "MAMBORO",
+"lon": 118.789,
+"lat": -9.437
+},
+{
+"label": "SUMBA",
+"lon": 119.757,
+"lat": -9.545
+},
+{
+"label": "SABU",
+"lon": 120.595,
+"lat": -10.154
+},
+{
+"label": "SABU",
+"lon": 121.688,
+"lat": -10.407
+},
+{
+"label": "WAINGAPO",
+"lon": 120.801,
+"lat": -9.731
+},
+{
+"label": "MANGGARAI",
+"lon": 119.957,
+"lat": -8.316
+},
+{
+"label": "RIUNG",
+"lon": 120.827,
+"lat": -8.209
+},
+{
+"label": "LARANTUKA",
+"lon": 123.101,
+"lat": -8.053
+},
+{
+"label": "LOMBLEN",
+"lon": 123.463,
+"lat": -8.516
+},
+{
+"label": "SOLOR",
+"lon": 123.384,
+"lat": -8.242
+},
+{
+"label": "ATONI",
+"lon": 124.183,
+"lat": -9.726
+},
+{
+"label": "KUPANG",
+"lon": 123.49,
+"lat": -10.055
+},
+{
+"label": "ROTI",
+"lon": 123.03,
+"lat": -10.644
+},
+{
+"label": "MARAE",
+"lon": 124.815,
+"lat": -9.387
+},
+{
+"label": "ALOR",
+"lon": 124.787,
+"lat": -8.123
+},
+{
+"label": "WETAR",
+"lon": 126.277,
+"lat": -7.69
+},
+{
+"label": "ROMA",
+"lon": 127.38,
+"lat": -7.391
+},
+{
+"label": "KISAR",
+"lon": 127.89,
+"lat": -7.944
+},
+{
+"label": "PANTAR",
+"lon": 124.086,
+"lat": -8.344
+},
+{
+"label": "BELU",
+"lon": 124.925,
+"lat": -8.949
+},
+{
+"label": "NGADA",
+"lon": 120.672,
+"lat": -8.647
+},
+{
+"label": "SIKKA",
+"lon": 122.428,
+"lat": -8.549
+},
+{
+"label": "ENDE",
+"lon": 121.433,
+"lat": -8.666
+},
+{
+"label": "LIO",
+"lon": 121.857,
+"lat": -8.617
+},
+{
+"label": "NAGEKEO",
+"lon": 120.981,
+"lat": -8.422
+},
+{
+"label": "BANJAR",
+"lon": 114.878,
+"lat": -3.227
+},
+{
+"label": "MAANYAN",
+"lon": 114.523,
+"lat": 0.112
+},
+{
+"label": "BAHAU",
+"lon": 115.622,
+"lat": 0.259
+},
+{
+"label": "LAWANGAN",
+"lon": 115.741,
+"lat": -0.787
+},
+{
+"label": "MURUT",
+"lon": 116.301,
+"lat": 4.313
+},
+{
+"label": "KAYAN",
+"lon": 116.311,
+"lat": 1.65
+},
+{
+"label": "KENYAH",
+"lon": 115.453,
+"lat": 2.604
+},
+{
+"label": "PUNAN",
+"lon": 113.465,
+"lat": 1.111
+},
+{
+"label": "IBAN",
+"lon": 110.88,
+"lat": 0.843
+},
+{
+"label": "OT DANUM",
+"lon": 111.396,
+"lat": -0.307
+},
+{
+"label": "MELAYU",
+"lon": 113.003,
+"lat": -2.782
+},
+{
+"label": "MELAYU",
+"lon": 107.083,
+"lat": 3.31
+},
+{
+"label": "DAYAK",
+"lon": 114.105,
+"lat": 0.578
+},
+{
+"label": "MELAYU",
+"lon": 109.795,
+"lat": -0.898
+},
+{
+"label": "MELAYU",
+"lon": 102.563,
+"lat": -0.57
+},
+{
+"label": "MELAYU",
+"lon": 98.964,
+"lat": 3.396
+},
+{
+"label": "MELAYU",
+"lon": 117.335,
+"lat": 0.525
+},
+{
+"label": "MINANGKABAU",
+"lon": 100.706,
+"lat": -0.996
+},
+{
+"label": "ACEH",
+"lon": 95.732,
+"lat": 5.044
+},
+{
+"label": "GAYO",
+"lon": 96.896,
+"lat": 4.537
+},
+{
+"label": "ALAS",
+"lon": 97.232,
+"lat": 4.153
+},
+{
+"label": "MANDAILING",
+"lon": 99.35,
+"lat": 1.249
+},
+{
+"label": "KARO",
+"lon": 97.628,
+"lat": 3.3
+},
+{
+"label": "DELI",
+"lon": 98.036,
+"lat": 3.945
+},
+{
+"label": "PAKPAK",
+"lon": 97.485,
+"lat": 2.732
+},
+{
+"label": "ANGKOLA",
+"lon": 98.415,
+"lat": 2.052
+},
+{
+"label": "TOBA",
+"lon": 98.158,
+"lat": 2.546
+},
+{
+"label": "SIMELUNGUN",
+"lon": 98.72,
+"lat": 3.228
+},
+{
+"label": "SIMOLOE",
+"lon": 95.694,
+"lat": 3.039
+},
+{
+"label": "SIKOLO",
+"lon": 96.025,
+"lat": 2.569
+},
+{
+"label": "NIAS",
+"lon": 97.344,
+"lat": 1.067
+},
+{
+"label": "MANTAWAI",
+"lon": 98.67,
+"lat": -1.336
+},
+{
+"label": "MAKASSAR",
+"lon": 119.766,
+"lat": -5.279
+},
+{
+"label": "LAJULO",
+"lon": 120.307,
+"lat": -6.376
+},
+{
+"label": "BUGIS",
+"lon": 119.941,
+"lat": -4.394
+},
+{
+"label": "LUWU",
+"lon": 120.047,
+"lat": -3.495
+},
+{
+"label": "TO SEKO",
+"lon": 119.862,
+"lat": -1.975
+},
+{
+"label": "TO PIPIKORO",
+"lon": 119.951,
+"lat": -1.497
+},
+{
+"label": "TO PALU",
+"lon": 119.51,
+"lat": -0.747
+},
+{
+"label": "TO TAWAILI",
+"lon": 120.395,
+"lat": -0.919
+},
+{
+"label": "MANDAR",
+"lon": 118.861,
+"lat": -3.27
+},
+{
+"label": "TO SA’DAN",
+"lon": 119.922,
+"lat": -2.437
+},
+{
+"label": "TO RAJA",
+"lon": 119.888,
+"lat": -2.75
+},
+{
+"label": "BARE’E",
+"lon": 120.935,
+"lat": -1.668
+},
+{
+"label": "MEKONGKA",
+"lon": 121.2,
+"lat": -3.523
+},
+{
+"label": "BUNGKUMORI",
+"lon": 122.56,
+"lat": -4.112
+},
+{
+"label": "BUNGKU",
+"lon": 121.814,
+"lat": -4.603
+},
+{
+"label": "BUNGKU",
+"lon": 123.251,
+"lat": -4.391
+},
+{
+"label": "MUNA",
+"lon": 122.343,
+"lat": -4.809
+},
+{
+"label": "BUTUNG",
+"lon": 122.705,
+"lat": -5.067
+},
+{
+"label": "BUNGKU",
+"lon": 121.747,
+"lat": -2.172
+},
+{
+"label": "TO LANDAN",
+"lon": 122.199,
+"lat": -3.081
+},
+{
+"label": "TO LAKI",
+"lon": 122.075,
+"lat": -3.674
+},
+{
+"label": "TO MAPUTE",
+"lon": 122.034,
+"lat": -2.621
+},
+{
+"label": "TO BOBONGKO",
+"lon": 121.246,
+"lat": -0.366
+},
+{
+"label": "TO LIONDANG",
+"lon": 121.531,
+"lat": -1.07
+},
+{
+"label": "TO MINI",
+"lon": 120.202,
+"lat": 0.285
+},
+{
+"label": "TO MORANE",
+"lon": 122.281,
+"lat": -0.844
+},
+{
+"label": "TO BANGGAI",
+"lon": 123.222,
+"lat": -1.415
+},
+{
+"label": "TO BALANTAK",
+"lon": 123.528,
+"lat": -0.605
+},
+{
+"label": "TALIABU",
+"lon": 124.793,
+"lat": -1.561
+},
+{
+"label": "MANGOL",
+"lon": 125.931,
+"lat": -1.734
+},
+{
+"label": "SULA",
+"lon": 126.02,
+"lat": -2.278
+},
+{
+"label": "BURU",
+"lon": 126.627,
+"lat": -3.376
+},
+{
+"label": "SERAM BARAT",
+"lon": 128.548,
+"lat": -2.709
+},
+{
+"label": "SERAM TENGAH",
+"lon": 129.465,
+"lat": -2.831
+},
+{
+"label": "SERAM TIMUR",
+"lon": 130.651,
+"lat": -3.111
+},
+{
+"label": "AMBON",
+"lon": 128.377,
+"lat": -3.706
+},
+{
+"label": "AMBON",
+"lon": 129.785,
+"lat": -4.341
+},
+{
+"label": "AMBON",
+"lon": 133.114,
+"lat": -5.274
+},
+{
+"label": "DAMAR",
+"lon": 128.637,
+"lat": -6.908
+},
+{
+"label": "LETI",
+"lon": 129.391,
+"lat": -8.064
+},
+{
+"label": "SELARU",
+"lon": 131.281,
+"lat": -8.276
+},
+{
+"label": "TANIMBAR",
+"lon": 131.417,
+"lat": -7.479
+},
+{
+"label": "YAMDE",
+"lon": 131.393,
+"lat": -7.692
+},
+{
+"label": "LAR",
+"lon": 131.468,
+"lat": -6.988
+},
+{
+"label": "ORDATA",
+"lon": 132.273,
+"lat": -6.868
+},
+{
+"label": "ARU",
+"lon": 134.588,
+"lat": -6.084
+},
+{
+"label": "KAI",
+"lon": 132.551,
+"lat": -5.696
+},
+{
+"label": "GOR",
+"lon": 131.424,
+"lat": -3.938
+},
+{
+"label": "TO GIAN",
+"lon": 122.289,
+"lat": -0.127
+},
+{
+"label": "BUAL",
+"lon": 121.456,
+"lat": 1.082
+},
+{
+"label": "BAJO",
+"lon": 120.971,
+"lat": 0.661
+},
+{
+"label": "HULONTALO",
+"lon": 122.131,
+"lat": 0.776
+},
+{
+"label": "MANADO",
+"lon": 124.765,
+"lat": 1.679
+},
+{
+"label": "SANGER",
+"lon": 125.538,
+"lat": 3.791
+},
+{
+"label": "MINAHASA",
+"lon": 124.476,
+"lat": 0.71
+},
+{
+"label": "BOLAANG MONGONDOU",
+"lon": 124.611,
+"lat": 1.175
+},
+{
+"label": "KAIDIPAN",
+"lon": 122.924,
+"lat": 1.135
+},
+{
+"label": "PITUULUMMA",
+"lon": 119.279,
+"lat": -2.62
+},
+{
+"label": "GANE",
+"lon": 128.319,
+"lat": -0.871
+},
+{
+"label": "WEDA",
+"lon": 127.99,
+"lat": -0.326
+},
+{
+"label": "MOROTAI",
+"lon": 128.451,
+"lat": 2.091
+},
+{
+"label": "LODA",
+"lon": 127.662,
+"lat": 2.118
+},
+{
+"label": "GALELA",
+"lon": 127.696,
+"lat": 1.758
+},
+{
+"label": "TOBELO",
+"lon": 127.939,
+"lat": 1.399
+},
+{
+"label": "PA’TANI",
+"lon": 128.411,
+"lat": 0.278
+},
+{
+"label": "WAIGEO",
+"lon": 130.696,
+"lat": -0.187
+},
+{
+"label": "BIAK",
+"lon": 131.737,
+"lat": -0.413
+},
+{
+"label": "HATTAM",
+"lon": 133.384,
+"lat": -0.546
+},
+{
+"label": "BIAK",
+"lon": 135.718,
+"lat": -0.586
+},
+{
+"label": "NUMFOR",
+"lon": 134.612,
+"lat": -0.692
+},
+{
+"label": "SERUI",
+"lon": 135.768,
+"lat": -1.396
+},
+{
+"label": "WARUPEN",
+"lon": 135.859,
+"lat": -2.014
+},
+{
+"label": "SARMI",
+"lon": 136.92,
+"lat": -1.708
+},
+{
+"label": "MAMBERAMO",
+"lon": 137.5,
+"lat": -1.283
+},
+{
+"label": "TAKUTA-MESSO",
+"lon": 137.87,
+"lat": -1.615
+},
+{
+"label": "DEMTA",
+"lon": 139.473,
+"lat": -1.867
+},
+{
+"label": "YAFI",
+"lon": 140.657,
+"lat": -2.479
+},
+{
+"label": "SANGGI",
+"lon": 140.013,
+"lat": -2.306
+},
+{
+"label": "GENYEM",
+"lon": 140.443,
+"lat": -1.788
+},
+{
+"label": "PANTAI UTARA",
+"lon": 140.287,
+"lat": -2.027
+},
+{
+"label": "GUAI",
+"lon": 138.868,
+"lat": -1.761
+},
+{
+"label": "UHUNDUNI",
+"lon": 137.454,
+"lat": -2.651
+},
+{
+"label": "DATARAN DANAU",
+"lon": 138.091,
+"lat": -2.027
+},
+{
+"label": "DANI",
+"lon": 138.872,
+"lat": -2.664
+},
+{
+"label": "TARUNGGAREH",
+"lon": 136.321,
+"lat": -2.372
+},
+{
+"label": "PEGUNUNGAN TINGGI",
+"lon": 137.784,
+"lat": -3.601
+},
+{
+"label": "ANGGI",
+"lon": 133.914,
+"lat": -1.051
+},
+{
+"label": "MANIKION",
+"lon": 132.431,
+"lat": -0.825
+},
+{
+"label": "MEYBRAT",
+"lon": 132.09,
+"lat": -1.569
+},
+{
+"label": "BINTUNI",
+"lon": 133.821,
+"lat": -1.888
+},
+{
+"label": "IHA",
+"lon": 132.036,
+"lat": -2.684
+},
+{
+"label": "MBRAI",
+"lon": 132.888,
+"lat": -3.348
+},
+{
+"label": "WENDAMEN",
+"lon": 133.412,
+"lat": -2.459
+},
+{
+"label": "ARGONI",
+"lon": 133.737,
+"lat": -3.255
+},
+{
+"label": "MAIRASI",
+"lon": 133.993,
+"lat": -3.813
+},
+{
+"label": "MISOOL",
+"lon": 129.999,
+"lat": -1.861
+},
+{
+"label": "MABA",
+"lon": 128.542,
+"lat": 0.747
+},
+{
+"label": "SULI",
+"lon": 128.454,
+"lat": 0.529
+},
+{
+"label": "BACAN",
+"lon": 127.453,
+"lat": -1.041
+},
+{
+"label": "TERNATE",
+"lon": 127.147,
+"lat": 0.723
+},
+{
+"label": "JAILOLO",
+"lon": 127.325,
+"lat": 0.444
+},
+{
+"label": "TIDORE",
+"lon": 127.303,
+"lat": 0.139
+},
+{
+"label": "MIMIKA",
+"lon": 135.755,
+"lat": -4.344
+},
+{
+"label": "MONI",
+"lon": 137.381,
+"lat": -4.212
+},
+{
+"label": "KAPAUKU",
+"lon": 136.608,
+"lat": -4.079
+},
+{
+"label": "KOWIAI",
+"lon": 135.063,
+"lat": -4.026
+},
+{
+"label": "ASMAT",
+"lon": 137.591,
+"lat": -4.663
+},
+{
+"label": "MUYU",
+"lon": 140.137,
+"lat": -4.96
+},
+{
+"label": "KIMAM",
+"lon": 138.147,
+"lat": -7.359
+},
+{
+"label": "MARINO-ANIM",
+"lon": 139.693,
+"lat": -7.223
+},
+{
+"label": "JEIANIM",
+"lon": 140.309,
+"lat": -6.868
+},
+{
+"label": "AHUSSI-ANIM",
+"lon": 140.258,
+"lat": -6.228
+},
+{
+"label": "BASSAM-ANIM",
+"lon": 140.254,
+"lat": -5.529
+},
+{
+"label": "AWIU",
+"lon": 139.508,
+"lat": -6.027
+},
+{
+"label": "YAKUI",
+"lon": 138.559,
+"lat": -5.598
+},
+{
+"label": "NGAJU",
+"lon": 113.371,
+"lat": -1.013
+},
+{
+"label": "PUAK-PUAK SUKU BATAK",
+"lon": 98.402,
+"lat": 2.793
+}
+]
+}

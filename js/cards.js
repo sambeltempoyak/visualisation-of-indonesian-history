@@ -52,7 +52,8 @@ export function sourceItem(D, ref, n) {
     el('div', { class: 'src-main' },
       el('div', { class: 'src-cite' }, citeDom(s), ref.pages ? el('span', { class: 'src-pages' }, ` pp. ${ref.pages}`) : null),
       el('div', { class: 'src-badges' }, el('span', { class: 'tag' }, TYPE_LABEL[s.type] || s.type),
-        s.peer_reviewed ? el('span', { class: 'tag b-peer' }, 'Peer-reviewed') : null, s.open_access ? el('span', { class: 'tag b-oa' }, 'Open access') : null),
+        s.peer_reviewed ? el('span', { class: 'tag b-peer' }, 'Peer-reviewed') : null, s.open_access ? el('span', { class: 'tag b-oa' }, 'Open access') : null,
+        s.library === 'mendeley' ? el('span', { class: 'tag b-lib' }, 'Ejak\'s library') : null),
       ref.note || s.note ? el('div', { class: 'src-note' }, ref.note || s.note) : null,
       el('div', { class: 'src-links' }, links, btn), result));
 }

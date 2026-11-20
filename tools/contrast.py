@@ -36,6 +36,25 @@ P=[ # (description, fg, bg, min)
 ("Tooltip #F6F4EF on dusk-end",G,I,4.5),("Tooltip sub #DFDDD7 on dusk-end",V,I,4.5),("Tooltip link #CCD6E6 on dusk-end",W,I,4.5),
 ("Tour HUD #DFDDD7 on dusk-end",V,I,4.5),
 ]
+
+# ---- v2 (Leaflet / GIS) additions ----
+INKS=['#49546D','#9A4A42','#8A6A22','#4A6B48','#2F6A6E','#6B4A68','#A0532A','#33393B','#5B6264','#6E4540','#51445A','#6B5F52']
+PAL_LAND,PAL_SEA='#EEF0F2','#CCD6E6'   # approximate palette-basemap land / water (graphics, min 3)
+P += [
+("Layers: row text #F6F4EF on glass-over-indigo hover", G,mixc(I,W,.2),4.5),("Layers: status error #6E4540 on Dew",ROSE,D,4.5),
+("Layers: btn-danger #F6F4EF on #9A4A42",G,'#9A4A42',4.5),("Basemap chip #F6F4EF on dusk-end",G,I,4.5),
+("Story column: title #33393B on #F6F4EF",F,G,4.5),("Story column: soft #5B6264 on #F6F4EF",S,G,4.5),
+("Story: private quote #4A5153 on #DFDDD7",'#4A5153',V,4.5),("Story: private quote #5B6264 on #DFDDD7",S,V,4.5),
+("Analyse inputs #33393B on #F6F4EF",F,G,4.5),("Analyse panel text #DFDDD7 on indigo",V,I,4.5),
+("Popup body #33393B on #F6F4EF",F,G,4.5),("Popup soft #5B6264 on #F6F4EF",S,G,4.5),("Toast #F6F4EF on #33393B",G,F,4.5),
+("Place names #33393B on Positron land",F,PAL_LAND,4.5),("Place names (sea) #49546D on palette water",I,PAL_SEA,4.5),
+("Place names (dusk) #CCD6E6 on dusk #3E4659",W,'#3E4659',4.5),
+("Attribute table #33393B on #F6F4EF",F,G,4.5),("Attribute table header #F6F4EF on indigo",G,I,4.5),
+]
+for n,c in [('ink',c) for c in INKS]:
+    P.append((f"Graphic: ink {c} on palette land",c,PAL_LAND,3.0))
+for k,c in __import__('re').findall(r"(\w+): '(#[0-9A-F]{6})'", "migration: '#49546D', trade: '#6E4540', slave: '#9A4A42', labour: '#6B5F52', resource: '#51445A'"):
+    P.append((f"Route colour {k} on palette water",c,PAL_SEA,3.0))
 bad=0
 for d,f,b,m in P:
     r=cr(f,b); ok=r>=m; bad+=not ok

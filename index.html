@@ -4,22 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Visualisation of Indonesian History</title>
-<meta name="description" content="An interactive hex map of the Southeast Asian world: indigenous trajectories, trade, religion, colonialism and independence, with verifiable scholarly sources.">
+<meta name="description" content="An interactive web map of the Southeast Asian world: indigenous trajectories, trade, religion, colonialism and independence, with GIS layers, spatial analysis, stories and verifiable scholarly sources.">
 <meta name="theme-color" content="#33393B">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Cpolygon points=%2716,2 29,9 29,23 16,30 3,23 3,9%27 fill=%27%2349546D%27 stroke=%27%23CCD6E6%27 stroke-width=%272%27/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2712%27 fill=%27%2349546D%27 stroke=%27%23CCD6E6%27 stroke-width=%272.5%27/%3E%3Cpath d=%27M8 18c4-8 12-8 16-2%27 fill=%27none%27 stroke=%27%23EEDED1%27 stroke-width=%272%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="vendor/leaflet-geoman.css">
+<link rel="stylesheet" href="vendor/MarkerCluster.css">
 <link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/gis.css">
 </head>
 <body>
 <div id="app">
-  <!-- Map: canvases (hex world) + one SVG overlay for labels, routes, badges, banners -->
-  <div id="map" aria-label="Hex map of Southeast Asia">
-    <canvas id="hexCanvas"></canvas>
-    <canvas id="dotsCanvas"></canvas>
-    <svg id="svg" role="application" aria-label="Interactive map. Drag to pan, scroll to zoom."></svg>
-    <div id="loading" class="loading"><div class="loading-hex"></div><span>Raising the map…</span></div>
+  <div id="map" aria-label="Interactive web map of Southeast Asia">
+    <div id="loading" class="loading"><div class="loading-dot"></div><span>Raising the map…</span></div>
   </div>
 
   <header id="topbar" class="topbar">
@@ -28,10 +28,12 @@
       <p>Indigenous trajectories across the Southeast Asian world, c. 65,000&nbsp;BP – today</p>
     </div>
     <div class="search" role="search">
-      <input id="search" type="search" placeholder="Search events, peoples, sources…" aria-label="Search events, peoples and sources" autocomplete="off">
+      <input id="search" type="search" placeholder="Search events, peoples, groups, layers, sources…" aria-label="Search events, peoples, ethnic groups, layers and sources" autocomplete="off">
       <div id="searchResults" class="search-results" hidden></div>
     </div>
     <nav class="topnav" aria-label="Main">
+      <button class="btn" data-open="stories" aria-label="Stories">Stories</button>
+      <button class="btn" data-open="analyse" aria-label="Spatial analysis">Analyse</button>
       <button class="btn" data-open="questions" aria-label="Questions guided tour">Questions</button>
       <button class="btn" data-open="sources" aria-label="Sources bibliography">Sources</button>
       <button class="btn" data-open="notes" aria-label="Notes">Notes</button>
@@ -41,28 +43,39 @@
   </header>
 
   <aside id="layers" class="layers" aria-label="Layers"></aside>
+  <aside id="analyse" class="layers analyse" aria-label="Analyse" hidden></aside>
+  <aside id="story" class="story" aria-label="Story" hidden></aside>
 
   <aside id="card" class="card" aria-label="Detail card" aria-hidden="true"></aside>
 
   <div id="tourHud" class="tour-hud" hidden></div>
+  <div id="liveMeasure" class="live-measure" hidden></div>
 
   <footer id="timeline" class="timeline" aria-label="Timeline"></footer>
 
   <nav id="tabbar" class="tabbar" aria-label="Mobile navigation">
     <button data-tab="layers"><span>◫</span>Layers</button>
-    <button data-open="questions"><span>?</span>Questions</button>
+    <button data-open="stories"><span>❦</span>Stories</button>
+    <button data-open="analyse"><span>⌖</span>Analyse</button>
     <button data-open="sources"><span>❡</span>Sources</button>
-    <button data-open="notes"><span>✎</span>Notes</button>
-    <button data-open="about"><span>i</span>About</button>
+    <button data-open="more"><span>⋯</span>More</button>
   </nav>
 
   <div id="modal" class="modal" hidden><div class="modal-backdrop"></div><section class="modal-sheet" role="dialog" aria-modal="true" id="modalSheet"></section></div>
   <div id="popover" class="popover" hidden></div>
   <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
 </div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs id="svgDefs"></defs></svg>
 
-<script src="vendor/d3.min.js"></script>
 <script src="vendor/topojson-client.min.js"></script>
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/leaflet-geoman.min.js"></script>
+<script src="vendor/leaflet.markercluster.js"></script>
+<script src="vendor/leaflet-heat.js"></script>
+<script src="vendor/esri-leaflet.js"></script>
+<script src="vendor/turf.min.js"></script>
+<script src="vendor/shp.min.js"></script>
+<script src="vendor/togeojson.umd.js"></script>
 <script type="module" src="js/main.js"></script>
 </body>
 </html>

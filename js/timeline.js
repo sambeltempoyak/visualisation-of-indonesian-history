@@ -1,7 +1,7 @@
 // timeline.js — the bottom "turn" bar: piecewise year scale, era bands, event ticks, draggable window brush,
 // cumulative toggle, play/pause with speeds, current-era header.
 import { el, clamp, formatYear, formatYearLong, formatRange, reducedMotion } from './util.js';
-import { svgEl } from './map.js';
+import { svgEl } from './util.js';
 
 const WIDTHS = { deep: .10, austronesian: .12, indic: .16, commerce: .14, company: .14, colonial: .14, revolution: .08, nation: .12 };
 

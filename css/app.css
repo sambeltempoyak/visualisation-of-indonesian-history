@@ -22,64 +22,12 @@ a { color: inherit; }
 kbd { font: 500 12px var(--sans); background: #EEDED1; color: #33393B; border-radius: 6px; padding: 1px 7px; border: 1px solid #DFDDD7; }
 code { font: 13px ui-monospace, Menlo, monospace; background: #EEDED1; color: #33393B; padding: 1px 6px; border-radius: 6px; }
 
-/* ---------- map ---------- */
-#map { position: absolute; inset: 0; background: radial-gradient(120% 90% at 30% 20%, #49546D 0%, #3E4659 45%, #33393B 100%); overflow: hidden; }
-#hexCanvas, #dotsCanvas, #svg { position: absolute; left: 0; top: 0; }
-#hexCanvas, #dotsCanvas { pointer-events: none; }
-#svg { touch-action: none; cursor: grab; outline: none; }
-#svg:active { cursor: grabbing; }
-.loading { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 14px; background: var(--dusk); color: #F6F4EF; font-family: var(--serif); font-size: 20px; z-index: 5; transition: opacity .6s; }
+/* ---------- map (Leaflet; layer styling lives in gis.css) ---------- */
+#map { position: absolute; inset: 0; z-index: 0; isolation: isolate; background: var(--sea, #CCD6E6); overflow: hidden; }
+.loading { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 14px; background: var(--dusk); color: #F6F4EF; font-family: var(--serif); font-size: 20px; z-index: 1000; transition: opacity .6s; }
 .loading.done { opacity: 0; pointer-events: none; }
-.loading-hex { width: 46px; height: 52px; clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); background: linear-gradient(135deg, #CCD6E6, #EEDED1); animation: spin 1.6s ease-in-out infinite; }
-@keyframes spin { 50% { transform: rotate(60deg) scale(.8); } }
-.rivers, .borders { transition: opacity .5s; }
-.river-path { stroke: #CCD6E6; stroke-width: 1.1px; stroke-opacity: .85; stroke-linecap: round; }
-.border-path { stroke: #33393B; stroke-width: 1.2px; stroke-dasharray: 5 4; stroke-opacity: .55; }
-.borders { opacity: 0; }
-
-.map-label { font-family: var(--serif); font-style: italic; pointer-events: none; transition: opacity .35s; user-select: none; }
-.map-label.sea { fill: #CCD6E6; }
-.map-label.land { fill: #33393B; paint-order: stroke; stroke: rgba(246, 244, 239, .7); stroke-width: 3.2px; stroke-linejoin: round; font-weight: 500; }
-
-/* routes */
-.route { opacity: 0; pointer-events: none; transition: opacity .35s; }
-.route.vis { opacity: 1; }
-.route.vis .r-hit { pointer-events: stroke; cursor: pointer; }
-.route.dim { opacity: .38; }
-.route.faded { opacity: .34; }
-.route.sel { filter: drop-shadow(0 0 5px rgba(246, 244, 239, .55)); }
-.r-under { opacity: .6; }
-.r-head-u { opacity: .85; }
-
-/* event badges (hexagons) */
-#g-badges .badge { position: absolute; pointer-events: none; outline: none; cursor: pointer; transform-origin: 0 0; }
-#g-badges .badge.vis { pointer-events: auto; }
-#g-badges .badge-in { transform-origin: 0 0; transform: scale(0); opacity: 0; transition: transform .3s cubic-bezier(.34, 1.56, .64, 1), opacity .25s ease; }
-#g-badges .badge.vis .badge-in { transform: scale(1); opacity: 1; }
-#g-badges .badge.vis:hover .badge-in { transform: translateY(-2px) scale(1.14); }
-.b-shadow { opacity: .6; transition: opacity .15s; }
-.b-glyph { font-family: 'Noto Sans Symbols 2', 'Noto Sans Symbols', 'Noto Sans Devanagari', 'Segoe UI Symbol', 'Apple Symbols', var(--sans); font-size: 16px; font-weight: 600; fill: #33393B; pointer-events: none; user-select: none; }
-.badge:focus-visible .b-shadow { opacity: 1; fill: #F6F4EF; }
-.badge.hl .b-shadow { fill: #CCD6E6; opacity: .95; }
-.badge .pulse { transform-origin: 0 0; stroke: none; opacity: 0; }
-.badge.sel .pulse { stroke: #F6F4EF; stroke-width: 2.2; animation: pulse 1.7s ease-out infinite; }
-.badge.sel .b-shadow { fill: #F6F4EF; opacity: 1; }
-@keyframes pulse { 0% { transform: scale(1); opacity: .95; } 100% { transform: scale(2.1); opacity: 0; } }
-.badge .leader line { stroke: rgba(246, 244, 239, .75); stroke-width: 1.2; }
-.badge .leader circle { fill: #F6F4EF; stroke: #33393B; stroke-width: 1; }
-.badge:not(.nudged) .leader { display: none; }
-
-/* people banners */
-#g-banners .banner { pointer-events: none; opacity: 0; transition: opacity .25s; cursor: pointer; outline: none; }
-#g-banners .banner.vis { opacity: 1; pointer-events: auto; }
-.banner-in { transition: transform .18s; }
-.banner:hover .banner-in { transform: translateY(-2px); }
-.pill { stroke: rgba(204, 214, 230, .55); stroke-width: 1; filter: drop-shadow(0 2px 3px rgba(51, 57, 59, .45)); }
-.pill-text { fill: #F6F4EF; font: 500 12px var(--sans); pointer-events: none; user-select: none; }
-.pill-hex { fill: #CCD6E6; }
-.pin { fill: #33393B; }
-.pin-dot { fill: #F6F4EF; stroke: #33393B; stroke-width: 1.4; }
-.banner.sel .pill, .banner:focus-visible .pill { stroke: #F6F4EF; stroke-width: 2.2; }
+.loading-dot { width: 46px; height: 46px; border-radius: 50%; background: linear-gradient(135deg, #CCD6E6, #EEDED1); animation: spin 1.6s ease-in-out infinite; }
+@keyframes spin { 50% { transform: scale(.7); } }
 
 /* ---------- shared buttons ---------- */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 36px; padding: 6px 14px; border-radius: 11px; border: 1px solid rgba(246, 244, 239, .24); background: rgba(246, 244, 239, .10); color: #F6F4EF; font-size: 13px; font-weight: 500; text-decoration: none; transition: transform .18s, background .18s, box-shadow .18s; line-height: 1.1; }
@@ -184,6 +132,7 @@ button.chip:hover { transform: translateY(-1px); background: #CCD6E6; }
 .src-badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 7px 0 2px; }
 .tag { display: inline-flex; padding: 1px 9px; border-radius: 999px; font-size: 11px; font-weight: 500; background: #DFDDD7; color: #33393B; border: 1px solid #B2ABB4; }
 .tag.b-peer { background: #CCD6E6; border-color: #49546D; } .tag.b-oa { background: #F6F4EF; border-color: #49546D; }
+.tag.b-lib { background: #EEDED1; border-color: #6E4540; color: #33393B; }
 .tag.b-local { background: #33393B; color: #F6F4EF; border-color: #33393B; } .tag.b-repo { background: #CCD6E6; border-color: #49546D; }
 .src-note { font-size: 12.5px; color: #5B6264; margin: 4px 0; line-height: 1.5; }
 .src-links { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: 12.5px; margin-top: 6px; } .isbn { color: #5B6264; }

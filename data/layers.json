@@ -1,0 +1,144 @@
+[
+ {
+  "id": "events",
+  "name": "Events",
+  "group": "Historical",
+  "type": "builtin",
+  "note": "Curated event cards, clustered at low zoom; follow the timeline and theme filters.",
+  "default": true
+ },
+ {
+  "id": "routes",
+  "name": "Routes",
+  "group": "Historical",
+  "type": "builtin",
+  "note": "Animated migration, trade, religion, colonial and labour routes.",
+  "default": true
+ },
+ {
+  "id": "peoples",
+  "name": "Peoples",
+  "group": "Historical",
+  "type": "builtin",
+  "note": "Banners for indigenous and ethnolinguistic groups with their own cards.",
+  "default": true
+ },
+ {
+  "id": "ethnic-groups",
+  "name": "Ethnic groups (Ananta et al. 2014)",
+  "group": "Ethnicity & language",
+  "type": "builtin",
+  "source_id": "ananta2014",
+  "attribution": "Ananta et al. 2014",
+  "note": "The 633 ethnic groups of the 2010 census, placed with honest precision.",
+  "default": false
+ },
+ {
+  "id": "wm-suku-labels",
+  "name": "Suku labels (Kartapranata)",
+  "group": "Ethnicity & language",
+  "type": "builtin",
+  "source_id": "kartapranata-map",
+  "attribution": "Gunawan Kartapranata, Wikimedia Commons",
+  "note": "213 labels from the Kartapranata ethnolinguistic map, georeferenced.",
+  "default": false
+ },
+ {
+  "id": "wm-suku-map",
+  "name": "Ethnolinguistic map (Kartapranata, Wikimedia)",
+  "group": "Ethnicity & language",
+  "type": "image",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Peta_Suku_Bangsa%2C_Bahasa%2C_dan_Aksara_di_Indonesia.svg",
+  "bounds": [
+   [
+    -14.831,
+    90.591
+   ],
+   [
+    7.539,
+    141.092
+   ]
+  ],
+  "attribution": "Gunawan Kartapranata, Wikimedia Commons",
+  "source_id": "kartapranata-map",
+  "opacity": 0.7,
+  "default": false,
+  "note": "SVG map overlaid with a least-squares georeference (rms about 0.22 degrees)."
+ },
+ {
+  "id": "languages",
+  "name": "Languages (Glottolog)",
+  "group": "Ethnicity & language",
+  "type": "builtin",
+  "attribution": "Glottolog 5.4, CC BY 4.0",
+  "note": "3,205 language points coloured by family; visible from zoom 6.",
+  "default": false
+ },
+ {
+  "id": "language-areas",
+  "name": "Language areas (Voronoi)",
+  "group": "Ethnicity & language",
+  "type": "builtin",
+  "attribution": "Glottolog 5.4; Natural Earth",
+  "note": "Derived: nearest-language cells clipped to land. Indicative only.",
+  "opacity": 0.6,
+  "default": false
+ },
+ {
+  "id": "place-names",
+  "name": "Place names",
+  "group": "Reference",
+  "type": "builtin",
+  "note": "Sea and island names for the unlabelled palette basemaps.",
+  "default": true
+ },
+ {
+  "id": "borders",
+  "name": "Modern borders",
+  "group": "Reference",
+  "type": "builtin",
+  "attribution": "Natural Earth",
+  "note": "Natural Earth 1:50m admin-0 boundaries.",
+  "default": false
+ },
+ {
+  "id": "rivers",
+  "name": "Rivers",
+  "group": "Reference",
+  "type": "builtin",
+  "attribution": "Natural Earth",
+  "note": "Natural Earth 1:50m rivers.",
+  "default": false
+ },
+ {
+  "id": "gebco-bathymetry",
+  "name": "GEBCO bathymetry (WMS)",
+  "group": "Reference",
+  "type": "wms",
+  "url": "https://wms.gebco.net/mapserv",
+  "options": {
+   "layers": "GEBCO_LATEST",
+   "format": "image/png",
+   "transparent": true,
+   "version": "1.3.0"
+  },
+  "attribution": "GEBCO Compilation Group (2023) GEBCO 2023 Grid",
+  "opacity": 0.8,
+  "default": false,
+  "note": "Sea-floor depth; shows the Sunda and Sahul shelves that joined Sumatra, Java and Borneo to the mainland at low sea level. External service: GetMap pattern from GEBCO's WMS documentation, not testable offline."
+ },
+ {
+  "id": "gibs-bluemarble",
+  "name": "NASA Blue Marble relief (GIBS tiles)",
+  "group": "Reference",
+  "type": "xyz",
+  "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_ShadedRelief_Bathymetry/default/GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpeg",
+  "options": {
+   "maxNativeZoom": 8
+  },
+  "attribution": "Imagery provided by services from NASA GIBS, operated by NASA/GSFC/ESDIS",
+  "opacity": 0.9,
+  "default": false,
+  "note": "NASA Global Imagery Browse Services WMTS (EPSG:3857, KVP-free REST pattern {layer}/default/{TileMatrixSet}/{z}/{row}/{col}). External service; not testable offline."
+ }
+]

@@ -1786,5 +1786,31 @@
   "issue": "19",
   "pages": "4219–4230.e10",
   "doi": "10.1016/j.cub.2021.07.022"
+ },
+ {
+  "id": "ananta2014",
+  "type": "journal",
+  "authors": "Ananta, Aris; Arifin, Evi Nurvidya; Hasbullah, M. Sairi; Handayani, Nur Budi; Pramono, Agus",
+  "year": 2014,
+  "title": "A New Classification of Indonesia's Ethnic Groups (Based on the 2010 Population Census)",
+  "container": "ISEAS Working Paper No. 1",
+  "peer_reviewed": false,
+  "open_access": true,
+  "publisher": "Institute of Southeast Asian Studies, Singapore",
+  "url": "https://www.iseas.edu.sg",
+  "library": "mendeley",
+  "note": "Source of the 633 ethnic groups (1,331 census codes regrouped). Working paper; expanded in Ananta et al. 2015, Demography of Indonesia's Ethnicity (ISEAS)."
+ },
+ {
+  "id": "kartapranata-map",
+  "type": "web",
+  "authors": "Kartapranata, Gunawan",
+  "year": 2020,
+  "title": "Peta Suku Bangsa, Bahasa, dan Aksara di Indonesia (map, SVG)",
+  "container": "Wikimedia Commons",
+  "peer_reviewed": false,
+  "open_access": true,
+  "url": "https://commons.wikimedia.org/wiki/File:Peta_Suku_Bangsa,_Bahasa,_dan_Aksara_di_Indonesia.svg",
+  "note": "Ethnolinguistic map of Indonesia; georeferenced here (rms ≈0.22°) and used as an overlay and to locate ethnic groups. Year approximate; see Commons page for licence."
  }
 ]

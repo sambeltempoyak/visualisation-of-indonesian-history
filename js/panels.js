@@ -2,62 +2,36 @@
 import { el, esc, formatYear, textGlyph, PAL } from './util.js';
 import { openModal } from './cards.js';
 
-// ---------------------------------------------------------------- Layers
-export function createLayers({ D, state, map }) {
-  const root = document.getElementById('layers');
-  const header = el('button', { class: 'layers-toggle', 'aria-expanded': 'true', 'aria-controls': 'layers-body', onclick: () => { const c = root.classList.toggle('collapsed'); header.setAttribute('aria-expanded', !c); } },
-    el('span', {}, 'Layers'), el('span', { class: 'caret' }, '▾'));
-  const body = el('div', { id: 'layers-body', class: 'layers-body' });
-  root.replaceChildren(header, body);
-
-  const toggleLayer = (key) => state.set({ layers: { ...state.get().layers, [key]: !state.get().layers[key] } });
-  const row = (id, label, checked, onChange, glyph, count, color) => {
-    const input = el('input', { type: 'checkbox', id, checked: checked || null });
-    input.addEventListener('change', () => onChange(input.checked));
-    return el('label', { class: 'lyr', for: id }, input, el('span', { class: 'switch' }),
-      glyph ? el('span', { class: 'lyr-glyph', style: `--c:${color}` }, textGlyph(glyph)) : null,
-      el('span', { class: 'lyr-name' }, label), count != null ? el('span', { class: 'lyr-count' }, count) : null);
-  };
-  const themesBox = el('div', { class: 'lyr-group' }, el('div', { class: 'lyr-h' }, el('span', {}, 'Themes'),
-    el('span', { class: 'lyr-all' }, el('button', { class: 'link-btn', onclick: () => state.set({ themesOn: new Set(D.themes.map(t => t.id)) }) }, 'all'), ' · ',
-      el('button', { class: 'link-btn', onclick: () => state.set({ themesOn: new Set() }) }, 'none'))));
-  D.themes.forEach(t => {
-    const r = row('th-' + t.id, t.name, true, on => { const s = new Set(state.get().themesOn); on ? s.add(t.id) : s.delete(t.id); state.set({ themesOn: s }); }, t.glyph, D.eventsByTheme.get(t.id) || 0, t.color);
-    r.dataset.theme = t.id; themesBox.append(r);
-  });
-  const other = el('div', { class: 'lyr-group' }, el('div', { class: 'lyr-h' }, 'Map'));
-  const L = state.get().layers;
-  [['peoples', 'Peoples'], ['routes', 'Routes'], ['languages', 'Languages (cultural borders)'], ['dots', 'Language dots (zoom in)'], ['rivers', 'Rivers'], ['borders', 'Modern borders'], ['labels', 'Labels']]
-    .forEach(([k, n]) => other.append(row('ly-' + k, n, L[k], () => toggleLayer(k))));
-  const legend = el('div', { class: 'legend', hidden: true }, el('div', { class: 'lyr-h' }, 'Language families'),
-    map.legend.map(g => el('div', { class: 'leg' }, el('i', { style: `background:${g.tint}` }), g.name)),
-    el('div', { class: 'leg-note' }, 'Glottolog 5.4 · nearest language point within 2.5°'));
-  body.append(themesBox, other, legend);
-  state.on((s, p) => {
-    if (s.layers !== p.layers) { legend.hidden = !s.layers.languages; for (const k of Object.keys(s.layers)) { const i = document.getElementById('ly-' + k); if (i) i.checked = s.layers[k]; } }
-    if (s.themesOn !== p.themesOn) D.themes.forEach(t => { const i = document.getElementById('th-' + t.id); if (i) i.checked = s.themesOn.has(t.id); });
-  });
-  return { root, toggleMobile: () => root.classList.toggle('sheet-open') };
-}
-
 // ---------------------------------------------------------------- Search
-export function createSearch({ D, actions }) {
+export function createSearch({ D, actions, reg, ethno, map, ctx }) {
   const input = document.getElementById('search'), box = document.getElementById('searchResults');
   const idx = [
     ...D.events.map(e => ({ kind: 'Event', id: e.id, label: e.title, sub: `${formatYear(e.start)} · ${e.place || ''}`, hay: `${e.title} ${e.place} ${e.summary} ${e.id}`.toLowerCase(), go: () => actions.select('event', e.id) })),
     ...D.peoples.map(p => ({ kind: 'People', id: p.id, label: p.name, sub: p.family || '', hay: `${p.name} ${p.autonym} ${p.region} ${p.family}`.toLowerCase(), go: () => actions.select('people', p.id) })),
+    ...(ethno?.groups || []).map(g => ({ kind: 'Group', id: g.id, label: g.name, sub: [g.island, g.place || (g.precision === 'none' ? 'not mapped' : '')].filter(Boolean).join(' · '), hay: `${g.name} ${(g.aliases || []).join(' ')} ${(g.codes || []).map(c => c.label).join(' ')} ${g.place || ''} ${g.island || ''} ${g.glottocode || ''}`.toLowerCase(), go: () => ethno.focus(g.id) })),
+    ...(ethno?.labels || []).map((l, i) => ({ kind: 'Suku', id: 'wm' + i, label: l.label, sub: 'Kartapranata map label', hay: l.label.toLowerCase(), go: async () => { await reg.setVisible('wm-suku-labels', true); map.flyToView([l.lat, l.lon], Math.max(map.map.getZoom(), 7), { duration: 1 }); } })),
     ...D.sources.map(s => ({ kind: 'Source', id: s.id, label: s.title, sub: `${s.authors} (${s.year})`, hay: `${s.title} ${s.authors} ${s.year} ${s.id}`.toLowerCase(), go: () => actions.openSources(s.title) }))
   ];
+  /** layers (always) and the feature names of user / result vector layers (live: they change at run time) */
+  const dynamic = terms => {
+    const out = [];
+    for (const d of reg.list()) {
+      if (d.kind === 'builtin') { if (terms.every(t => d.name.toLowerCase().includes(t))) out.push({ kind: 'Layer', id: d.id, label: d.name, sub: d.group, hay: '', go: () => { reg.setVisible(d.id, true); reg.zoomTo(d.id); } }); continue; }
+      if (terms.every(t => d.name.toLowerCase().includes(t))) out.push({ kind: 'Layer', id: d.id, label: d.name, sub: d.group, go: () => { reg.setVisible(d.id, true); reg.zoomTo(d.id); } });
+      const fc = d.kind !== 'catalogue' || d.data ? (d.data || null) : null;
+      if (fc) for (const f of fc.features) { const nm = f.properties && (f.properties.name ?? f.properties.label ?? f.properties.title); if (nm != null && terms.every(t => String(nm).toLowerCase().includes(t))) out.push({ kind: 'Feature', id: d.id, label: String(nm), sub: d.name, go: () => { reg.setVisible(d.id, true); const b = L.geoJSON(f, { coordsToLatLng: c => L.latLng(c[1], c[0]) }).getBounds(); b.getSouthWest().equals(b.getNorthEast()) ? map.flyToView(b.getCenter(), Math.max(map.map.getZoom(), 9), { duration: 1 }) : map.flyToBounds(b, { pad: 60, maxZoom: 12 }); } }); if (out.length > 30) break; }
+    }
+    return out;
+  };
   let items = [], sel = -1;
   const close = () => { box.hidden = true; sel = -1; };
-  const paint = () => {
-    [...box.children].forEach((c, i) => c.classList.toggle('on', i === sel));
-  };
+  const paint = () => { [...box.children].forEach((c, i) => c.classList.toggle('on', i === sel)); };
   function run() {
     const q = input.value.trim().toLowerCase();
     if (q.length < 2) return close();
     const terms = q.split(/\s+/);
-    items = idx.filter(x => terms.every(t => x.hay.includes(t))).sort((a, b) => (b.label.toLowerCase().startsWith(q) - a.label.toLowerCase().startsWith(q))).slice(0, 14);
+    const rank = x => (x.label.toLowerCase().startsWith(q) ? 0 : 1);
+    items = [...idx.filter(x => terms.every(t => x.hay.includes(t))), ...dynamic(terms)].sort((a, b) => rank(a) - rank(b)).slice(0, 16);
     box.replaceChildren(...(items.length ? items.map((x, i) => el('button', { class: 'sr', role: 'option', onclick: () => pick(i) }, el('span', { class: 'sr-kind' }, x.kind), el('span', { class: 'sr-main' }, el('b', {}, x.label), el('small', {}, x.sub)))) : [el('div', { class: 'sr-none' }, 'No matches')]));
     box.hidden = false; sel = -1;
   }
@@ -122,17 +96,23 @@ export function createTour({ D, actions }) {
 
 // ---------------------------------------------------------------- About
 export function openAbout(D) {
+  const nEg = D.ethnic?.groups?.length || 0;
   const c = el('div', { class: 'panel-body prose' },
-    el('p', { class: 'lede' }, 'An interactive hex map that follows indigenous peoples of the Southeast Asian world and the long web of migration, trade, religion, slavery, empire, plantation and independence that connected them — from the first crossings to Sahul, c. 65,000 years ago, to today.'),
+    el('p', { class: 'lede' }, 'An interactive web map that follows indigenous peoples of the Southeast Asian world and the long web of migration, trade, religion, slavery, empire, plantation and independence that connected them — from the first crossings to Sahul, c. 65,000 years ago, to today.'),
     el('h3', { class: 'sec-h' }, 'Purpose'),
-    el('p', {}, 'Built as a research companion: every event is a card with a summary, the scholarly debate around it, the peoples involved and the sources it rests on. Sources carry a Verify button that checks the DOI against Crossref and OpenAlex (and ISBNs against Open Library) in your browser.'),
+    el('p', {}, 'Built as a research companion: every event is a card with a summary, the scholarly debate around it, the peoples involved and the sources it rests on. Sources carry a Verify button that checks the DOI against Crossref and OpenAlex (and ISBNs against Open Library) in your browser. Stories walk through one place chapter by chapter.'),
     el('h3', { class: 'sec-h' }, 'Method'),
-    el('p', {}, 'Procedural hex map generated in the browser from Natural Earth 50 m coastlines; language territories from Glottolog 5.4 (Hammarström, Forkel, Haspelmath & Bank 2026), cross-checked against Wikipedia’s “Languages of Indonesia” map; every card cites its sources; certainty flags mark each card as Established, Debated or Estimate. The Languages layer colours each hex by the family of the nearest Glottolog language point (within 2.5°) and is indicative, not a claim about historical territories.'),
-    el('h3', { class: 'sec-h' }, 'Data credits'),
-    el('ul', {}, el('li', {}, 'Natural Earth — coastlines, countries, rivers (public domain).'), el('li', {}, 'Glottolog 5.4 — language locations and families (CC-BY-4.0).'), el('li', {}, 'Crossref, OpenAlex and Open Library — live verification of citations.')),
+    el('p', {}, 'The map is a standard web map built with Leaflet, with a Bhumi-style layer manager and GIS tools (Leaflet-Geoman for drawing, Turf for analysis, leaflet.heat for density, esri-leaflet for ArcGIS services, shpjs and togeojson for uploads). Historical layers follow the timeline; every card cites its sources and carries a certainty flag (Established, Debated, Estimate). The 633 ethnic groups are those of the 2010 census as listed by Ananta et al. (2014); each is placed with the honest precision it allows (point, district, province, island) and the method is stated in its popup. The Kartapranata map is georeferenced by a least-squares fit on 17 control points (rms ≈ 0.22°). “Language areas” are Voronoi cells of Glottolog points clipped to land — indicative, not historical territories.'),
+    el('h3', { class: 'sec-h' }, 'Data & basemap credits'),
+    el('ul', {}, el('li', {}, 'Basemaps: © OpenStreetMap contributors, © CARTO (Positron / Dark Matter), Esri (World Shaded Relief, World Imagery). “Ejak (palette)” is CARTO Positron recoloured in the browser.'),
+      el('li', {}, 'Natural Earth — coastlines, countries, rivers (public domain); also the offline fallback map.'),
+      el('li', {}, 'Glottolog 5.4 — language locations and families (CC BY 4.0).'),
+      el('li', {}, 'Ananta, Utami, Handayani & Arifin (2014/2015) — the 633 ethnic groups of Indonesia, 2010 census.'),
+      el('li', {}, 'Gunawan Kartapranata — “Peta Suku Bangsa, Bahasa, dan Aksara di Indonesia”, Wikimedia Commons (CC BY-SA): map image and suku labels.'),
+      el('li', {}, 'Crossref, OpenAlex and Open Library — live verification of citations.')),
     el('h3', { class: 'sec-h' }, 'Adding to the map'),
-    el('p', {}, 'Ask Claude in the chat: ', el('code', {}, '“add to the map: …”'), ' — Claude edits data/*.json and pushes to GitHub. Notes you write on a card stay in this browser (localStorage) until you export them from the Notes panel.'),
-    el('p', { class: 'muted' }, `Currently ${D.events.length} events, ${D.routes.length} routes, ${D.peoples.length} peoples, ${D.sources.length} sources.` + (D.warnings.length ? ` ${D.warnings.length} data warning(s) — see the browser console.` : '')),
+    el('p', {}, 'Ask Claude in the chat: ', el('code', {}, '“add to the map: …”'), ' — Claude edits data/*.json and pushes to GitHub. Layers you add in the browser (files, WMS, tiles, ArcGIS) stay on this device until you use “Catalogue entry” and ask Claude to make them permanent. Notes you write on a card stay in this browser until you export them from the Notes panel. Private story quotes never leave your browser.'),
+    el('p', { class: 'muted' }, `Currently ${D.events.length} events, ${D.routes.length} routes, ${D.peoples.length} peoples, ${nEg} ethnic groups, ${D.sources.length} sources.` + (D.warnings.length ? ` ${D.warnings.length} data warning(s) — see the browser console.` : '')),
     el('h3', { class: 'sec-h' }, 'Keyboard'),
     el('p', {}, el('kbd', {}, 'Space'), ' play / pause · ', el('kbd', {}, '←'), ' ', el('kbd', {}, '→'), ' previous / next event · ', el('kbd', {}, 'Esc'), ' close · ', el('kbd', {}, '/'), ' search'));
   openModal('About this map', c);

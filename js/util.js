@@ -129,3 +129,52 @@ export function downloadFile(name, text, type = 'application/json') {
 
 /** Add U+FE0E so emoji-capable glyphs (⚓ ⚖ ⚙ ⛏ ⛓ …) render as monochrome text. */
 export const textGlyph = g => (g || '•') + '︎';
+
+// ---------- SVG helper ----------
+const SVGNS = 'http://www.w3.org/2000/svg';
+export const svgEl = (tag, attrs = {}, parent) => {
+  const n = document.createElementNS(SVGNS, tag);
+  for (const [k, v] of Object.entries(attrs)) if (v != null) n.setAttribute(k, v);
+  if (parent) parent.append(n);
+  return n;
+};
+
+/** Longitudes ≥ 180 are used by the Pacific routes; points stored with negative lon (Fiji, Samoa…) are shifted east so they sit next to them. */
+export const unwrapLon = lon => (lon < -100 ? lon + 360 : lon);
+
+// ---------- IndexedDB key/value (always safe: falls back to memory) ----------
+const idbMem = new Map();
+let idbPromise = null;
+function idb() {
+  if (idbPromise) return idbPromise;
+  idbPromise = new Promise(res => {
+    try {
+      const rq = indexedDB.open('vih-v2', 1);
+      rq.onupgradeneeded = () => rq.result.createObjectStore('kv');
+      rq.onsuccess = () => res(rq.result);
+      rq.onerror = () => res(null);
+    } catch (e) { res(null); }
+  });
+  return idbPromise;
+}
+export const kv = {
+  async get(key) {
+    const db = await idb(); if (!db) return idbMem.get(key) ?? null;
+    return new Promise(res => { try { const r = db.transaction('kv').objectStore('kv').get(key); r.onsuccess = () => res(r.result ?? null); r.onerror = () => res(idbMem.get(key) ?? null); } catch (e) { res(idbMem.get(key) ?? null); } });
+  },
+  async set(key, val) {
+    idbMem.set(key, val);
+    const db = await idb(); if (!db) return false;
+    return new Promise(res => { try { const tx = db.transaction('kv', 'readwrite'); tx.objectStore('kv').put(val, key); tx.oncomplete = () => res(true); tx.onerror = () => res(false); } catch (e) { res(false); } });
+  },
+  async del(key) {
+    idbMem.delete(key);
+    const db = await idb(); if (!db) return;
+    return new Promise(res => { try { const tx = db.transaction('kv', 'readwrite'); tx.objectStore('kv').delete(key); tx.oncomplete = () => res(); tx.onerror = () => res(); } catch (e) { res(); } });
+  },
+  async keys(prefix = '') {
+    const db = await idb(); const mem = [...idbMem.keys()].filter(k => k.startsWith(prefix));
+    if (!db) return mem;
+    return new Promise(res => { try { const r = db.transaction('kv').objectStore('kv').getAllKeys(); r.onsuccess = () => res([...new Set([...r.result.filter(k => String(k).startsWith(prefix)), ...mem])]); r.onerror = () => res(mem); } catch (e) { res(mem); } });
+  }
+};
