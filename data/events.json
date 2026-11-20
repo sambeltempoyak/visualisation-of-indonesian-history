@@ -1,0 +1,3639 @@
+[
+ {
+  "id": "sundaland",
+  "title": "Sundaland, Sahul and the Wallace Line",
+  "start": -70000,
+  "end": -8000,
+  "era": "deep",
+  "theme": "migration",
+  "place": "Sunda Shelf",
+  "lat": 2.0,
+  "lon": 108.0,
+  "summary": "In glacial periods sea level fell by up to about 120 m, joining Sumatra, Java, Bali and Borneo to the Asian mainland (Sundaland) and New Guinea to Australia (Sahul). Between them, the islands of Wallacea always needed sea crossings.",
+  "detail": "This geography is the stage for everything that follows. Sundaland could be walked; Wallacea — Sulawesi, Lombok to Timor, Maluku — could not, which is why the earliest crossings to Sahul imply boats and planned voyages. The Wallace Line, first drawn from the distribution of animals, also marks a deep human threshold.\n\nRising seas after the Last Glacial Maximum (c. 20,000 years ago) drowned the Sunda plains, creating the shallow Java Sea, Strait of Malacca and South China Sea that later carried monsoon trade. The modern nations of the region — Indonesia, Malaysia, Brunei, Singapore, the Philippines, Timor-Leste, Papua New Guinea, and mainland Thailand, Myanmar, Cambodia, Laos and Vietnam — sit across this drowned continent and its island arcs.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "bellwood2007",
+    "pages": "1–39"
+   },
+   {
+    "id": "bellwood2017"
+   }
+  ],
+  "q": [
+   1,
+   2
+  ],
+  "peoples": [],
+  "routes": [
+   "r-sunda-entry"
+  ],
+  "related": []
+ },
+ {
+  "id": "monsoon",
+  "title": "Lands below the winds: monsoons and straits",
+  "start": 1,
+  "end": 1600,
+  "era": "commerce",
+  "theme": "trade",
+  "place": "Strait of Malacca",
+  "lat": 2.6,
+  "lon": 101.2,
+  "summary": "Alternating monsoon winds set the rhythm of sailing: ships waited in ports for the wind to turn, making straits such as Malacca and Sunda natural sites for entrepôts.",
+  "detail": "Anthony Reid's 'lands below the winds' takes its name from a Malay, Persian and Arab phrase for the lands their ships reached on the monsoon winds, east of India. Because ships from India, China and the Arabian Sea had to wait months for the winds to reverse, ports where routes met — the Isthmus of Kra, the Strait of Malacca, the north Java coast — became cosmopolitan meeting places. This structural fact explains why power in the archipelago was so often maritime and port-based rather than territorial.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "reid1988",
+    "pages": "1–10"
+   },
+   {
+    "id": "wolters1967"
+   },
+   {
+    "id": "hall2011"
+   }
+  ],
+  "q": [
+   1,
+   5
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "first-sahul",
+  "title": "First crossings to Sahul",
+  "start": -65000,
+  "end": -47000,
+  "era": "deep",
+  "theme": "migration",
+  "place": "Madjedbebe, Arnhem Land",
+  "lat": -12.5,
+  "lon": 132.9,
+  "summary": "Modern humans crossed the Wallacean straits and reached northern Australia by about 65,000–50,000 years ago — among the earliest deliberate sea voyages known.",
+  "detail": "Excavations at Madjedbebe rock shelter in Arnhem Land produced artefacts dated to about 65,000 years ago, the earliest secure evidence of people in Sahul; others prefer a later arrival near 50,000 years ago, so the date range is still debated. Either way, Papuans and Aboriginal Australians descend from these first voyagers, and their ancestry is the deepest layer in the populations of eastern Indonesia, from Timor and Alor to Papua.",
+  "certainty": "debated",
+  "sources": [
+   {
+    "id": "clarkson2017"
+   },
+   {
+    "id": "bellwood2017"
+   },
+   {
+    "id": "skoglund2016"
+   }
+  ],
+  "q": [
+   2
+  ],
+  "peoples": [
+   "yolngu",
+   "dani"
+  ],
+  "routes": [
+   "r-sahul-south",
+   "r-sahul-north"
+  ],
+  "related": [],
+  "debate": "Arrival 65 ka (Clarkson et al. 2017) vs c. 50–47 ka (critics of the Madjedbebe dating). Both imply open-sea crossings through Wallacea."
+ },
+ {
+  "id": "sulawesi-art",
+  "title": "The world's oldest narrative art, Sulawesi",
+  "start": -51200,
+  "end": -40000,
+  "era": "deep",
+  "theme": "indigenous",
+  "place": "Leang Karampuang, Maros-Pangkep",
+  "lat": -4.95,
+  "lon": 119.67,
+  "summary": "Cave paintings in the limestone karst of Maros-Pangkep show humans and animals in a scene dated to at least 51,200 years ago; a warty-pig painting at Leang Tedongnge is at least 45,500 years old.",
+  "detail": "These dates, obtained by uranium-series analysis of mineral crusts over the paint, place Sulawesi — not Europe — at the origin of figurative and narrative image-making. They show that the first people moving through Wallacea brought complex symbolic culture with them.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "oktaviana2024"
+   },
+   {
+    "id": "brumm2021"
+   }
+  ],
+  "q": [
+   2
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "liang-bua",
+  "title": "Homo floresiensis and other archaic humans",
+  "start": -100000,
+  "end": -50000,
+  "era": "deep",
+  "theme": "migration",
+  "place": "Liang Bua, Flores",
+  "lat": -8.53,
+  "lon": 120.45,
+  "summary": "Flores was home to a small archaic hominin, Homo floresiensis, whose remains date to about 100,000–60,000 years ago; its traces vanish around 50,000 years ago, near the arrival of modern humans.",
+  "detail": "The islands were not empty when modern humans arrived: archaic hominins lived on Flores (and on Luzon, Homo luzonensis). Whether modern humans played a part in their disappearance is unknown.",
+  "certainty": "debated",
+  "sources": [
+   {
+    "id": "sutikna2016"
+   },
+   {
+    "id": "bellwood2017"
+   }
+  ],
+  "q": [
+   2
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "hoabinhian",
+  "title": "Hòabìnhian foragers and the ancestors of the Semang",
+  "start": -30000,
+  "end": -2000,
+  "era": "deep",
+  "theme": "indigenous",
+  "place": "Malay Peninsula interior",
+  "lat": 5.3,
+  "lon": 101.6,
+  "summary": "Ancient genomes show that the Semang Orang Asli (Jahai, Batek and others) carry the deepest local hunter-gatherer ancestry in mainland Southeast Asia, from the Hòabìnhian forager tradition.",
+  "detail": "McColl et al. (2018) sequenced ancient individuals from Laos, Malaysia, Vietnam and elsewhere and found a 'two-layer' history: first Hòabìnhian hunter-gatherers, then farming populations from the north. The Semang retain most of the first layer; the Senoi (Semai, Temiar) are a mix of these foragers with Neolithic Austroasiatic farmers; the 'Proto-Malay' groups (Temuan, Jakun) speak Malayic Austronesian languages. Geoffrey Benjamin warns that these three categories describe social modes (foraging, swiddening, trade-oriented) as much as descent.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "mccoll2018"
+   },
+   {
+    "id": "bulbeck2011"
+   },
+   {
+    "id": "benjamin2002"
+   },
+   {
+    "id": "endicott2016"
+   }
+  ],
+  "q": [
+   2,
+   12
+  ],
+  "peoples": [
+   "jehai",
+   "batek",
+   "semai",
+   "temiar",
+   "temuan",
+   "jakun"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "ayta-first",
+  "title": "The Philippines' earliest settlers",
+  "start": -50000,
+  "end": -20000,
+  "era": "deep",
+  "theme": "migration",
+  "place": "Zambales, Luzon",
+  "lat": 15.2,
+  "lon": 120.4,
+  "summary": "Genome-wide data show that Philippine Negrito groups such as the Ayta descend from the earliest settlers of the islands, and that the Philippines received at least five migration waves over 50,000 years.",
+  "detail": "Larena et al. (2021) found that Ayta Magbukon carry the highest Denisovan ancestry known, and that later waves — including Austronesian-speakers from Taiwan — mixed with the earliest population rather than replacing it.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "larena2021"
+   },
+   {
+    "id": "larena2021b"
+   }
+  ],
+  "q": [
+   2
+  ],
+  "peoples": [
+   "ayta"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "kuk",
+  "title": "Independent agriculture in highland New Guinea",
+  "start": -5000,
+  "end": -4400,
+  "era": "deep",
+  "theme": "migration",
+  "place": "Kuk Swamp, Wahgi Valley",
+  "lat": -5.78,
+  "lon": 144.33,
+  "summary": "By about 7,000–6,400 years ago Papuan communities were draining wetlands and cultivating bananas and taro at Kuk — one of the world's independent centres of plant domestication.",
+  "detail": "Kuk shows that Papuan societies developed farming on their own, long before Austronesian-speakers arrived on the New Guinea coasts. This matters for how 'progress' narratives treat Papua as backward: its highlands were early agricultural innovators.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "denham2003"
+   },
+   {
+    "id": "bellwood2017"
+   }
+  ],
+  "q": [
+   2,
+   12
+  ],
+  "peoples": [
+   "dani"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "austroasiatic",
+  "title": "Austroasiatic farmers spread south",
+  "start": -2500,
+  "end": -1000,
+  "era": "austronesian",
+  "theme": "migration",
+  "place": "Mainland Southeast Asia",
+  "lat": 15.5,
+  "lon": 104.5,
+  "summary": "Rice- and millet-farming communities related to today's Austroasiatic speakers (Khmer, Mon, Vietnamese, Aslian Orang Asli) spread through the mainland and into the Malay Peninsula from about 4,500 years ago.",
+  "detail": "Ancient genomes from Man Bac in Vietnam and later sites show farmers with East Asian ancestry mixing with local Hòabìnhian foragers. Lipson et al. (2014) also detected Austroasiatic-related ancestry in western Indonesians (Java, Bali, Borneo), suggesting an early mainland farmer layer there before Austronesian dominance — a hint that Sundaland's history was more layered than a single 'wave'.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "lipson2018"
+   },
+   {
+    "id": "mccoll2018"
+   },
+   {
+    "id": "lipson2014"
+   }
+  ],
+  "q": [
+   2
+  ],
+  "peoples": [
+   "semai",
+   "temiar"
+  ],
+  "routes": [
+   "r-austroasiatic"
+  ],
+  "related": []
+ },
+ {
+  "id": "out-of-taiwan",
+  "title": "Out of Taiwan: the Austronesian departure",
+  "start": -3000,
+  "end": -2200,
+  "era": "austronesian",
+  "theme": "migration",
+  "place": "Taiwan → Batanes → Luzon",
+  "lat": 22.0,
+  "lon": 121.3,
+  "summary": "Linguistic, archaeological and genetic evidence points to Taiwan as the homeland of the Austronesian language family; speakers moved south to the northern Philippines by about 4,200 years ago.",
+  "detail": "Nine of Austronesian's ten first-order branches are found only on Taiwan, which Blust read as the signature of a homeland. Gray et al.'s phylogeny of 400 languages dates the expansion's start to about 5,200 years ago, with a 'pause' before the move to the Philippines. Red-slipped pottery, rice and pig husbandry, and Taiwan nephrite traded as far as Borneo and Vietnam trace the movement archaeologically.\n\nThe 'Out-of-Taiwan' model remains debated. Some geneticists (Soares, Hill and colleagues) argued for older dispersals out of Sundaland after the Ice Age; Solheim proposed a 'Nusantao' trading network instead of a migration. Genome-wide and ancient-DNA studies since 2014 broadly support a Taiwan source for Austronesian ancestry, but layered over earlier Papuan-related and Austroasiatic-related populations.",
+  "certainty": "debated",
+  "sources": [
+   {
+    "id": "blust1995"
+   },
+   {
+    "id": "gray2009"
+   },
+   {
+    "id": "bellwood2017"
+   },
+   {
+    "id": "ko2014"
+   },
+   {
+    "id": "lipson2014"
+   },
+   {
+    "id": "soares2008"
+   },
+   {
+    "id": "hill2007"
+   },
+   {
+    "id": "solheim2006"
+   }
+  ],
+  "q": [
+   2
+  ],
+  "peoples": [
+   "amis",
+   "tagalog"
+  ],
+  "routes": [
+   "r-taiwan-luzon"
+  ],
+  "related": [],
+  "debate": "Out-of-Taiwan (Bellwood, Blust, Gray) vs Out-of-Sundaland mtDNA models (Soares 2008, Hill 2007) vs the Nusantao trade-network model (Solheim 2006)."
+ },
+ {
+  "id": "malayo-polynesian",
+  "title": "Malayo-Polynesian dispersal through the islands",
+  "start": -2200,
+  "end": -500,
+  "era": "austronesian",
+  "theme": "migration",
+  "place": "Philippines → Borneo, Sulawesi, Java, Sumatra",
+  "lat": 1.0,
+  "lon": 118.0,
+  "summary": "From the Philippines, Malayo-Polynesian speakers moved into Borneo, Sulawesi and Maluku, then west to Java, Sumatra and the Malay Peninsula, and east along New Guinea's coasts.",
+  "detail": "In the west they met long-established foragers and probably Austroasiatic-speaking farmers; in the east, Papuan-speaking peoples who had lived there for tens of thousands of years. The result is the patchwork visible on the language map: Austronesian languages dominate the west, while Halmahera, Timor-Alor-Pantar and New Guinea keep Papuan families, and eastern Indonesian populations show heavy Papuan-related ancestry.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "bellwood2007",
+    "pages": "201–254"
+   },
+   {
+    "id": "lipson2014"
+   },
+   {
+    "id": "adelaar2005"
+   }
+  ],
+  "q": [
+   2
+  ],
+  "peoples": [
+   "javanese",
+   "bugis",
+   "ngaju",
+   "dani"
+  ],
+  "routes": [
+   "r-mp-south",
+   "r-mp-borneo",
+   "r-mp-west",
+   "r-mp-east"
+  ],
+  "related": []
+ },
+ {
+  "id": "malay-homeland",
+  "title": "Where do the Malays come from?",
+  "start": -300,
+  "end": 700,
+  "era": "austronesian",
+  "theme": "migration",
+  "place": "West Borneo",
+  "lat": 0.4,
+  "lon": 111.6,
+  "summary": "Linguists locate the homeland of the Malayic languages in western Borneo; Malay later spread into southeast Sumatra and the Peninsula and became the region's trade language.",
+  "detail": "Malay is one Austronesian language among many — not a 'race'. Adelaar and others place Proto-Malayic in West Borneo, where Malayic Dayak languages (Iban, Kendayan) still cluster. By the late 7th century Old Malay was written in Srivijaya's inscriptions near Palembang and Jambi. 'Malayu' identity then grew through commerce, Islam and court culture, absorbing Orang Laut, Orang Asli and migrants. Leonard Andaya shows that ethnic labels in the Straits were shaped by trade roles as much as ancestry.",
+  "certainty": "debated",
+  "sources": [
+   {
+    "id": "adelaar2005"
+   },
+   {
+    "id": "andaya2008"
+   },
+   {
+    "id": "benjamin2002"
+   }
+  ],
+  "q": [
+   2,
+   12
+  ],
+  "peoples": [
+   "malay",
+   "iban",
+   "temuan"
+  ],
+  "routes": [
+   "r-malay-spread"
+  ],
+  "related": [],
+  "debate": "Borneo homeland is the majority view; some earlier scholars favoured Sumatra (Jambi/Palembang)."
+ },
+ {
+  "id": "lapita",
+  "title": "Lapita and Remote Oceania",
+  "start": -1300,
+  "end": -800,
+  "era": "austronesian",
+  "theme": "migration",
+  "place": "Bismarck Archipelago → Tonga",
+  "lat": -4.5,
+  "lon": 151.5,
+  "summary": "From about 3,300 years ago, Austronesian-speaking Lapita potters sailed beyond the Solomons into uninhabited Remote Oceania, reaching Vanuatu, Fiji, Tonga and Samoa within a few centuries.",
+  "detail": "Ancient genomes from Lapita-associated burials in Vanuatu and Tonga show almost entirely Asian (Taiwan-linked) ancestry, with Papuan ancestry arriving later — overturning older 'Melanesian mixing on the way' models. After a long pause, East Polynesia was settled rapidly c. 1025–1120 CE and New Zealand c. 1250–1300 CE.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "skoglund2016"
+   },
+   {
+    "id": "kirch2017"
+   },
+   {
+    "id": "gray2009"
+   },
+   {
+    "id": "wilmshurst2011"
+   }
+  ],
+  "q": [
+   2
+  ],
+  "peoples": [],
+  "routes": [
+   "r-lapita",
+   "r-poly-hawaii",
+   "r-poly-rapa",
+   "r-poly-nz"
+  ],
+  "related": []
+ },
+ {
+  "id": "madagascar",
+  "title": "Across the Indian Ocean to Madagascar",
+  "start": 500,
+  "end": 900,
+  "era": "austronesian",
+  "theme": "migration",
+  "place": "Madagascar",
+  "lat": -19.0,
+  "lon": 47.0,
+  "summary": "Malagasy is a Barito language from south Borneo, and Malagasy maternal lineages trace to Indonesia; settlement began roughly 1,200–1,500 years ago.",
+  "detail": "Adelaar showed Malagasy's closest relative is Ma'anyan of south-east Kalimantan, with loanwords from Malay and Javanese — suggesting Barito people travelled as crew in Malay-led ventures. Cox et al. estimate a founding group of perhaps 30 Island Southeast Asian women. The voyage makes Austronesians the most widely dispersed language family before 1500.",
+  "certainty": "estimate",
+  "sources": [
+   {
+    "id": "adelaar2005"
+   },
+   {
+    "id": "cox2012"
+   }
+  ],
+  "q": [
+   2
+  ],
+  "peoples": [
+   "maanyan",
+   "malagasy"
+  ],
+  "routes": [
+   "r-madagascar"
+  ],
+  "related": []
+ },
+ {
+  "id": "dongson",
+  "title": "Bronze drums across the archipelago",
+  "start": -500,
+  "end": 200,
+  "era": "austronesian",
+  "theme": "trade",
+  "place": "Dong Son, Red River",
+  "lat": 20.0,
+  "lon": 105.8,
+  "summary": "Dong Son-type bronze drums made in northern Vietnam were traded as prestige goods to Sumatra, Java, Bali, Sumbawa, Alor and the Kei Islands between about 500 BCE and 300 CE.",
+  "detail": "The drums show that long-distance exchange linked mainland and island societies before any Indian influence. Local communities later cast their own drums (the 'Moon of Pejeng' in Bali; moko in Alor).",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "calo2009"
+   },
+   {
+    "id": "higham2014"
+   },
+   {
+    "id": "bellwood2007"
+   }
+  ],
+  "q": [
+   2,
+   3
+  ],
+  "peoples": [],
+  "routes": [
+   "r-dongson"
+  ],
+  "related": []
+ },
+ {
+  "id": "bay-of-bengal",
+  "title": "Early contact with India across the Bay of Bengal",
+  "start": -400,
+  "end": 200,
+  "era": "austronesian",
+  "theme": "trade",
+  "place": "Khao Sam Kaeo, Isthmus of Kra",
+  "lat": 10.4,
+  "lon": 99.1,
+  "summary": "By the 4th century BCE, glass and stone beads made with Indian techniques — and probably by Indian craftsmen — appear at Ban Don Ta Phet and Khao Sam Kaeo on the Thai-Malay peninsula.",
+  "detail": "Bellina and Glover show a two-way exchange: Southeast Asian sailors were active in the Bay of Bengal, and South Asian artisans settled in peninsula ports. Indian influence therefore began as trade and craft, centuries before kings adopted Sanskrit titles.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "bellina2004"
+   },
+   {
+    "id": "hall2011"
+   }
+  ],
+  "q": [
+   3,
+   6
+  ],
+  "peoples": [],
+  "routes": [
+   "r-bengal"
+  ],
+  "related": []
+ },
+ {
+  "id": "indianisation-debate",
+  "title": "Indianisation, localisation or convergence?",
+  "start": 100,
+  "end": 1300,
+  "era": "indic",
+  "theme": "indic",
+  "place": "Bay of Bengal",
+  "lat": 12.0,
+  "lon": 89.5,
+  "summary": "How Indian religion and kingship reached Southeast Asia is itself debated: colonisation by Indians (old view), selection by local elites (Wolters' 'localisation'), or parallel development (Kulke's 'convergence').",
+  "detail": "George Coedès' 'Indianized States' (1944) imagined Indian traders and Brahmins founding kingdoms. Later scholars rejected any conquest: there is no evidence of Indian armies or colonies. O. W. Wolters argued that local chiefs — 'men of prowess' at the centre of fluid mandala polities — selectively took Indic ideas that enhanced their status. Hermann Kulke saw Southeast Asian and Indian states maturing in parallel. Sheldon Pollock's 'Sanskrit cosmopolis' frames Sanskrit as a prestige language of political expression, adopted from Afghanistan to Java between about 300 and 1300 CE without imperial force. For a postcolonial reading, the shift matters: it moves agency from 'foreign civilisers' back to Southeast Asians.",
+  "certainty": "debated",
+  "sources": [
+   {
+    "id": "coedes1968"
+   },
+   {
+    "id": "wolters1999",
+    "pages": "41–55"
+   },
+   {
+    "id": "kulke1990"
+   },
+   {
+    "id": "pollock2006"
+   },
+   {
+    "id": "manguin2004"
+   }
+  ],
+  "q": [
+   3
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": [],
+  "debate": "Coedès (Indian colonisation) vs Wolters (local selection) vs Kulke (convergence) vs Pollock (cosmopolitan prestige language)."
+ },
+ {
+  "id": "funan",
+  "title": "Funan and the port of Oc Eo",
+  "start": 100,
+  "end": 630,
+  "era": "indic",
+  "theme": "indic",
+  "place": "Oc Eo, Mekong Delta",
+  "lat": 10.25,
+  "lon": 105.15,
+  "summary": "Chinese envoys of the 3rd century described Funan, a polity in the Mekong delta with a legend of an Indian Brahmin, Kaundinya, marrying a local queen; its port at Oc Eo traded Roman, Indian and Chinese goods.",
+  "detail": "Oc Eo's canals and workshops have yielded Indian seals, Sanskrit inscriptions and a Roman medallion of Antoninus Pius (152 CE). Funan is the earliest 'Indic' polity in the region, but its population and builders were local.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "manguin2004"
+   },
+   {
+    "id": "miksic2017"
+   },
+   {
+    "id": "coedes1968"
+   }
+  ],
+  "q": [
+   3,
+   5,
+   6
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "kutai",
+  "title": "Kutai: the earliest inscriptions in Indonesia",
+  "start": 380,
+  "end": 420,
+  "era": "indic",
+  "theme": "indic",
+  "place": "Muara Kaman, Kutai (East Kalimantan)",
+  "lat": -0.33,
+  "lon": 116.72,
+  "summary": "Seven stone posts (yūpa) in Sanskrit and Pallava script record gifts to Brahmins by King Mūlavarman around 400 CE — the earliest writing found in Indonesia.",
+  "detail": "The inscriptions name Mūlavarman's grandfather Kuṇḍuṅga, a non-Sanskrit name, then a father with an Indic name — a classic picture of a local ruling line adopting Indic kingship within a few generations.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "coedes1968",
+    "pages": "52"
+   },
+   {
+    "id": "hall2011"
+   }
+  ],
+  "q": [
+   3
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "tarumanagara",
+  "title": "Tarumanagara and Purnavarman",
+  "start": 400,
+  "end": 600,
+  "era": "indic",
+  "theme": "indic",
+  "place": "Ciaruteun, Bogor (West Java)",
+  "lat": -6.55,
+  "lon": 106.69,
+  "summary": "Fifth-century Sanskrit inscriptions near Bogor and Jakarta celebrate King Pūrṇavarman of Tārumā, carving his footprints like those of Vishnu.",
+  "detail": "Tārumā shows Vaishnava kingship and irrigation works in West Java, in Sundanese lands, centuries before the better-known Central Javanese temples.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "coedes1968"
+   },
+   {
+    "id": "hall2011"
+   }
+  ],
+  "q": [
+   3
+  ],
+  "peoples": [
+   "sundanese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "prambanan",
+  "title": "Mataram (Medang): Shaivite temples of Central Java",
+  "start": 732,
+  "end": 929,
+  "era": "indic",
+  "theme": "indic",
+  "place": "Prambanan, Central Java",
+  "lat": -7.75,
+  "lon": 110.49,
+  "summary": "Central Java's Mataram kingdom built Hindu temple complexes culminating in the Śiva temple of Prambanan (856 CE), alongside Buddhist monuments of the Śailendra.",
+  "detail": "The Kedu and Prambanan plains hold hundreds of candi whose orientation and placement read the landscape — rivers, volcanoes — in Indic cosmological terms. Around 929 the court moved to East Java, possibly after Merapi eruptions and political conflict.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "degroot2009"
+   },
+   {
+    "id": "miksic2017"
+   },
+   {
+    "id": "ricklefs2008"
+   }
+  ],
+  "q": [
+   3
+  ],
+  "peoples": [
+   "javanese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "champa",
+  "title": "Champa: an Austronesian Hindu kingdom on the mainland",
+  "start": 192,
+  "end": 1471,
+  "era": "indic",
+  "theme": "indic",
+  "place": "Mỹ Sơn, Champa",
+  "lat": 15.76,
+  "lon": 108.12,
+  "summary": "The Cham, speakers of an Austronesian (Chamic) language on the coast of today's Vietnam, built Śaiva temple-cities from the 4th century until Vijaya fell to Đại Việt in 1471.",
+  "detail": "Champa is a reminder that Austronesians were not only islanders. Chamic is closely related to Malay and Acehnese; linguists think Acehnese speakers came from the Champa coast, a rare west-bound Austronesian movement.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "thurgood1999"
+   },
+   {
+    "id": "coedes1968"
+   },
+   {
+    "id": "hall2011"
+   }
+  ],
+  "q": [
+   3,
+   12
+  ],
+  "peoples": [
+   "cham",
+   "acehnese"
+  ],
+  "routes": [
+   "r-champa-aceh"
+  ],
+  "related": []
+ },
+ {
+  "id": "angkor",
+  "title": "Angkor: the largest pre-industrial city",
+  "start": 802,
+  "end": 1431,
+  "era": "indic",
+  "theme": "urban",
+  "place": "Angkor",
+  "lat": 13.41,
+  "lon": 103.87,
+  "summary": "From 802 Khmer kings built Angkor, whose temples, reservoirs and canals spread over roughly 1,000 km² — the most extensive pre-industrial urban complex known.",
+  "detail": "Radar and aerial mapping by Evans et al. revealed a low-density urban landscape tied together by water management. Angkor moved from Śaiva and Vaishnava kingship (Angkor Wat, 12th c.) to Mahāyāna (Bayon) and then Theravāda Buddhism.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "evans2007"
+   },
+   {
+    "id": "miksic2017"
+   },
+   {
+    "id": "coedes1968"
+   }
+  ],
+  "q": [
+   3,
+   5
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "chola",
+  "title": "The Chola raid on Srivijaya",
+  "start": 1025,
+  "end": 1025,
+  "era": "indic",
+  "theme": "colonial",
+  "place": "Kadaram (Bujang Valley, Kedah)",
+  "lat": 5.73,
+  "lon": 100.43,
+  "summary": "In 1025 the South Indian Chola king Rājendra I sent a naval expedition that sacked Srivijaya's ports, including Kadaram (Kedah).",
+  "detail": "The only recorded Indian military expedition to Southeast Asia, it was a commercial-political strike rather than a colonisation, and it weakened Srivijaya's monopoly of the Straits.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "kulke2009"
+   },
+   {
+    "id": "hall2011"
+   }
+  ],
+  "q": [
+   3,
+   4
+  ],
+  "peoples": [],
+  "routes": [
+   "r-chola"
+  ],
+  "related": []
+ },
+ {
+  "id": "majapahit",
+  "title": "Majapahit",
+  "start": 1293,
+  "end": 1527,
+  "era": "indic",
+  "theme": "urban",
+  "place": "Trowulan, East Java",
+  "lat": -7.56,
+  "lon": 112.38,
+  "summary": "Founded in 1293 after a Mongol invasion of Java, Majapahit claimed overlordship across much of the archipelago; the court poem Deśawarṇana (1365) lists its tributaries.",
+  "detail": "Majapahit's brick capital at Trowulan was a dense urban landscape with canals and Muslim graves from 1368 — evidence that Islam was present at court while it remained Hindu-Buddhist (Śiva-Buddha). Its claimed 'empire' was more a network of tributary and trading relations than direct rule; it later became a nationalist symbol of a united 'Nusantara'. After its decline, Hindu court culture survived mainly in Bali.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "robson1995"
+   },
+   {
+    "id": "ricklefs2008",
+    "pages": "3–20"
+   },
+   {
+    "id": "miksic2017"
+   }
+  ],
+  "q": [
+   3,
+   5,
+   10
+  ],
+  "peoples": [
+   "javanese",
+   "balinese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "buddhism-routes",
+  "title": "Buddhism: from India and Sri Lanka by sea — not mainly from China",
+  "start": 300,
+  "end": 1300,
+  "era": "indic",
+  "theme": "buddhist",
+  "place": "Andaman Sea",
+  "lat": 9.0,
+  "lon": 94.0,
+  "summary": "Buddhism reached most of Southeast Asia from India and Sri Lanka along the sea routes, from about the 4th–5th centuries CE. China was a partner rather than the source — except in northern Vietnam, where Mahāyāna and Chan came via China.",
+  "detail": "Early Buddha images and inscriptions (Pyu, Dvāravatī Mon, peninsula ports) follow South Asian models. Chinese monks such as Faxian (5th c.) and Yijing (671–695) passed through the archipelago, and Yijing recommended Srivijaya as a place to study Sanskrit and Buddhist texts before going on to India — showing the islands as a hub of the Buddhist world. Theravāda Buddhism, now dominant on the mainland, was consolidated from Sri Lanka between the 11th and 13th centuries (Bagan, then Sukhothai). In the islands, Mahāyāna and Vajrayāna flourished in Srivijaya and Java, then gave way to Śiva-Buddha syncretism and Islam.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "sen2003"
+   },
+   {
+    "id": "takakusu1896"
+   },
+   {
+    "id": "coedes1968"
+   },
+   {
+    "id": "lieberman2003"
+   }
+  ],
+  "q": [
+   4
+  ],
+  "peoples": [],
+  "routes": [
+   "r-yijing"
+  ],
+  "related": []
+ },
+ {
+  "id": "srivijaya",
+  "title": "Srivijaya",
+  "start": 671,
+  "end": 1025,
+  "era": "indic",
+  "theme": "buddhist",
+  "place": "Palembang (and Jambi)",
+  "lat": -2.99,
+  "lon": 104.76,
+  "summary": "A Malay maritime polity centred at Palembang, Srivijaya controlled the Straits of Malacca and Sunda from the late 7th century; its Old Malay inscription at Kedukan Bukit (682) is among the earliest writing in Malay.",
+  "detail": "Yijing stayed there in 671 and again in 687–695, describing over a thousand monks. Wolters argued Srivijaya's power rested on making its ports the obligatory stopping place for China trade. Its capital later shifted to Jambi (Melayu), near the Buddhist complex of Muara Jambi. Archaeologically, Srivijaya looks like a dispersed riverine network, not a monumental capital.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "wolters1967"
+   },
+   {
+    "id": "takakusu1896"
+   },
+   {
+    "id": "manguin2004"
+   },
+   {
+    "id": "miksic2017"
+   }
+  ],
+  "q": [
+   4,
+   5
+  ],
+  "peoples": [
+   "malay"
+  ],
+  "routes": [
+   "r-yijing",
+   "r-maritime-silk"
+  ],
+  "related": []
+ },
+ {
+  "id": "muara-jambi",
+  "title": "Muara Jambi: a Buddhist landscape on the Batang Hari",
+  "start": 650,
+  "end": 1300,
+  "era": "indic",
+  "theme": "buddhist",
+  "place": "Muara Jambi, Batang Hari river",
+  "lat": -1.48,
+  "lon": 103.67,
+  "summary": "The brick temple complex at Muara Jambi, spread along the Batang Hari river, is one of Southeast Asia's largest Buddhist sites, active roughly from the 7th to 13th centuries.",
+  "detail": "Upriver, in the forests of the Batang Hari basin, lived the forest peoples whose descendants include today's Orang Rimba — the river linked court, port and forest products such as resins and rattan.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "miksic2017"
+   },
+   {
+    "id": "manguin2004"
+   }
+  ],
+  "q": [
+   4,
+   12
+  ],
+  "peoples": [
+   "orang-rimba",
+   "malay"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "borobudur",
+  "title": "Borobudur and the Śailendra",
+  "start": 780,
+  "end": 830,
+  "era": "indic",
+  "theme": "buddhist",
+  "place": "Borobudur, Kedu Plain",
+  "lat": -7.61,
+  "lon": 110.2,
+  "summary": "The Mahāyāna monument of Borobudur was built around 780–830 under the Śailendra dynasty, a three-dimensional maṇḍala with over 2,600 relief panels.",
+  "detail": "A Nalanda copper plate of about 860 records the Śailendra prince Bālaputra (then ruling in Sumatra) endowing a monastery in Bengal — evidence of the direct island–India Buddhist link.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "miksic2017"
+   },
+   {
+    "id": "degroot2009"
+   },
+   {
+    "id": "sen2003"
+   }
+  ],
+  "q": [
+   4
+  ],
+  "peoples": [
+   "javanese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "bagan",
+  "title": "Bagan and the rise of Theravāda",
+  "start": 1044,
+  "end": 1287,
+  "era": "indic",
+  "theme": "buddhist",
+  "place": "Bagan",
+  "lat": 21.17,
+  "lon": 94.86,
+  "summary": "Under Anawrahta (r. 1044–77) Bagan adopted Theravāda Buddhism with texts and monks linked to Sri Lanka; over 2,000 brick temples survive.",
+  "detail": "Lieberman treats Bagan as the first 'charter state' of the western mainland — the model for later Burmese integration.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "lieberman2003"
+   },
+   {
+    "id": "miksic2017"
+   }
+  ],
+  "q": [
+   4,
+   5
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "bondage",
+  "title": "Bondage in a world short of people",
+  "start": 1300,
+  "end": 1900,
+  "era": "commerce",
+  "theme": "slavery",
+  "place": "Across the archipelago",
+  "lat": -2.0,
+  "lon": 118.0,
+  "summary": "In a land-rich, labour-poor region, power was measured in followers: debt bondage, war captives and purchased slaves were widespread, and most slaves lived inside households.",
+  "detail": "Reid distinguishes 'open' systems, where slaves were absorbed into the owner's kin group over time (common in Southeast Asia), from the 'closed' systems of the Americas. Raiding for people was a core activity of states and sea-peoples, and slaves were traded between ports. Colonial companies did not invent this system but scaled and commercialised it, buying slaves for cities and plantations; the Dutch prohibited the slave trade in 1818 and abolished slavery in the Indies in 1860, though bondage persisted in outlying islands.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "reid1983",
+    "pages": "1–43"
+   },
+   {
+    "id": "reid1988"
+   },
+   {
+    "id": "vink2003"
+   }
+  ],
+  "q": [
+   5
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "batavia-slaves",
+  "title": "Batavia: a city of slaves",
+  "start": 1619,
+  "end": 1800,
+  "era": "company",
+  "theme": "slavery",
+  "place": "Batavia",
+  "lat": -6.13,
+  "lon": 106.81,
+  "summary": "VOC Batavia depended on imported slaves; in the late 17th century slaves made up roughly half of the town's inhabitants, brought from Bengal, Arakan, the Coromandel Coast, Bali, Sulawesi and the eastern islands.",
+  "detail": "Markus Vink calls the Dutch Indian Ocean slave trade 'the world's oldest trade' and estimates it was larger in the 17th century than often assumed. Remco Raben shows how Batavia's ethnic quarters (kampung) grouped Balinese, Bugis, Makassarese, Ambonese and others — the origin of the Betawi people. Slaves came first from South Asia, then increasingly from within the archipelago once the VOC banned exports from Java.",
+  "certainty": "estimate",
+  "sources": [
+   {
+    "id": "vink2003"
+   },
+   {
+    "id": "raben1996"
+   },
+   {
+    "id": "bosma2008"
+   }
+  ],
+  "q": [
+   5,
+   7
+  ],
+  "peoples": [],
+  "routes": [
+   "r-slave-arakan",
+   "r-slave-coromandel",
+   "r-slave-bali",
+   "r-slave-sulawesi"
+  ],
+  "related": []
+ },
+ {
+  "id": "bali-slaves",
+  "title": "Bali as a slave exporter",
+  "start": 1620,
+  "end": 1830,
+  "era": "company",
+  "theme": "slavery",
+  "place": "South Bali",
+  "lat": -8.55,
+  "lon": 115.2,
+  "summary": "Balinese rulers sold war captives and debtors to Dutch, Chinese and Bugis traders for Batavia, the Cape and Mauritius from the 17th to the early 19th century.",
+  "detail": "Van der Kraan describes how the trade financed Balinese courts' purchase of opium and arms — showing indigenous elites as active participants in the regional slave economy.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "vanderkraan1983"
+   },
+   {
+    "id": "vink2003"
+   }
+  ],
+  "q": [
+   5,
+   12
+  ],
+  "peoples": [
+   "balinese"
+  ],
+  "routes": [
+   "r-slave-bali"
+  ],
+  "related": []
+ },
+ {
+  "id": "sulawesi-slaves",
+  "title": "South Sulawesi's slave trade",
+  "start": 1660,
+  "end": 1830,
+  "era": "company",
+  "theme": "slavery",
+  "place": "Makassar",
+  "lat": -5.13,
+  "lon": 119.41,
+  "summary": "After the Dutch conquest of Makassar (1669), the city became a major slave market, supplying Batavia with captives from the wars of South Sulawesi and from the eastern islands.",
+  "detail": "Heather Sutherland traces how Bugis and Makassarese warfare, debt and raiding supplied slaves, and how the VOC both depended on and policed the trade.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "sutherland1983"
+   },
+   {
+    "id": "cummings2002"
+   }
+  ],
+  "q": [
+   5
+  ],
+  "peoples": [
+   "bugis",
+   "makassarese"
+  ],
+  "routes": [
+   "r-slave-sulawesi"
+  ],
+  "related": []
+ },
+ {
+  "id": "sumba-slaves",
+  "title": "Sumba and the slave trade",
+  "start": 1700,
+  "end": 1910,
+  "era": "company",
+  "theme": "slavery",
+  "place": "Sumba",
+  "lat": -9.65,
+  "lon": 119.9,
+  "summary": "Sumba was raided and traded for slaves into the late 19th century: Endenese from Flores and traders linked to Bima and Makassar took captives, often in exchange for arms and cloth; Sumbanese nobles also sold people.",
+  "detail": "Rodney Needham's study shows the trade continued long after formal Dutch abolition (1860), helped by the colonial state's weak presence on Sumba until the military campaigns of 1906–13. Within Sumbanese society, hereditary slaves (ata) formed a lower rank — a hierarchy that still shapes marriage, land and politics today, as Hoskins and Keane discuss for Kodi and Anakalang.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "needham1983"
+   },
+   {
+    "id": "hoskins1993"
+   },
+   {
+    "id": "keane1997"
+   }
+  ],
+  "q": [
+   5,
+   12
+  ],
+  "peoples": [
+   "kambera",
+   "kodi",
+   "lamboya"
+  ],
+  "routes": [
+   "r-slave-sumba"
+  ],
+  "related": []
+ },
+ {
+  "id": "sulu-zone",
+  "title": "The Sulu Zone",
+  "start": 1768,
+  "end": 1898,
+  "era": "company",
+  "theme": "slavery",
+  "place": "Jolo, Sulu",
+  "lat": 6.05,
+  "lon": 121.0,
+  "summary": "Iranun and Balangingi raiders based in the Sulu sultanate seized tens of thousands of captives across the Philippines, Borneo, Sulawesi and Maluku to work in Sulu's trade in sea and forest products for the China market.",
+  "detail": "James Warren's classic study shows that the British country trade's demand for trepang, pearl and birds' nests drove slave raiding — global commerce and 'piracy' were linked, not opposed.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "warren1981"
+   }
+  ],
+  "q": [
+   5,
+   9
+  ],
+  "peoples": [
+   "tausug"
+  ],
+  "routes": [
+   "r-sulu-west",
+   "r-sulu-north",
+   "r-sulu-south"
+  ],
+  "related": []
+ },
+ {
+  "id": "papua-slaves",
+  "title": "Papuans in the Maluku slave trade",
+  "start": 1600,
+  "end": 1870,
+  "era": "company",
+  "theme": "slavery",
+  "place": "Raja Ampat & Papuan coast",
+  "lat": -0.9,
+  "lon": 130.9,
+  "summary": "The Sultan of Tidore claimed Papuan coasts and islands as dependencies; tribute and raids supplied Papuan slaves to Maluku and beyond.",
+  "detail": "Andaya shows Raja Ampat and Biak seafarers as both victims and agents: some Papuan groups served as Tidore's raiders.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "andaya1993"
+   }
+  ],
+  "q": [
+   5,
+   12
+  ],
+  "peoples": [
+   "biak"
+  ],
+  "routes": [
+   "r-papua-tidore"
+  ],
+  "related": []
+ },
+ {
+  "id": "melaka",
+  "title": "Melaka, the great entrepôt",
+  "start": 1400,
+  "end": 1511,
+  "era": "commerce",
+  "theme": "urban",
+  "place": "Melaka",
+  "lat": 2.19,
+  "lon": 102.25,
+  "summary": "Founded around 1400 by Parameswara, a prince from the Palembang line, Melaka became the hub of the Indian Ocean–China trade; its rulers converted to Islam in the 15th century.",
+  "detail": "Tomé Pires, writing just after the Portuguese conquest, describes merchants from Gujarat, Tamil Nadu, Bengal, Java, Luzon and China, and dozens of languages in the streets. Reid estimates its population around 1500 at the order of 100,000. Melaka's court laws and literature (Sejarah Melayu) set the model of Malay kingship.",
+  "certainty": "estimate",
+  "sources": [
+   {
+    "id": "cortesao1944"
+   },
+   {
+    "id": "reid1993",
+    "pages": "62–90"
+   },
+   {
+    "id": "andaya2017"
+   },
+   {
+    "id": "wade2005"
+   },
+   {
+    "id": "miksic2013"
+   }
+  ],
+  "q": [
+   5,
+   6
+  ],
+  "peoples": [
+   "malay"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "ayutthaya",
+  "title": "Ayutthaya",
+  "start": 1351,
+  "end": 1767,
+  "era": "commerce",
+  "theme": "urban",
+  "place": "Ayutthaya",
+  "lat": 14.36,
+  "lon": 100.57,
+  "summary": "Siam's island capital on the Chao Phraya, a cosmopolitan port with Persian, Japanese, Portuguese, Dutch and Chinese quarters, until it was sacked by Burmese armies in 1767.",
+  "detail": "Reid ranks Ayutthaya among the largest cities of the age of commerce.",
+  "certainty": "estimate",
+  "sources": [
+   {
+    "id": "reid1993"
+   },
+   {
+    "id": "baker2009"
+   },
+   {
+    "id": "lieberman2003"
+   }
+  ],
+  "q": [
+   5
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "aceh",
+  "title": "Aceh Darussalam",
+  "start": 1500,
+  "end": 1700,
+  "era": "commerce",
+  "theme": "urban",
+  "place": "Banda Aceh",
+  "lat": 5.55,
+  "lon": 95.32,
+  "summary": "After 1511 Muslim traders diverted from Portuguese Melaka to Aceh, which grew into a pepper-exporting sultanate; under Iskandar Muda (1607–36) it dominated northern Sumatra and attacked Melaka.",
+  "detail": "Aceh's capital was one of the large cities of the 17th-century archipelago and a centre of Islamic scholarship (Hamzah Fansuri, al-Raniri). Its 'Veranda of Mecca' identity later fuelled resistance to the Dutch.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "reid2005"
+   },
+   {
+    "id": "reid1993"
+   },
+   {
+    "id": "ricklefs2008"
+   }
+  ],
+  "q": [
+   5,
+   12
+  ],
+  "peoples": [
+   "acehnese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "banten",
+  "title": "Banten, pepper port",
+  "start": 1527,
+  "end": 1682,
+  "era": "commerce",
+  "theme": "urban",
+  "place": "Banten",
+  "lat": -6.03,
+  "lon": 106.16,
+  "summary": "The Muslim sultanate of Banten in West Java grew rich on pepper; English and Dutch first set up trading posts there (1596, 1602) before the VOC subdued it in 1682.",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "ricklefs2008"
+   },
+   {
+    "id": "reid1993"
+   }
+  ],
+  "q": [
+   5,
+   7
+  ],
+  "peoples": [
+   "sundanese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "makassar",
+  "title": "Makassar (Gowa–Tallo)",
+  "start": 1600,
+  "end": 1669,
+  "era": "commerce",
+  "theme": "urban",
+  "place": "Somba Opu, Makassar",
+  "lat": -5.19,
+  "lon": 119.4,
+  "summary": "After Gowa–Tallo's rulers embraced Islam in 1605, Makassar became an open port where Portuguese, English, Danish and Malay merchants traded spices outside Dutch control.",
+  "detail": "William Cummings shows how writing and Islam transformed Makassarese ideas of rank and history. Makassar's openness made it the VOC's main rival in the east until the war of 1666–69.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "cummings2002"
+   },
+   {
+    "id": "andaya2015"
+   },
+   {
+    "id": "reid1993"
+   }
+  ],
+  "q": [
+   5,
+   7
+  ],
+  "peoples": [
+   "makassarese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "ternate",
+  "title": "Ternate and Tidore: the clove sultanates",
+  "start": 1450,
+  "end": 1606,
+  "era": "commerce",
+  "theme": "urban",
+  "place": "Ternate",
+  "lat": 0.79,
+  "lon": 127.38,
+  "summary": "Cloves grew only on a few islands of north Maluku; their sultans (Muslim from the late 15th century) were courted by Javanese, Malay, Chinese, Portuguese, Spanish and Dutch traders.",
+  "detail": "Leonard Andaya reads Maluku through local ideas of a 'single tree' of four kingdoms rather than European rivalry.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "andaya1993"
+   }
+  ],
+  "q": [
+   5,
+   6,
+   7
+  ],
+  "peoples": [
+   "ternatean"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "brunei-port",
+  "title": "Brunei",
+  "start": 1400,
+  "end": 1600,
+  "era": "commerce",
+  "theme": "urban",
+  "place": "Brunei Town (Kampong Ayer)",
+  "lat": 4.89,
+  "lon": 114.94,
+  "summary": "The Muslim sultanate of Brunei, with its town on stilts over the river, dominated the north Borneo coast and traded with Manila and China; Magellan's crew visited in 1521.",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "saunders2002"
+   },
+   {
+    "id": "reid1993"
+   }
+  ],
+  "q": [
+   5,
+   8
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "mataram-islam",
+  "title": "Islamic Mataram",
+  "start": 1587,
+  "end": 1755,
+  "era": "company",
+  "theme": "urban",
+  "place": "Kotagede / Plered",
+  "lat": -7.83,
+  "lon": 110.4,
+  "summary": "An inland agrarian kingdom in Central Java, Mataram under Sultan Agung (r. 1613–46) conquered most of Java's ports and twice besieged Batavia (1628–29).",
+  "detail": "Its rice-based, inland power contrasts with the maritime ports — a contrast Reid and Ricklefs use to explain the 17th-century 'crisis' of the coast.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "ricklefs2008"
+   },
+   {
+    "id": "reid1993"
+   },
+   {
+    "id": "lieberman2009"
+   }
+  ],
+  "q": [
+   5,
+   7
+  ],
+  "peoples": [
+   "javanese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "pasai",
+  "title": "Islam takes root: Pasai",
+  "start": 1290,
+  "end": 1520,
+  "era": "commerce",
+  "theme": "islam",
+  "place": "Samudra-Pasai",
+  "lat": 5.16,
+  "lon": 97.15,
+  "summary": "The gravestone of Sultan Malik al-Salih (d. 1297) at Samudra-Pasai is the earliest firm evidence of a Muslim ruler in the archipelago; Marco Polo noted Muslims at nearby Perlak in 1292.",
+  "detail": "Islam spread mainly along trade routes, through merchants from Gujarat, the Coromandel coast, Arabia and China, and through Sufi teachers and marriage — not conquest. Ricklefs stresses gradual 'conversion' over centuries; Laffan shows how later Dutch scholars constructed the story of a 'Sufi' and Indian-derived Islam.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "ricklefs2008",
+    "pages": "3–17"
+   },
+   {
+    "id": "laffan2011"
+   }
+  ],
+  "q": [
+   5,
+   6
+  ],
+  "peoples": [
+   "acehnese"
+  ],
+  "routes": [
+   "r-islam"
+  ],
+  "related": []
+ },
+ {
+  "id": "demak",
+  "title": "Demak and the north coast of Java",
+  "start": 1475,
+  "end": 1550,
+  "era": "commerce",
+  "theme": "islam",
+  "place": "Demak",
+  "lat": -6.89,
+  "lon": 110.64,
+  "summary": "Muslim port principalities on Java's north coast, led by Demak, eclipsed Majapahit in the early 16th century; Javanese tradition credits the nine saints (wali songo).",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "ricklefs2008"
+   },
+   {
+    "id": "reid1993"
+   }
+  ],
+  "q": [
+   5
+  ],
+  "peoples": [
+   "javanese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "gowa-islam",
+  "title": "Makassar accepts Islam (1605)",
+  "start": 1605,
+  "end": 1611,
+  "era": "commerce",
+  "theme": "islam",
+  "place": "Gowa–Tallo",
+  "lat": -5.2,
+  "lon": 119.45,
+  "summary": "The rulers of Gowa and Tallo converted in 1605 and then spread Islam to Bugis states by war (1608–11).",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "cummings2002"
+   },
+   {
+    "id": "pelras1996"
+   }
+  ],
+  "q": [
+   5
+  ],
+  "peoples": [
+   "makassarese",
+   "bugis"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "zhenghe",
+  "title": "Zheng He's voyages",
+  "start": 1405,
+  "end": 1433,
+  "era": "commerce",
+  "theme": "trade",
+  "place": "Fleet route to the Indian Ocean",
+  "lat": 4.0,
+  "lon": 100.0,
+  "summary": "Seven Ming fleets under the eunuch admiral Zheng He sailed through Champa, Java, Palembang, Melaka and Sumatra to India, Arabia and East Africa between 1405 and 1433.",
+  "detail": "Geoff Wade argues the voyages were armed state ventures to impose Ming hegemony over ports — they intervened militarily in Palembang, Sumatra and Ceylon — rather than peaceful goodwill tours. Melaka gained Ming backing against Siam.",
+  "certainty": "debated",
+  "sources": [
+   {
+    "id": "wade2005"
+   },
+   {
+    "id": "reid2015"
+   }
+  ],
+  "q": [
+   5,
+   6
+  ],
+  "peoples": [],
+  "routes": [
+   "r-zhenghe"
+  ],
+  "related": [],
+  "debate": "Peaceful exploration (popular narratives) vs 'proto-colonial' armed diplomacy (Wade 2005)."
+ },
+ {
+  "id": "roman-indirect",
+  "title": "Indirect contact with the Roman world",
+  "start": 100,
+  "end": 250,
+  "era": "indic",
+  "theme": "contact",
+  "place": "Oc Eo and Ptolemy's 'Iabadiou'",
+  "lat": 9.8,
+  "lon": 105.4,
+  "summary": "Roman coins and a medallion of Antoninus Pius reached Oc Eo, and Ptolemy's 2nd-century Geography names 'Iabadiou' (perhaps Java) — the West knew of the region through Indian middlemen.",
+  "detail": "There was no direct European presence: goods and knowledge passed hand to hand along Indian Ocean routes.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "bellina2004"
+   },
+   {
+    "id": "manguin2004"
+   }
+  ],
+  "q": [
+   6
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "marco-polo",
+  "title": "Marco Polo in Sumatra (1292)",
+  "start": 1292,
+  "end": 1292,
+  "era": "commerce",
+  "theme": "contact",
+  "place": "Perlak / Samudra, Sumatra",
+  "lat": 5.1,
+  "lon": 97.6,
+  "summary": "Returning from China, Marco Polo spent five months on Sumatra waiting for the monsoon and described several small kingdoms, one of them Muslim — the first European eyewitness account.",
+  "detail": "Later medieval travellers such as Odoric of Pordenone (1320s) also passed through Java and Sumatra, but no European power was present until 1509.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "ricklefs2008",
+    "pages": "3–4"
+   },
+   {
+    "id": "reid2015"
+   }
+  ],
+  "q": [
+   6
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "portuguese-melaka",
+  "title": "The Portuguese seize Melaka (1511)",
+  "start": 1509,
+  "end": 1641,
+  "era": "commerce",
+  "theme": "contact",
+  "place": "Melaka",
+  "lat": 2.19,
+  "lon": 102.25,
+  "summary": "After a first visit by Diogo Lopes de Sequeira in 1509, Afonso de Albuquerque conquered Melaka in 1511; in 1512 Portuguese ships reached Banda and Ternate, the sources of nutmeg and cloves.",
+  "detail": "This was the first sustained direct contact between Europe and the archipelago. The Portuguese 'Estado da Índia' was a network of fortresses and licences rather than a territorial empire; Muslim traders simply moved to Aceh, Johor, Banten and Makassar. Melaka fell to the Dutch and Johor in 1641.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "subrahmanyam2012"
+   },
+   {
+    "id": "cortesao1944"
+   },
+   {
+    "id": "reid1993"
+   },
+   {
+    "id": "andaya2017"
+   }
+  ],
+  "q": [
+   6,
+   7
+  ],
+  "peoples": [
+   "malay"
+  ],
+  "routes": [
+   "r-portuguese"
+  ],
+  "related": []
+ },
+ {
+  "id": "magellan",
+  "title": "Magellan's expedition and Lapulapu (1521)",
+  "start": 1521,
+  "end": 1522,
+  "era": "commerce",
+  "theme": "contact",
+  "place": "Mactan & Cebu",
+  "lat": 10.3,
+  "lon": 123.95,
+  "summary": "Magellan's Spanish fleet reached the Philippines from the Pacific in March 1521; Magellan was killed at Mactan by Lapulapu's forces. The survivors bought cloves at Tidore and returned home round the Cape — the first circumnavigation.",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "phelan1959"
+   },
+   {
+    "id": "andaya1993"
+   }
+  ],
+  "q": [
+   6,
+   7
+  ],
+  "peoples": [],
+  "routes": [
+   "r-magellan"
+  ],
+  "related": []
+ },
+ {
+  "id": "portuguese-maluku",
+  "title": "Portuguese forts, Catholics and Topasses",
+  "start": 1522,
+  "end": 1702,
+  "era": "commerce",
+  "theme": "colonial",
+  "place": "Ternate, Ambon, Solor, Timor",
+  "lat": -3.7,
+  "lon": 128.2,
+  "summary": "The Portuguese built a fort on Ternate (1522) but were expelled in 1575 after murdering Sultan Hairun; they shifted to Tidore, Ambon, Solor and Timor, where mixed 'Black Portuguese' (Topasses) controlled the sandalwood trade.",
+  "detail": "Hans Hägerdal shows how Timorese lords and Topasses, not Lisbon, shaped Timor's colonial geography; the Portuguese capital moved from Lifau to Dili in 1769 — the root of Timor-Leste.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "andaya1993"
+   },
+   {
+    "id": "hagerdal2012"
+   },
+   {
+    "id": "subrahmanyam2012"
+   }
+  ],
+  "q": [
+   7
+  ],
+  "peoples": [
+   "ternatean",
+   "tetum",
+   "atoni"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "spain-manila",
+  "title": "Spain in the Philippines",
+  "start": 1565,
+  "end": 1898,
+  "era": "commerce",
+  "theme": "colonial",
+  "place": "Manila",
+  "lat": 14.59,
+  "lon": 120.97,
+  "summary": "Miguel López de Legazpi founded a Spanish base at Cebu in 1565 and took Manila in 1571. Manila galleons carried American silver to Asia and Chinese silk to Acapulco until 1815.",
+  "detail": "Spain did settle — as friars, soldiers and officials — and converted most lowland Filipinos to Catholicism, but Muslim sultanates of Mindanao and Sulu and upland peoples of the Cordillera stayed outside effective rule for centuries. Flynn and Giráldez date the birth of global trade to 1571, when Manila linked the Americas to China. Spain also held a fort on Tidore (1606–63) and northern Taiwan (1626–42).",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "phelan1959"
+   },
+   {
+    "id": "flynn1995"
+   },
+   {
+    "id": "andrade2008"
+   }
+  ],
+  "q": [
+   7,
+   8
+  ],
+  "peoples": [
+   "tagalog",
+   "tausug"
+  ],
+  "routes": [
+   "r-galleon"
+  ],
+  "related": []
+ },
+ {
+  "id": "voc",
+  "title": "The Dutch arrive; the VOC is founded (1602)",
+  "start": 1596,
+  "end": 1619,
+  "era": "company",
+  "theme": "colonial",
+  "place": "Banten",
+  "lat": -6.03,
+  "lon": 106.16,
+  "summary": "Cornelis de Houtman's fleet reached Banten in 1596; rival Dutch companies merged in 1602 into the VOC, a chartered company empowered to wage war, make treaties and build forts in Asia.",
+  "detail": "The English East India Company (1600) also opened a factory at Banten in 1602. The VOC's aim was monopoly of fine spices, enforced by violence.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "gaastra2003"
+   },
+   {
+    "id": "boxer1965"
+   },
+   {
+    "id": "ricklefs2008"
+   }
+  ],
+  "q": [
+   7
+  ],
+  "peoples": [],
+  "routes": [
+   "r-voc"
+  ],
+  "related": []
+ },
+ {
+  "id": "batavia",
+  "title": "Batavia (1619)",
+  "start": 1619,
+  "end": 1799,
+  "era": "company",
+  "theme": "colonial",
+  "place": "Batavia (Jakarta)",
+  "lat": -6.13,
+  "lon": 106.81,
+  "summary": "Jan Pieterszoon Coen destroyed Jayakarta in 1619 and built Batavia, the VOC's Asian headquarters, a walled city of canals and ethnic quarters.",
+  "detail": "Batavia was besieged twice by Mataram (1628–29). In 1740 a massacre of the Chinese population followed fears of revolt. The Javanese hinterland was taken step by step through intervention in Mataram's succession wars.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "ricklefs2008"
+   },
+   {
+    "id": "raben1996"
+   },
+   {
+    "id": "bosma2008"
+   }
+  ],
+  "q": [
+   7,
+   5
+  ],
+  "peoples": [],
+  "routes": [
+   "r-voc-spice"
+  ],
+  "related": []
+ },
+ {
+  "id": "banda",
+  "title": "The conquest of Banda (1621)",
+  "start": 1621,
+  "end": 1621,
+  "era": "company",
+  "theme": "colonial",
+  "place": "Banda Islands",
+  "lat": -4.53,
+  "lon": 129.9,
+  "summary": "To secure the nutmeg monopoly, Coen's forces conquered the Banda Islands in 1621. Most of the roughly 15,000 Bandanese were killed, died of hunger, enslaved or deported; survivors fled to Kei and elsewhere.",
+  "detail": "The VOC divided the islands into perken (nutmeg gardens) run by Dutch perkeniers with imported slaves — an early plantation colony. Descendants of refugees still speak a Banda language at Banda Eli and Banda Elat in the Kei Islands, keeping memories of the lost homeland.",
+  "certainty": "estimate",
+  "sources": [
+   {
+    "id": "loth1995"
+   },
+   {
+    "id": "andaya1993"
+   },
+   {
+    "id": "kaartinen2010"
+   },
+   {
+    "id": "vink2003"
+   }
+  ],
+  "q": [
+   7,
+   5,
+   12
+  ],
+  "peoples": [
+   "bandanese"
+  ],
+  "routes": [
+   "r-banda-kei"
+  ],
+  "related": []
+ },
+ {
+  "id": "amboyna",
+  "title": "Amboyna (1623) and the British turn to India",
+  "start": 1623,
+  "end": 1667,
+  "era": "company",
+  "theme": "colonial",
+  "place": "Ambon",
+  "lat": -3.69,
+  "lon": 128.18,
+  "summary": "In 1623 the VOC tortured and executed English East India Company men at Ambon; the English largely withdrew from the spice islands. Under the Treaty of Breda (1667) England gave up its claim to Run in exchange for New Amsterdam (Manhattan).",
+  "detail": "The English kept a pepper post at Bencoolen (Bengkulu, 1685) and concentrated on India and the China trade.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "boxer1965"
+   },
+   {
+    "id": "tarling1962"
+   },
+   {
+    "id": "andaya1993"
+   }
+  ],
+  "q": [
+   7
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "dutch-formosa",
+  "title": "The Dutch in Taiwan",
+  "start": 1624,
+  "end": 1662,
+  "era": "company",
+  "theme": "colonial",
+  "place": "Fort Zeelandia, Taiwan",
+  "lat": 23.0,
+  "lon": 120.16,
+  "summary": "The VOC held southwest Taiwan from 1624, ruling indigenous Austronesian villages and encouraging Chinese settlers, until Zheng Chenggong (Koxinga) expelled it in 1662.",
+  "detail": "Tonio Andrade calls this 'co-colonisation': Dutch rule enabled Han Chinese settlement that marginalised Taiwan's indigenous peoples — the descendants of the first Austronesians.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "andrade2008"
+   }
+  ],
+  "q": [
+   7,
+   12
+  ],
+  "peoples": [
+   "amis"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "makassar-war",
+  "title": "The Makassar War and the Bugis diaspora",
+  "start": 1666,
+  "end": 1669,
+  "era": "company",
+  "theme": "colonial",
+  "place": "Makassar & Bone",
+  "lat": -5.13,
+  "lon": 119.41,
+  "summary": "The VOC under Speelman, allied with the Bugis prince Arung Palakka of Bone, defeated Gowa; the Treaty of Bongaya (1667) and fall of Somba Opu (1669) ended Makassar's free port.",
+  "detail": "Defeat scattered Makassarese and Bugis warriors and traders across the archipelago: Bugis dynasties founded or captured power in Riau, Selangor and Johor in the 18th century. This is a clear case of indigenous rivalries interlocking with company power.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "andaya2015"
+   },
+   {
+    "id": "cummings2002"
+   },
+   {
+    "id": "pelras1996"
+   }
+  ],
+  "q": [
+   7,
+   9,
+   12
+  ],
+  "peoples": [
+   "bugis",
+   "makassarese"
+  ],
+  "routes": [
+   "r-bugis"
+  ],
+  "related": []
+ },
+ {
+  "id": "trepang",
+  "title": "Makassan trepangers and Aboriginal Australians",
+  "start": 1720,
+  "end": 1907,
+  "era": "company",
+  "theme": "trade",
+  "place": "Marege' (Arnhem Land)",
+  "lat": -12.0,
+  "lon": 136.5,
+  "summary": "From about the 1720s, fleets of praus from Makassar sailed each monsoon to Arnhem Land and the Kimberley to collect and process trepang (sea cucumber) for the China market, trading with Yolŋu and other Aboriginal peoples.",
+  "detail": "Macknight documents a long, mostly peaceful relationship that left Makassarese words in Yolŋu languages and Aboriginal people who travelled to Makassar. The South Australian government, which then administered the Northern Territory, ended the voyages by refusing licences in 1906–07.",
+  "certainty": "estimate",
+  "sources": [
+   {
+    "id": "macknight1976"
+   },
+   {
+    "id": "broome2010"
+   }
+  ],
+  "q": [
+   9,
+   12
+  ],
+  "peoples": [
+   "yolngu",
+   "makassarese"
+  ],
+  "routes": [
+   "r-trepang"
+  ],
+  "related": []
+ },
+ {
+  "id": "giyanti",
+  "title": "The partition of Mataram (1755)",
+  "start": 1755,
+  "end": 1755,
+  "era": "company",
+  "theme": "colonial",
+  "place": "Surakarta & Yogyakarta",
+  "lat": -7.57,
+  "lon": 110.82,
+  "summary": "The Treaty of Giyanti, brokered by the VOC, split Mataram into the courts of Surakarta and Yogyakarta, completing Dutch paramountcy over Central Java.",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "ricklefs2008"
+   }
+  ],
+  "q": [
+   7,
+   8
+  ],
+  "peoples": [
+   "javanese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "british-straits",
+  "title": "Penang, Singapore and the Straits Settlements",
+  "start": 1786,
+  "end": 1826,
+  "era": "company",
+  "theme": "colonial",
+  "place": "Penang & Singapore",
+  "lat": 3.0,
+  "lon": 101.0,
+  "summary": "The EIC acquired Penang in 1786 and Raffles founded a British post at Singapore in 1819; with Melaka they became the Straits Settlements in 1826.",
+  "detail": "Britain also governed Java from 1811 to 1816 during the Napoleonic wars (Raffles' land-rent system). These free ports drew Chinese, Indian and archipelago traders and later became the hubs of indentured labour recruitment.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "tarling1962"
+   },
+   {
+    "id": "andaya2017"
+   },
+   {
+    "id": "carey2007"
+   }
+  ],
+  "q": [
+   7,
+   8
+  ],
+  "peoples": [],
+  "routes": [
+   "r-eic"
+  ],
+  "related": []
+ },
+ {
+  "id": "voc-end",
+  "title": "From company to colonial state",
+  "start": 1799,
+  "end": 1816,
+  "era": "company",
+  "theme": "colonial",
+  "place": "Batavia",
+  "lat": -6.2,
+  "lon": 106.85,
+  "summary": "Bankrupt and corrupt, the VOC was dissolved on 31 December 1799; its possessions passed to the Dutch state, and the Netherlands Indies was re-established after British rule in 1816.",
+  "detail": "This marks the shift from a company of trading posts to a territorial colonial state — Ricklefs dates the real colonial state in Java to the aftermath of the Java War (1830).",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "gaastra2003"
+   },
+   {
+    "id": "ricklefs2008"
+   }
+  ],
+  "q": [
+   8
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "treaty-1824",
+  "title": "The Anglo-Dutch Treaty of 1824",
+  "start": 1824,
+  "end": 1824,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "Strait of Malacca",
+  "lat": 1.8,
+  "lon": 103.0,
+  "summary": "Britain and the Netherlands divided the Malay world along the Strait of Malacca: Britain kept the Peninsula and Singapore, the Dutch Sumatra and the islands to the south.",
+  "detail": "This European line split societies that had long been one Malay world (Johor-Riau was cut in two). It is the origin of the Indonesia–Malaysia border and of separate 'Indonesian' and 'Malaysian' national histories.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "tarling1962"
+   },
+   {
+    "id": "andaya2017"
+   }
+  ],
+  "q": [
+   8
+  ],
+  "peoples": [
+   "malay"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "padri",
+  "title": "The Padri War, Minangkabau",
+  "start": 1803,
+  "end": 1838,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "Minangkabau highlands",
+  "lat": -0.3,
+  "lon": 100.4,
+  "summary": "Islamic reformers (Padri) clashed with adat leaders in the Minangkabau highlands; the Dutch intervened from 1821 and defeated the Padri in 1837–38.",
+  "detail": "Christine Dobbin links the reform movement to the coffee and trade boom in the highlands. The war folded Minangkabau into the colonial state while the famous 'adat basandi syarak, syarak basandi Kitabullah' (adat founded on Islamic law) settlement emerged later.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "dobbin1983"
+   },
+   {
+    "id": "kahn1993"
+   }
+  ],
+  "q": [
+   8,
+   12
+  ],
+  "peoples": [
+   "minangkabau"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "java-war",
+  "title": "The Java War (1825–30)",
+  "start": 1825,
+  "end": 1830,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "Central Java",
+  "lat": -7.8,
+  "lon": 110.36,
+  "summary": "Prince Dipanagara of Yogyakarta led a war against Dutch rule in which perhaps 200,000 Javanese died; his capture in 1830 ended the old Javanese order.",
+  "detail": "Peter Carey shows the war combined Javanese prophecy (Ratu Adil), Islam and anger at land and toll abuses.",
+  "certainty": "estimate",
+  "sources": [
+   {
+    "id": "carey2007"
+   }
+  ],
+  "q": [
+   8,
+   10
+  ],
+  "peoples": [
+   "javanese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "cultivation",
+  "title": "The Cultivation System",
+  "start": 1830,
+  "end": 1870,
+  "era": "colonial",
+  "theme": "labour",
+  "place": "Java",
+  "lat": -7.3,
+  "lon": 110.0,
+  "summary": "Governor-General Van den Bosch required Javanese villages to grow export crops (coffee, sugar, indigo) for the government; profits balanced the Dutch budget.",
+  "detail": "Elson and Fasseur show regional variation, but the system tied village heads and priyayi elites to colonial extraction and contributed to famines in Cirebon and Central Java in the 1840s. After 1870 the Agrarian Law opened land to private plantations on long leases.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "elson1994"
+   },
+   {
+    "id": "fasseur1992"
+   },
+   {
+    "id": "ricklefs2008"
+   }
+  ],
+  "q": [
+   8,
+   9,
+   12
+  ],
+  "peoples": [
+   "javanese",
+   "sundanese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "aceh-war",
+  "title": "The Aceh War",
+  "start": 1873,
+  "end": 1912,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "Aceh",
+  "lat": 5.3,
+  "lon": 96.0,
+  "summary": "The Dutch invaded Aceh in 1873; tens of thousands died in a war that lasted, as guerrilla resistance, into the 1910s.",
+  "detail": "Christiaan Snouck Hurgronje's advice to separate ulama from uleebalang chiefs shaped the colonial strategy. The war's memory fed later Acehnese rebellions (Darul Islam 1953, GAM 1976–2005).",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "reid2005"
+   },
+   {
+    "id": "ricklefs2008"
+   }
+  ],
+  "q": [
+   8,
+   12
+  ],
+  "peoples": [
+   "acehnese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "pax-neerlandica",
+  "title": "Pax Neerlandica: completing the colonial state",
+  "start": 1890,
+  "end": 1914,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "Netherlands Indies",
+  "lat": -2.5,
+  "lon": 118.0,
+  "summary": "Between the 1890s and 1914, military campaigns under Van Heutsz and others brought the whole archipelago under direct Dutch control; rulers signed the 'Short Declaration' of submission.",
+  "detail": "Borders were fixed by treaty with Britain (Borneo, New Guinea at 141°E) and Portugal (Timor, 1859/1904/1916). This is when 'Indonesia' as a bounded territory came into being — the territory the nationalists would later claim.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "ricklefs2008"
+   },
+   {
+    "id": "elson2008"
+   },
+   {
+    "id": "vickers2013"
+   }
+  ],
+  "q": [
+   8
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "bali-puputan",
+  "title": "The puputan of Badung and Klungkung",
+  "start": 1906,
+  "end": 1908,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "Denpasar & Klungkung",
+  "lat": -8.65,
+  "lon": 115.22,
+  "summary": "When Dutch troops invaded south Bali in 1906 and Klungkung in 1908, the royal courts walked out in ritual 'endings' (puputan) into rifle fire; hundreds died.",
+  "detail": "Adrian Vickers shows how the colonial state then reinvented Bali as a living museum of Hindu-Javanese culture — the basis of later tourism.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "vickers1989"
+   }
+  ],
+  "q": [
+   8,
+   12
+  ],
+  "peoples": [
+   "balinese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "sumba-pacification",
+  "title": "Sumba brought under direct rule",
+  "start": 1906,
+  "end": 1913,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "Sumba",
+  "lat": -9.6,
+  "lon": 119.6,
+  "summary": "Dutch military patrols subdued Sumba's domains between 1906 and 1913, after centuries of indirect contact through the slave and horse trades; colonial rule then created 'rajas' and districts that cut across older clan territories.",
+  "detail": "Hoskins describes how Kodi experienced pacification and the colonial calendar; Vel shows how colonial and later state categories reshaped West Sumbanese politics around the uma (house). Protestant missions spread rapidly in the 20th century alongside the Marapu religion.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "hoskins1993"
+   },
+   {
+    "id": "vel2008"
+   },
+   {
+    "id": "needham1983"
+   }
+  ],
+  "q": [
+   8,
+   12
+  ],
+  "peoples": [
+   "kodi",
+   "lamboya",
+   "kambera"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "british-malaya",
+  "title": "British Malaya",
+  "start": 1874,
+  "end": 1909,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "Perak & the Malay states",
+  "lat": 4.6,
+  "lon": 101.1,
+  "summary": "The Pangkor Engagement (1874) placed a British Resident in Perak after wars over tin; the Federated Malay States followed in 1895, and the 1909 treaty with Siam transferred Kedah, Perlis, Kelantan and Terengganu to Britain.",
+  "detail": "Indirect rule preserved the Malay sultans and the idea of the Malays as the 'native' people, while Chinese and Indian immigrants dominated tin and rubber — the root of Malaysia's later communal politics. The Orang Asli were classed as 'aborigines' apart from the Malays.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "andaya2017"
+   },
+   {
+    "id": "harper1999"
+   },
+   {
+    "id": "winichakul1994"
+   }
+  ],
+  "q": [
+   8
+  ],
+  "peoples": [
+   "malay",
+   "semai"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "borneo-north",
+  "title": "Brooke Sarawak, North Borneo and the shrinking of Brunei",
+  "start": 1841,
+  "end": 1906,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "Sarawak, Sabah & Brunei",
+  "lat": 3.5,
+  "lon": 113.5,
+  "summary": "The adventurer James Brooke became Rajah of Sarawak in 1841; the British North Borneo Company took Sabah in 1881. Brunei, cut to two small enclaves, became a British protectorate (1888) with a Resident from 1906.",
+  "detail": "Oil found at Seria in 1929 made Brunei rich. It stayed out of Malaysia in 1963 and became independent only in 1984. The Brookes' rule relied on Iban levies, setting Dayak groups against each other.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "saunders2002"
+   },
+   {
+    "id": "king1993"
+   }
+  ],
+  "q": [
+   8,
+   9
+  ],
+  "peoples": [
+   "iban"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "siam",
+  "title": "Siam: never colonised, but re-mapped",
+  "start": 1855,
+  "end": 1909,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "Siam (Thailand)",
+  "lat": 14.0,
+  "lon": 100.5,
+  "summary": "The Bowring Treaty (1855) opened Siam to British trade; under Mongkut and Chulalongkorn it modernised and survived as a buffer between British Burma/Malaya and French Indochina, losing Laos and Cambodian provinces (1893–1907) and the northern Malay states (1909).",
+  "detail": "Thongchai Winichakul shows how modern mapping created Siam's 'geo-body' — overlapping tributary sovereignties were replaced by a single bounded territory, a process paralleling colonial states.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "winichakul1994"
+   },
+   {
+    "id": "baker2009"
+   }
+  ],
+  "q": [
+   8
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "french-indochina",
+  "title": "French Indochina and British Burma",
+  "start": 1858,
+  "end": 1887,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "Indochina",
+  "lat": 16.0,
+  "lon": 106.5,
+  "summary": "France took Cochinchina from 1858 and formed the Indochinese Union in 1887; Britain annexed Burma in three wars (1824–85).",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "tarling1992"
+   }
+  ],
+  "q": [
+   8
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "philippines-us",
+  "title": "Revolution and American rule in the Philippines",
+  "start": 1896,
+  "end": 1946,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "Luzon",
+  "lat": 15.5,
+  "lon": 121.0,
+  "summary": "The Philippine Revolution against Spain began in 1896; Spain ceded the islands to the United States in 1898, which defeated the Philippine Republic in a brutal war (1899–1902) and ruled until 1946.",
+  "detail": "Reynaldo Ileto reads the revolution from below, through the Pasyon (passion narrative) of peasant movements.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "ileto1979"
+   },
+   {
+    "id": "tarling1992"
+   }
+  ],
+  "q": [
+   8,
+   10
+  ],
+  "peoples": [
+   "tagalog"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "australia-1788",
+  "title": "British settlement of Australia",
+  "start": 1788,
+  "end": 1901,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "Sydney",
+  "lat": -33.86,
+  "lon": 151.21,
+  "summary": "The First Fleet founded a penal colony at Sydney in 1788; frontier violence, disease and land seizure devastated Aboriginal societies as settlement spread. The colonies federated in 1901.",
+  "detail": "Australia is the region's settler colony: unlike the Indies or Malaya, the colonisers came to stay and replace. Northern Aboriginal peoples kept older ties with Makassar until colonial licensing ended the voyages in 1906–07.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "broome2010"
+   }
+  ],
+  "q": [
+   8,
+   12
+  ],
+  "peoples": [
+   "yolngu"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "new-guinea",
+  "title": "Partitioning New Guinea",
+  "start": 1828,
+  "end": 1906,
+  "era": "colonial",
+  "theme": "colonial",
+  "place": "New Guinea",
+  "lat": -5.0,
+  "lon": 141.0,
+  "summary": "The Dutch claimed western New Guinea to 141°E in 1828 (finalised 1848); Germany and Britain divided the east in 1884, the British part passing to Australia in 1906.",
+  "detail": "The 141st meridian — a line drawn in Europe — still divides Papuan peoples between Indonesia and Papua New Guinea.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "chauvel2005"
+   },
+   {
+    "id": "drooglever2009"
+   }
+  ],
+  "q": [
+   8,
+   12
+  ],
+  "peoples": [
+   "dani",
+   "marind"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "deli",
+  "title": "Deli's plantation belt and the coolie ordinance",
+  "start": 1863,
+  "end": 1940,
+  "era": "colonial",
+  "theme": "labour",
+  "place": "Deli, East Sumatra",
+  "lat": 3.6,
+  "lon": 98.67,
+  "summary": "From 1863 tobacco, then rubber, oil palm and tea estates spread across East Sumatra on land leased from Malay sultans; workers were indentured Chinese, then Javanese, bound by penal sanctions under the Coolie Ordinance (1880).",
+  "detail": "Jan Breman documents flogging, debt and violence; Ann Stoler traces the long history of labour control and resistance from 1870 to 1979. Batak and Malay cultivators lost access to land rotated under swidden. Indenture with penal sanction was abolished only in the 1930s.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "breman1989"
+   },
+   {
+    "id": "stoler1985"
+   },
+   {
+    "id": "kaur2004"
+   }
+  ],
+  "q": [
+   9,
+   12
+  ],
+  "peoples": [
+   "javanese",
+   "batak-toba",
+   "malay"
+  ],
+  "routes": [
+   "r-coolie-china",
+   "r-java-deli"
+  ],
+  "related": []
+ },
+ {
+  "id": "suriname",
+  "title": "Javanese indenture to Suriname",
+  "start": 1890,
+  "end": 1939,
+  "era": "colonial",
+  "theme": "labour",
+  "place": "Java → Suriname",
+  "lat": -7.0,
+  "lon": 110.4,
+  "summary": "Around 33,000 Javanese were shipped to Suriname between 1890 and 1939 to replace emancipated slaves on plantations; many stayed, forming today's Javanese Surinamese community.",
+  "detail": "Rosemarijn Hoefte compares their contracts with those of British Indian labourers.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "hoefte1998"
+   }
+  ],
+  "q": [
+   9
+  ],
+  "peoples": [
+   "javanese"
+  ],
+  "routes": [
+   "r-suriname"
+  ],
+  "related": []
+ },
+ {
+  "id": "tamil-malaya",
+  "title": "Tamil labour for Malaya's rubber",
+  "start": 1880,
+  "end": 1938,
+  "era": "colonial",
+  "theme": "labour",
+  "place": "Klang & Perak rubber estates",
+  "lat": 3.05,
+  "lon": 101.45,
+  "summary": "Hundreds of thousands of South Indian (mainly Tamil) labourers came to Malaya through indenture and the kangani recruiting system to work on rubber estates.",
+  "detail": "Malaya's rubber boom after 1905 made the colony the world's leading producer; estate labour regimes shaped Malaysia's Indian community.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "sandhu1969"
+   },
+   {
+    "id": "kaur2004"
+   },
+   {
+    "id": "harper1999"
+   }
+  ],
+  "q": [
+   9
+  ],
+  "peoples": [],
+  "routes": [
+   "r-tamil"
+  ],
+  "related": []
+ },
+ {
+  "id": "bangka",
+  "title": "Bangka tin and Chinese miners",
+  "start": 1710,
+  "end": 1940,
+  "era": "company",
+  "theme": "mining",
+  "place": "Bangka",
+  "lat": -2.1,
+  "lon": 106.1,
+  "summary": "Tin was found on Bangka around 1710; the Palembang sultan, then the Dutch state, brought in Chinese miners who formed lasting communities.",
+  "detail": "Mary Somers Heidhues shows how Chinese miners and Malay pepper farmers built a distinctive island society.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "heidhues1992"
+   }
+  ],
+  "q": [
+   9
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "kongsi",
+  "title": "The gold kongsi of West Borneo",
+  "start": 1760,
+  "end": 1885,
+  "era": "company",
+  "theme": "mining",
+  "place": "Montrado, West Borneo",
+  "lat": 0.95,
+  "lon": 109.1,
+  "summary": "Chinese gold miners organised self-governing federations (kongsi) in West Borneo from the 1760s, trading and intermarrying with Dayak communities, until the Dutch destroyed them by 1884.",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "heidhues2003"
+   },
+   {
+    "id": "king1993"
+   }
+  ],
+  "q": [
+   9,
+   12
+  ],
+  "peoples": [
+   "iban"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "malayan-tin",
+  "title": "Malayan tin",
+  "start": 1840,
+  "end": 1940,
+  "era": "colonial",
+  "theme": "mining",
+  "place": "Larut & Kinta Valley",
+  "lat": 4.6,
+  "lon": 101.1,
+  "summary": "Tin rushes in Larut and Kinta drew Chinese miners and secret societies; wars between them provided the pretext for British intervention in 1874.",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "wong1965"
+   },
+   {
+    "id": "andaya2017"
+   }
+  ],
+  "q": [
+   9
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "ombilin",
+  "title": "Ombilin coal: convict labour in Minangkabau",
+  "start": 1892,
+  "end": 1940,
+  "era": "colonial",
+  "theme": "mining",
+  "place": "Sawahlunto",
+  "lat": -0.68,
+  "lon": 100.78,
+  "summary": "The Dutch opened the Ombilin coal mines at Sawahlunto in the 1890s, worked by chained convict labourers ('orang rantai'), contract coolies and Minangkabau workers; a railway linked the mines to Emmahaven (Padang).",
+  "detail": "UNESCO inscribed the mining town as World Heritage in 2019.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "unesco2019"
+   }
+  ],
+  "q": [
+   9,
+   12
+  ],
+  "peoples": [
+   "minangkabau"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "oil-borneo",
+  "title": "Oil in Sumatra and Borneo",
+  "start": 1890,
+  "end": 1940,
+  "era": "colonial",
+  "theme": "mining",
+  "place": "Seria, Balikpapan, Pangkalan Brandan",
+  "lat": 4.6,
+  "lon": 114.3,
+  "summary": "Royal Dutch was founded in 1890 to exploit oil in North Sumatra; Balikpapan (East Borneo) and later Seria in Brunei (1929) became major oilfields.",
+  "detail": "Oil made the Indies strategically vital — a key reason for the Japanese invasion of 1942.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "ricklefs2008"
+   },
+   {
+    "id": "saunders2002"
+   }
+  ],
+  "q": [
+   9,
+   10
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "romusha",
+  "title": "Japanese occupation and romusha",
+  "start": 1942,
+  "end": 1945,
+  "era": "revolution",
+  "theme": "labour",
+  "place": "Java → Thailand–Burma railway",
+  "lat": -7.0,
+  "lon": 110.4,
+  "summary": "Japan occupied the Indies, Malaya and the Philippines in 1942. Hundreds of thousands of Javanese were mobilised as romusha (labourers); many were sent abroad, including to the Thailand–Burma railway, and large numbers died.",
+  "detail": "Shigeru Sato shows how requisitions and forced labour devastated Javanese villages, while the occupation also armed and mobilised Indonesian youth (PETA), preparing the ground for revolution.",
+  "certainty": "estimate",
+  "sources": [
+   {
+    "id": "sato1994"
+   },
+   {
+    "id": "ricklefs2008"
+   }
+  ],
+  "q": [
+   9,
+   10
+  ],
+  "peoples": [
+   "javanese"
+  ],
+  "routes": [
+   "r-romusha"
+  ],
+  "related": []
+ },
+ {
+  "id": "freeport",
+  "title": "Freeport in Papua",
+  "start": 1967,
+  "end": 2026,
+  "era": "nation",
+  "theme": "mining",
+  "place": "Ertsberg & Grasberg",
+  "lat": -4.05,
+  "lon": 137.11,
+  "summary": "Freeport-McMoRan signed the New Order's first foreign investment contract in 1967, before Papua's 1969 'Act of Free Choice'; the Grasberg copper-gold mine, found in 1988, became one of the world's largest.",
+  "detail": "Mining displaced Amungme and Kamoro communities and dumped tailings into their rivers; security operations around the mine are tied to human-rights abuses. Denise Leith analyses Freeport's alliance with the Suharto regime; Eben Kirksey follows Papuan movements entangled with it.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "leith2003"
+   },
+   {
+    "id": "kirksey2012"
+   }
+  ],
+  "q": [
+   9,
+   11,
+   12
+  ],
+  "peoples": [
+   "amungme",
+   "kamoro"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "national-awakening",
+  "title": "From the Ethical Policy to the Youth Pledge",
+  "start": 1901,
+  "end": 1928,
+  "era": "colonial",
+  "theme": "independence",
+  "place": "Batavia & Bandung",
+  "lat": -6.2,
+  "lon": 106.8,
+  "summary": "The Ethical Policy (1901) expanded schooling; a new educated elite founded Budi Utomo (1908), Sarekat Islam (1912) and the PKI (1920), and in 1928 the Youth Pledge proclaimed one homeland, one nation and one language: Indonesia.",
+  "detail": "Benedict Anderson argues that the colonial school system and print in Malay created the 'imagined community' of Indonesia within the borders of the colonial state. Robert Elson traces how the idea of 'Indonesia' was invented and contested. After the 1926–27 communist uprisings, the colonial state exiled radicals to Boven Digoel in Papua.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "anderson1983"
+   },
+   {
+    "id": "elson2008"
+   },
+   {
+    "id": "ricklefs2008"
+   }
+  ],
+  "q": [
+   10
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "proclamation",
+  "title": "Proclamation and revolution (1945–49)",
+  "start": 1945,
+  "end": 1949,
+  "era": "revolution",
+  "theme": "independence",
+  "place": "Jakarta",
+  "lat": -6.2,
+  "lon": 106.85,
+  "summary": "Sukarno and Hatta proclaimed independence on 17 August 1945. Four years of war and diplomacy followed — Surabaya (1945), Dutch 'police actions' (1947, 1948) — until the Netherlands transferred sovereignty on 27 December 1949.",
+  "detail": "George Kahin and Anthony Reid wrote the classic accounts. The revolution was also a series of local 'social revolutions' — in Aceh, East Sumatra and elsewhere aristocrats were killed or displaced. The Dutch kept western New Guinea, setting up the next conflict.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "kahin1952"
+   },
+   {
+    "id": "reid1974"
+   },
+   {
+    "id": "ricklefs2008"
+   }
+  ],
+  "q": [
+   10
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "mainland-independence",
+  "title": "Decolonisation across the region",
+  "start": 1945,
+  "end": 1957,
+  "era": "revolution",
+  "theme": "independence",
+  "place": "Mainland Southeast Asia",
+  "lat": 17.0,
+  "lon": 100.0,
+  "summary": "The Philippines became independent in 1946, Burma in 1948; Vietnam's revolution (1945) led to war with France until 1954; Cambodia and Laos gained independence in 1953; Malaya in 1957.",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "tarling1992"
+   },
+   {
+    "id": "harper1999"
+   }
+  ],
+  "q": [
+   10
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "malayan-emergency",
+  "title": "The Malayan Emergency and the Orang Asli",
+  "start": 1948,
+  "end": 1960,
+  "era": "revolution",
+  "theme": "independence",
+  "place": "Malayan interior",
+  "lat": 4.5,
+  "lon": 101.8,
+  "summary": "During the communist insurgency, the British resettled about half a million rural Chinese into 'New Villages' and forcibly moved Orang Asli out of the forests; many died in the camps. Merdeka came on 31 August 1957.",
+  "detail": "John Leary shows how both sides courted the Orang Asli; the colonial state created a Department of Aborigines and the Aboriginal Peoples Act (1954), a protective but controlling framework still in force in Malaysia.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "leary1995"
+   },
+   {
+    "id": "harper1999"
+   },
+   {
+    "id": "nicholas2000"
+   }
+  ],
+  "q": [
+   10,
+   12
+  ],
+  "peoples": [
+   "semai",
+   "temiar",
+   "jehai"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "malaysia-1963",
+  "title": "Malaysia, Konfrontasi and Singapore",
+  "start": 1963,
+  "end": 1966,
+  "era": "revolution",
+  "theme": "independence",
+  "place": "Malaysia & Borneo",
+  "lat": 2.5,
+  "lon": 111.0,
+  "summary": "Malaysia was formed on 16 September 1963 from Malaya, Singapore, Sabah and Sarawak; Brunei stayed out after a 1962 revolt. Indonesia opposed it in a 'Confrontation' (1963–66); Singapore left Malaysia in 1965.",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "mackie1974"
+   },
+   {
+    "id": "saunders2002"
+   },
+   {
+    "id": "andaya2017"
+   }
+  ],
+  "q": [
+   10
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "west-papua",
+  "title": "West Papua and the 'Act of Free Choice' (1969)",
+  "start": 1962,
+  "end": 1969,
+  "era": "revolution",
+  "theme": "independence",
+  "place": "West Papua",
+  "lat": -3.5,
+  "lon": 138.5,
+  "summary": "Under the 1962 New York Agreement the Netherlands handed West New Guinea to UN and then Indonesian administration; in 1969 1,025 selected representatives voted for integration with Indonesia.",
+  "detail": "Pieter Drooglever's study for the Dutch government concluded that the 1969 process did not meet the standard of genuine self-determination. Papuan nationalism — symbolised by the Morning Star flag first raised in 1961 — has continued since.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "drooglever2009"
+   },
+   {
+    "id": "chauvel2005"
+   }
+  ],
+  "q": [
+   10,
+   12
+  ],
+  "peoples": [
+   "dani",
+   "biak",
+   "amungme"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "timor",
+  "title": "East Timor: invasion and independence",
+  "start": 1975,
+  "end": 2002,
+  "era": "nation",
+  "theme": "independence",
+  "place": "Timor-Leste",
+  "lat": -8.75,
+  "lon": 125.9,
+  "summary": "Indonesia invaded Portuguese Timor in December 1975. The truth commission (CAVR) estimated at least 102,800 conflict-related deaths during the occupation. After a UN-run referendum in 1999 and militia violence, Timor-Leste became independent in 2002.",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "cavr2005"
+   },
+   {
+    "id": "hagerdal2012"
+   }
+  ],
+  "q": [
+   10,
+   12
+  ],
+  "peoples": [
+   "tetum"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "brunei-1984",
+  "title": "Brunei's independence (1984)",
+  "start": 1984,
+  "end": 1984,
+  "era": "nation",
+  "theme": "independence",
+  "place": "Bandar Seri Begawan",
+  "lat": 4.9,
+  "lon": 114.94,
+  "summary": "Brunei became fully independent on 1 January 1984 as an absolute monarchy funded by oil and gas.",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "saunders2002"
+   }
+  ],
+  "q": [
+   10
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "killings-1965",
+  "title": "The 1965–66 killings and the New Order",
+  "start": 1965,
+  "end": 1966,
+  "era": "nation",
+  "theme": "development",
+  "place": "Java, Bali, Sumatra",
+  "lat": -7.5,
+  "lon": 112.0,
+  "summary": "After the 30 September 1965 movement, the army and allied militias killed about 500,000 people accused of communist links and imprisoned hundreds of thousands; Suharto's New Order (1966–98) was built on this violence.",
+  "detail": "Geoffrey Robinson shows the army's central role. The New Order's ideology of 'development' (pembangunan) and order framed indigenous peoples as 'isolated, alien communities' (masyarakat terasing) to be resettled and civilised.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "robinson2018"
+   },
+   {
+    "id": "li2007"
+   }
+  ],
+  "q": [
+   11,
+   12
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "new-order-forest",
+  "title": "State forest, logging and the 'tribal slot'",
+  "start": 1967,
+  "end": 1998,
+  "era": "nation",
+  "theme": "development",
+  "place": "Kalimantan",
+  "lat": 0.0,
+  "lon": 114.0,
+  "summary": "The Basic Forestry Law of 1967 claimed most of the outer islands as state forest; logging concessions were handed to military-linked conglomerates, overriding adat claims.",
+  "detail": "Tania Li shows how indigeneity in Indonesia became a 'tribal slot' — a position defined by the state and activists through resource politics. Satellite studies document how logging gave way to plantations in Borneo and Sumatra.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "li2000"
+   },
+   {
+    "id": "li2007"
+   },
+   {
+    "id": "gaveau2016"
+   }
+  ],
+  "q": [
+   11,
+   12
+  ],
+  "peoples": [
+   "ngaju",
+   "iban",
+   "kenyah"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "transmigrasi",
+  "title": "Transmigration (transmigrasi)",
+  "start": 1905,
+  "end": 2000,
+  "era": "nation",
+  "theme": "development",
+  "place": "Java → outer islands",
+  "lat": -5.0,
+  "lon": 112.0,
+  "summary": "Begun by the Dutch as kolonisatie in 1905 and expanded by the New Order, transmigration moved millions of people from Java, Bali and Madura to Sumatra, Kalimantan, Sulawesi and Papua.",
+  "detail": "Officially a population and development programme, it also served security and 'national integration' goals, placing settlers on land claimed by indigenous communities, especially in Papua. Fearnside reviews its environmental and social costs.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "fearnside1997"
+   },
+   {
+    "id": "hardjono1977"
+   },
+   {
+    "id": "li2007"
+   }
+  ],
+  "q": [
+   11,
+   12
+  ],
+  "peoples": [
+   "javanese",
+   "madurese",
+   "orang-rimba",
+   "marind"
+  ],
+  "routes": [
+   "r-transmig-lampung",
+   "r-transmig-kalimantan",
+   "r-transmig-sulawesi",
+   "r-transmig-papua"
+  ],
+  "related": []
+ },
+ {
+  "id": "asean",
+  "title": "ASEAN (1967)",
+  "start": 1967,
+  "end": 1967,
+  "era": "nation",
+  "theme": "development",
+  "place": "Bangkok",
+  "lat": 13.75,
+  "lon": 100.5,
+  "summary": "Indonesia, Malaysia, the Philippines, Singapore and Thailand founded ASEAN in Bangkok on 8 August 1967, ending Konfrontasi's era; Brunei joined in 1984, later the mainland states.",
+  "detail": "",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "tarling1992"
+   },
+   {
+    "id": "reid2015"
+   }
+  ],
+  "q": [
+   11
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "palm-oil",
+  "title": "The oil palm frontier",
+  "start": 1980,
+  "end": 2026,
+  "era": "nation",
+  "theme": "development",
+  "place": "Borneo & Sumatra",
+  "lat": 0.5,
+  "lon": 110.0,
+  "summary": "Indonesia and Malaysia became the world's largest palm oil producers; industrial plantations spread over millions of hectares of Borneo and Sumatra, much of it former forest and customary land.",
+  "detail": "Margono et al. measured Indonesia's primary forest loss at over six million hectares in 2000–12; Gaveau et al. tracked four decades of plantation expansion in Borneo. Li and Semedi call the result 'corporate occupation': plantations that govern land, labour and villages like a colonial order.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "li2021"
+   },
+   {
+    "id": "gaveau2016"
+   },
+   {
+    "id": "margono2014"
+   },
+   {
+    "id": "li2014"
+   }
+  ],
+  "q": [
+   11,
+   12
+  ],
+  "peoples": [
+   "ngaju",
+   "iban",
+   "orang-rimba"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "reformasi",
+  "title": "Reformasi and decentralisation",
+  "start": 1998,
+  "end": 2005,
+  "era": "nation",
+  "theme": "development",
+  "place": "Jakarta",
+  "lat": -6.2,
+  "lon": 106.85,
+  "summary": "Suharto fell in May 1998. Decentralisation laws (1999, implemented 2001) moved power to districts, and new provinces and districts multiplied (pemekaran) — often along ethnic and adat lines.",
+  "detail": "Schulte Nordholt and van Klinken show how local elites used decentralisation and adat to renegotiate boundaries; it also sharpened land conflicts.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "schulte2010"
+   },
+   {
+    "id": "henley2007"
+   }
+  ],
+  "q": [
+   11,
+   12
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "aceh-peace",
+  "title": "Tsunami and peace in Aceh",
+  "start": 2004,
+  "end": 2005,
+  "era": "nation",
+  "theme": "independence",
+  "place": "Aceh",
+  "lat": 5.55,
+  "lon": 95.32,
+  "summary": "The Indian Ocean tsunami of 26 December 2004 killed over 160,000 people in Aceh; the Helsinki agreement of August 2005 ended the war between Indonesia and GAM and granted special autonomy.",
+  "detail": "Edward Aspinall traces how Acehnese nationalism grew from grievances over resources and military violence.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "aspinall2009"
+   }
+  ],
+  "q": [
+   11,
+   12
+  ],
+  "peoples": [
+   "acehnese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "adat-revival",
+  "title": "Adat revival, AMAN and the Constitutional Court",
+  "start": 1999,
+  "end": 2026,
+  "era": "nation",
+  "theme": "indigenous",
+  "place": "Indonesia",
+  "lat": -4.0,
+  "lon": 116.0,
+  "summary": "In 1999 the first congress of indigenous peoples founded AMAN (Aliansi Masyarakat Adat Nusantara). In 2013 the Constitutional Court (decision 35/PUU-X/2012) ruled that customary forests are not state forests.",
+  "detail": "Davidson and Henley trace adat from the colonial Leiden school of Van Vollenhoven — which codified 'adat law circles' — to today's indigenism, showing its double edge: protection, but also exclusion and elite capture. Implementing MK35 has been slow and depends on regional regulations recognising each community.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "henley2007"
+   },
+   {
+    "id": "burns2004"
+   },
+   {
+    "id": "mk2012"
+   },
+   {
+    "id": "butt2014"
+   },
+   {
+    "id": "aman1999"
+   }
+  ],
+  "q": [
+   11,
+   12
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "bali-tourism",
+  "title": "Tourism and 'touristic culture'",
+  "start": 1924,
+  "end": 2026,
+  "era": "nation",
+  "theme": "development",
+  "place": "Bali",
+  "lat": -8.5,
+  "lon": 115.26,
+  "summary": "From KPM steamship tours in the 1920s to mass tourism after 1970, Bali became a model of cultural tourism that Indonesia replicated elsewhere — including eastern islands such as Sumba.",
+  "detail": "Michel Picard argues that tourism did not simply corrupt Balinese culture but produced a 'touristic culture' in which Balinese learned to see their own religion and arts through tourism's eyes.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "picard1996"
+   },
+   {
+    "id": "vickers1989"
+   }
+  ],
+  "q": [
+   11,
+   12
+  ],
+  "peoples": [
+   "balinese"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "mifee",
+  "title": "MIFEE and food estates in Papua",
+  "start": 2010,
+  "end": 2026,
+  "era": "nation",
+  "theme": "development",
+  "place": "Merauke",
+  "lat": -8.5,
+  "lon": 140.4,
+  "summary": "The Merauke Integrated Food and Energy Estate (from 2010) allocated over a million hectares of Marind lands for agribusiness; later 'food estate' projects have renewed the pressure.",
+  "detail": "Ginting and Pye document Marind resistance and the role of transmigration and corporate concessions.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "ginting2013"
+   },
+   {
+    "id": "li2021"
+   }
+  ],
+  "q": [
+   11,
+   12
+  ],
+  "peoples": [
+   "marind"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "orang-asli-land",
+  "title": "Orang Asli land rights in Malaysia",
+  "start": 1954,
+  "end": 2026,
+  "era": "nation",
+  "theme": "indigenous",
+  "place": "Peninsular Malaysia",
+  "lat": 3.8,
+  "lon": 101.9,
+  "summary": "Under the Aboriginal Peoples Act (1954) Orang Asli occupy land at the state's pleasure; logging, dams, plantations and Islamisation programmes have pressed on their territories, while court cases since the late 1990s have begun to recognise customary title.",
+  "detail": "Colin Nicholas argues that the contest for resources, not culture, defines Orang Asli politics; Endicott's volume reviews history and present.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "nicholas2000"
+   },
+   {
+    "id": "endicott2016"
+   }
+  ],
+  "q": [
+   12
+  ],
+  "peoples": [
+   "semai",
+   "temiar",
+   "jehai",
+   "batek",
+   "temuan",
+   "jakun"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "orang-rimba-now",
+  "title": "The Orang Rimba of Bukit Duabelas",
+  "start": 1980,
+  "end": 2026,
+  "era": "nation",
+  "theme": "indigenous",
+  "place": "Bukit Duabelas, Jambi",
+  "lat": -1.95,
+  "lon": 102.6,
+  "summary": "The Orang Rimba, forest-dwelling hunter-gardeners of Jambi, saw their forests cut by logging, transmigration settlements and oil palm from the 1980s; Bukit Duabelas was made a national park in 2000, partly to protect them.",
+  "detail": "Steven Sager's ethnography describes Orang Rimba custom (adat), religion and the boundary they draw between forest life and the settled 'Orang Terang' world — a boundary under pressure from sedentarisation, conversion programmes and plantation work.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "sager2008"
+   },
+   {
+    "id": "li2021"
+   }
+  ],
+  "q": [
+   12
+  ],
+  "peoples": [
+   "orang-rimba"
+  ],
+  "routes": [],
+  "related": []
+ },
+ {
+  "id": "language-map",
+  "title": "Reading the language map",
+  "start": -5000,
+  "end": 2026,
+  "era": "nation",
+  "theme": "indigenous",
+  "place": "Island Southeast Asia",
+  "lat": -1.0,
+  "lon": 124.0,
+  "summary": "Over 700 languages are spoken in Indonesia alone. Austronesian languages dominate from Sumatra to Maluku; Papuan families survive in Halmahera, Timor-Alor-Pantar and New Guinea; Austroasiatic Aslian languages mark the Orang Asli of the Peninsula.",
+  "detail": "Switch on the 'Languages' layer to see territories generated from Glottolog's coordinates for 3,205 languages in the region, coloured by family. Glottolog points are approximate centres, not borders: real language areas overlap, and migrants (Javanese, Bugis, Madurese, Minangkabau) live far from their homelands. The map is cross-checked against Wikipedia's ethnolinguistic map of Indonesia.",
+  "certainty": "established",
+  "sources": [
+   {
+    "id": "glottolog2026"
+   },
+   {
+    "id": "wiki-langmap"
+   },
+   {
+    "id": "blust1995"
+   },
+   {
+    "id": "bellwood2007"
+   }
+  ],
+  "q": [
+   1,
+   2,
+   12
+  ],
+  "peoples": [],
+  "routes": [],
+  "related": []
+ }
+]

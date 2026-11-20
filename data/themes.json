@@ -1,0 +1,16 @@
+[
+ {"id":"migration","name":"Migration & settlement","glyph":"⟿","color":"#CCD6E6"},
+ {"id":"indic","name":"Hindu–Indic influence","glyph":"ॐ","color":"#EEDED1"},
+ {"id":"buddhist","name":"Buddhist influence","glyph":"☸","color":"#EEDED1"},
+ {"id":"islam","name":"Islam","glyph":"☪","color":"#DFDDD7"},
+ {"id":"trade","name":"Trade & exchange","glyph":"⚖","color":"#CCD6E6"},
+ {"id":"urban","name":"Urban centres","glyph":"♜","color":"#F6F4EF"},
+ {"id":"slavery","name":"Slavery & bondage","glyph":"⛓","color":"#B2ABB4"},
+ {"id":"contact","name":"First contact with the West","glyph":"⚓","color":"#CCD6E6"},
+ {"id":"colonial","name":"Colonial power","glyph":"⚑","color":"#B2ABB4"},
+ {"id":"labour","name":"Plantation & indenture","glyph":"❦","color":"#EEDED1"},
+ {"id":"mining","name":"Mining","glyph":"⛏","color":"#DFDDD7"},
+ {"id":"independence","name":"Independence & nationhood","glyph":"✦","color":"#F6F4EF"},
+ {"id":"development","name":"20th-century development","glyph":"⚙","color":"#DFDDD7"},
+ {"id":"indigenous","name":"Indigenous peoples & land","glyph":"❖","color":"#EEDED1"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"acehnese","name":"Acehnese","autonym":"Ureuëng Acèh","glottocode":"achi1257","lat":5.2,"lon":96.4,"family":"Austronesian › Malayo-Polynesian › Chamic","country":"Indonesia","region":"Aceh, northern Sumatra","summary":"Chamic-speaking people of the northern tip of Sumatra.","impacts":[{"period":"1873–1904","text":"Aceh War against the Dutch.","sources":[{"id":"reid1988"}]}],"sources":[{"id":"reid1988"}]},
+{"id":"tagalog","name":"Tagalog","autonym":"Tagalog","glottocode":"taga1280","lat":14.2,"lon":121.2,"family":"Austronesian › Malayo-Polynesian › Philippine","country":"Philippines","region":"Luzon","summary":"Largest ethnolinguistic group of central Luzon.","impacts":[],"sources":[{"id":"bellwood2007"}]},
+{"id":"papuan-highlands","name":"Highland Papuans","autonym":"","glottocode":"huli1244","lat":-5.9,"lon":143.9,"family":"Nuclear Trans New Guinea","country":"Papua New Guinea","region":"Highlands","summary":"Independent agricultural societies from c. 7000 BCE.","impacts":[],"sources":[{"id":"clarkson2017"}]},
+{"id":"orang-rimba","name":"Orang Rimba","autonym":"Orang Rimba","glottocode":"kubu1240","lat":-2.0,"lon":102.6,"family":"Austronesian › Malayic","country":"Indonesia","region":"Bukit Duabelas, Jambi","summary":"Forest-dwelling people of Jambi.","impacts":[],"sources":[{"id":"bellwood2007"}]}
+]

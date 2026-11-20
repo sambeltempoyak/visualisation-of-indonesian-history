@@ -1,0 +1,6 @@
+[
+{"id":"r-sahul","title":"Sundaland to Sahul","kind":"migration","start":-65000,"end":-50000,"path":[[110,-1],[118,-3],[125,-6],[131,-9],[135,-12]],"width":2,"note":"Southern route via Wallacea","event":"sahul-crossing","sources":[{"id":"bellwood2007"}]},
+{"id":"r-out-of-taiwan","title":"Out of Taiwan","kind":"migration","start":-3000,"end":-1500,"path":[[121,23],[121,17],[122,11],[119,5],[115,-1],[110,-6],[100,-6]],"width":3,"note":"Island chain","event":"out-of-taiwan","sources":[{"id":"lipson2014"}]},
+{"id":"r-indic","title":"Indic maritime route","kind":"religion","start":100,"end":700,"path":[[80,13],[92,10],[98,6],[104,1],[106,-6]],"width":2,"note":"Bay of Bengal crossing","event":"srivijaya","sources":[{"id":"coedes1968"}]},
+{"id":"r-spice","title":"Spice route","kind":"trade","start":1400,"end":1550,"path":[[128,-4],[118,-8],[112,-7],[104,-5],[102,2],[95,6],[80,8]],"width":3,"note":"Maluku to Melaka","event":"melaka-spice","sources":[{"id":"reid1988"}]}
+]

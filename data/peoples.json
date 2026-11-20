@@ -1,0 +1,1664 @@
+[
+ {
+  "id": "acehnese",
+  "name": "Acehnese",
+  "autonym": "Ureuëng Acèh",
+  "glottocode": "achi1257",
+  "lat": 5.2,
+  "lon": 96.2,
+  "family": "Austronesian › Malayo-Polynesian › Chamic",
+  "country": "Indonesia",
+  "region": "Aceh, northern tip of Sumatra",
+  "summary": "Speakers of a Chamic language related to Cham of Vietnam; heirs of Pasai and the Aceh sultanate, the 'Veranda of Mecca'.",
+  "impacts": [
+   {
+    "period": "c. 600–1200?",
+    "text": "Ancestors of Acehnese speakers probably arrived from the Champa coast; date uncertain.",
+    "sources": [
+     {
+      "id": "thurgood1999"
+     }
+    ]
+   },
+   {
+    "period": "1290s–1520",
+    "text": "Samudra-Pasai is the first Muslim sultanate in the archipelago.",
+    "sources": [
+     {
+      "id": "ricklefs2008"
+     }
+    ]
+   },
+   {
+    "period": "1520–1700",
+    "text": "Aceh Darussalam grows on pepper and Islamic scholarship, rivals Portuguese Melaka.",
+    "sources": [
+     {
+      "id": "reid2005"
+     },
+     {
+      "id": "reid1993"
+     }
+    ]
+   },
+   {
+    "period": "1873–1912",
+    "text": "The Aceh War: decades of Dutch conquest and guerrilla resistance.",
+    "sources": [
+     {
+      "id": "reid2005"
+     }
+    ]
+   },
+   {
+    "period": "1976–2005",
+    "text": "GAM rebellion; tsunami (2004); Helsinki peace and special autonomy (2005).",
+    "sources": [
+     {
+      "id": "aspinall2009"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "reid2005"
+   },
+   {
+    "id": "aspinall2009"
+   }
+  ],
+  "glottolog_name": "Acehnese"
+ },
+ {
+  "id": "minangkabau",
+  "name": "Minangkabau",
+  "autonym": null,
+  "glottocode": "mina1268",
+  "lat": -0.6,
+  "lon": 100.5,
+  "family": "Austronesian › Malayo-Polynesian › Malayic",
+  "country": "Indonesia",
+  "region": "West Sumatra highlands (darek) and coast (rantau)",
+  "summary": "A matrilineal Muslim society of the West Sumatran highlands, famous for merantau (migration) and for combining adat with Islam.",
+  "impacts": [
+   {
+    "period": "1784–1838",
+    "text": "Coffee and trade boom; the Padri reform movement and the Dutch Padri War.",
+    "sources": [
+     {
+      "id": "dobbin1983"
+     }
+    ]
+   },
+   {
+    "period": "1830s–1910s",
+    "text": "Forced coffee cultivation and colonial 'adat' administration; Ombilin coal mines worked by convicts.",
+    "sources": [
+     {
+      "id": "kahn1993"
+     },
+     {
+      "id": "unesco2019"
+     }
+    ]
+   },
+   {
+    "period": "20th c.",
+    "text": "Minangkabau migrants and intellectuals (Hatta, Sjahrir, Tan Malaka) prominent in nationalism.",
+    "sources": [
+     {
+      "id": "kahn1993"
+     },
+     {
+      "id": "elson2008"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "dobbin1983"
+   },
+   {
+    "id": "kahn1993"
+   }
+  ],
+  "glottolog_name": "Minangkabau"
+ },
+ {
+  "id": "javanese",
+  "name": "Javanese",
+  "autonym": "Wong Jawa",
+  "glottocode": "java1254",
+  "lat": -7.3,
+  "lon": 110.6,
+  "family": "Austronesian › Malayo-Polynesian › Javanese",
+  "country": "Indonesia (and Suriname, Malaysia, New Caledonia)",
+  "region": "Central and East Java",
+  "summary": "The largest ethnic group in Southeast Asia, heirs of Mataram, Majapahit and Islamic Mataram, and of a long agrarian court culture.",
+  "impacts": [
+   {
+    "period": "8th–15th c.",
+    "text": "Hindu-Buddhist kingdoms: Mataram (Borobudur, Prambanan), Kediri, Singhasari, Majapahit.",
+    "sources": [
+     {
+      "id": "miksic2017"
+     },
+     {
+      "id": "robson1995"
+     }
+    ]
+   },
+   {
+    "period": "15th–17th c.",
+    "text": "North-coast Muslim ports; inland Islamic Mataram.",
+    "sources": [
+     {
+      "id": "ricklefs2008"
+     }
+    ]
+   },
+   {
+    "period": "1825–1870",
+    "text": "Java War; the Cultivation System's forced export crops.",
+    "sources": [
+     {
+      "id": "carey2007"
+     },
+     {
+      "id": "elson1994"
+     }
+    ]
+   },
+   {
+    "period": "1870–1939",
+    "text": "Indentured to Deli and Suriname as coolies.",
+    "sources": [
+     {
+      "id": "breman1989"
+     },
+     {
+      "id": "hoefte1998"
+     }
+    ]
+   },
+   {
+    "period": "1942–45",
+    "text": "Mobilised as romusha by the Japanese.",
+    "sources": [
+     {
+      "id": "sato1994"
+     }
+    ]
+   },
+   {
+    "period": "1905–2000",
+    "text": "Moved as transmigrants to the outer islands — often onto indigenous land.",
+    "sources": [
+     {
+      "id": "fearnside1997"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "ricklefs2008"
+   }
+  ],
+  "glottolog_name": "Javanese"
+ },
+ {
+  "id": "sundanese",
+  "name": "Sundanese",
+  "autonym": "Urang Sunda",
+  "glottocode": "sund1252",
+  "lat": -6.9,
+  "lon": 107.4,
+  "family": "Austronesian › Malayo-Polynesian › Sundanese",
+  "country": "Indonesia",
+  "region": "West Java (Pasundan)",
+  "summary": "The people of West Java, heirs of Tarumanagara, Sunda-Pajajaran and Banten.",
+  "impacts": [
+   {
+    "period": "5th c.",
+    "text": "Tarumanagara inscriptions of King Purnavarman.",
+    "sources": [
+     {
+      "id": "coedes1968"
+     }
+    ]
+   },
+   {
+    "period": "1527–1682",
+    "text": "Banten sultanate's pepper trade.",
+    "sources": [
+     {
+      "id": "ricklefs2008"
+     }
+    ]
+   },
+   {
+    "period": "1830–1870",
+    "text": "Priangan coffee under forced cultivation.",
+    "sources": [
+     {
+      "id": "elson1994"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "ricklefs2008"
+   }
+  ],
+  "glottolog_name": "Sundanese"
+ },
+ {
+  "id": "balinese",
+  "name": "Balinese",
+  "autonym": null,
+  "glottocode": "bali1278",
+  "lat": -8.357,
+  "lon": 115.075,
+  "family": "Austronesian › Malayo-Polynesian › Bali-Sasak-Sumbawa",
+  "country": "Indonesia",
+  "region": "Bali",
+  "summary": "A Hindu society whose court culture inherited Majapahit's; later made into the archetype of 'cultural tourism'.",
+  "impacts": [
+   {
+    "period": "16th c.",
+    "text": "After Majapahit's fall, Hindu-Javanese court culture continues in Gelgel and Klungkung.",
+    "sources": [
+     {
+      "id": "vickers1989"
+     }
+    ]
+   },
+   {
+    "period": "1620–1830",
+    "text": "Balinese courts export war captives as slaves to Batavia and beyond.",
+    "sources": [
+     {
+      "id": "vanderkraan1983"
+     }
+    ]
+   },
+   {
+    "period": "1906–1908",
+    "text": "Puputan: the royal houses of Badung and Klungkung die facing Dutch troops.",
+    "sources": [
+     {
+      "id": "vickers1989"
+     }
+    ]
+   },
+   {
+    "period": "1920s–today",
+    "text": "Tourism produces a 'touristic culture'.",
+    "sources": [
+     {
+      "id": "picard1996"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "vickers1989"
+   },
+   {
+    "id": "picard1996"
+   }
+  ],
+  "glottolog_name": "Balinese"
+ },
+ {
+  "id": "makassarese",
+  "name": "Makassarese",
+  "autonym": null,
+  "glottocode": "maka1311",
+  "lat": -5.4,
+  "lon": 119.6,
+  "family": "Austronesian › Malayo-Polynesian › South Sulawesi",
+  "country": "Indonesia",
+  "region": "South-west Sulawesi (Gowa–Tallo)",
+  "summary": "Seafaring people of Gowa–Tallo, whose port of Makassar was the free-trading rival of the VOC.",
+  "impacts": [
+   {
+    "period": "1605",
+    "text": "Rulers of Gowa–Tallo accept Islam.",
+    "sources": [
+     {
+      "id": "cummings2002"
+     }
+    ]
+   },
+   {
+    "period": "1600–1669",
+    "text": "Makassar flourishes as an open spice port.",
+    "sources": [
+     {
+      "id": "reid1993"
+     }
+    ]
+   },
+   {
+    "period": "1666–69",
+    "text": "Defeat by the VOC and Bone; diaspora.",
+    "sources": [
+     {
+      "id": "andaya2015"
+     }
+    ]
+   },
+   {
+    "period": "1720–1907",
+    "text": "Trepang voyages to Aboriginal Australia (Marege').",
+    "sources": [
+     {
+      "id": "macknight1976"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "cummings2002"
+   }
+  ],
+  "glottolog_name": "Makasar"
+ },
+ {
+  "id": "bugis",
+  "name": "Bugis",
+  "autonym": "To Ugi'",
+  "glottocode": "bugi1244",
+  "lat": -4.3,
+  "lon": 120.0,
+  "family": "Austronesian › Malayo-Polynesian › South Sulawesi",
+  "country": "Indonesia, Malaysia",
+  "region": "South Sulawesi; diaspora across the archipelago",
+  "summary": "Rice farmers, traders and sailors of South Sulawesi with a written literature (La Galigo) and a far-flung 18th-century diaspora.",
+  "impacts": [
+   {
+    "period": "1608–11",
+    "text": "Islamised by Gowa in war.",
+    "sources": [
+     {
+      "id": "pelras1996"
+     }
+    ]
+   },
+   {
+    "period": "1666–69",
+    "text": "Arung Palakka of Bone allies with the VOC against Gowa.",
+    "sources": [
+     {
+      "id": "andaya2015"
+     }
+    ]
+   },
+   {
+    "period": "18th c.",
+    "text": "Bugis dynasties rise in Riau, Selangor and Johor.",
+    "sources": [
+     {
+      "id": "andaya2015"
+     },
+     {
+      "id": "pelras1996"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "pelras1996"
+   }
+  ],
+  "glottolog_name": "Buginese"
+ },
+ {
+  "id": "kambera",
+  "name": "Sumbanese (Kambera, East Sumba)",
+  "autonym": null,
+  "glottocode": "kamb1299",
+  "lat": -9.8,
+  "lon": 120.3,
+  "family": "Austronesian › Malayo-Polynesian › Central Malayo-Polynesian › Sumba-Hawu",
+  "country": "Indonesia",
+  "region": "East Sumba",
+  "summary": "East Sumbanese, speakers of Kambera, in a ranked society of nobles, commoners and hereditary servants, with the Marapu ancestral religion and horse and textile trade.",
+  "impacts": [
+   {
+    "period": "1700–1900",
+    "text": "Sumba raided and traded for slaves and horses via Ende, Bima and Makassar.",
+    "sources": [
+     {
+      "id": "needham1983"
+     }
+    ]
+   },
+   {
+    "period": "1906–13",
+    "text": "Dutch military 'pacification'; colonial rajas and districts.",
+    "sources": [
+     {
+      "id": "needham1983"
+     },
+     {
+      "id": "hoskins1993"
+     }
+    ]
+   },
+   {
+    "period": "20th c.–",
+    "text": "Protestant missions, state land categories and, recently, plantation and tourism frontiers.",
+    "sources": [
+     {
+      "id": "vel2008"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "needham1983"
+   },
+   {
+    "id": "keane1997"
+   }
+  ],
+  "glottolog_name": "Kambera"
+ },
+ {
+  "id": "dani",
+  "name": "Dani (Baliem Valley)",
+  "autonym": null,
+  "glottocode": "lowe1415",
+  "lat": -4.1,
+  "lon": 138.95,
+  "family": "Nuclear Trans New Guinea › Dani",
+  "country": "Indonesia",
+  "region": "Baliem Valley, highland Papua",
+  "summary": "Highland Papuan farmers of the Baliem Valley, heirs of one of the world's independent agricultural traditions, first contacted by outsiders in 1938.",
+  "impacts": [
+   {
+    "period": "c. 7000 BP",
+    "text": "New Guinea highlanders domesticate taro and bananas (Kuk).",
+    "sources": [
+     {
+      "id": "denham2003"
+     }
+    ]
+   },
+   {
+    "period": "1962–69",
+    "text": "Integration into Indonesia via the New York Agreement and Act of Free Choice.",
+    "sources": [
+     {
+      "id": "drooglever2009"
+     }
+    ]
+   },
+   {
+    "period": "1970s–",
+    "text": "Missions, migration from other islands and militarisation; Papuan nationalism.",
+    "sources": [
+     {
+      "id": "chauvel2005"
+     },
+     {
+      "id": "kirksey2012"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "chauvel2005"
+   }
+  ],
+  "glottolog_name": "Lower Grand Valley Dani"
+ },
+ {
+  "id": "semai",
+  "name": "Semai (Senoi Orang Asli)",
+  "autonym": null,
+  "glottocode": "sema1266",
+  "lat": 4.133,
+  "lon": 101.477,
+  "family": "Austroasiatic › Aslian",
+  "country": "Malaysia",
+  "region": "Central Malay Peninsula (Perak, Pahang)",
+  "summary": "The largest Orang Asli group, Senoi swidden farmers speaking an Aslian (Austroasiatic) language.",
+  "impacts": [
+   {
+    "period": "c. 4,000 BP",
+    "text": "Mix of Hòabìnhian foragers and incoming Austroasiatic farmers.",
+    "sources": [
+     {
+      "id": "mccoll2018"
+     },
+     {
+      "id": "bulbeck2011"
+     }
+    ]
+   },
+   {
+    "period": "18th–19th c.",
+    "text": "Orang Asli communities raided for slaves by Malay and other slavers.",
+    "sources": [
+     {
+      "id": "endicott1983"
+     }
+    ]
+   },
+   {
+    "period": "1948–60",
+    "text": "Forced resettlement during the Malayan Emergency.",
+    "sources": [
+     {
+      "id": "leary1995"
+     }
+    ]
+   },
+   {
+    "period": "1954–today",
+    "text": "Governed under the Aboriginal Peoples Act; land lost to plantations and dams.",
+    "sources": [
+     {
+      "id": "nicholas2000"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "endicott2016"
+   },
+   {
+    "id": "nicholas2000"
+   }
+  ],
+  "glottolog_name": "Semai"
+ },
+ {
+  "id": "orang-rimba",
+  "name": "Orang Rimba (Kubu)",
+  "autonym": "Orang Rimba (people of the forest)",
+  "glottocode": "kubu1239",
+  "lat": -1.95,
+  "lon": 102.6,
+  "family": "Austronesian › Malayo-Polynesian › Malayic",
+  "country": "Indonesia",
+  "region": "Bukit Duabelas and Bukit Tigapuluh forests, Jambi",
+  "summary": "Forest-dwelling hunter-gardeners of Jambi who speak a Malayic language and keep a strict boundary between forest life and settled outsiders; 'Kubu' is a pejorative exonym.",
+  "impacts": [
+   {
+    "period": "7th–13th c.",
+    "text": "Forest-product collectors in the hinterland of Melayu/Muara Jambi.",
+    "sources": [
+     {
+      "id": "miksic2017"
+     }
+    ]
+   },
+   {
+    "period": "1980s–",
+    "text": "Logging, transmigration settlements and oil palm encircle their forests.",
+    "sources": [
+     {
+      "id": "sager2008"
+     },
+     {
+      "id": "fearnside1997"
+     }
+    ]
+   },
+   {
+    "period": "2000",
+    "text": "Bukit Duabelas declared a national park.",
+    "sources": [
+     {
+      "id": "sager2008"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "sager2008"
+   }
+  ],
+  "glottolog_name": "Kubu"
+ },
+ {
+  "id": "malay",
+  "name": "Malay",
+  "autonym": null,
+  "glottocode": "stan1306",
+  "lat": 2.5,
+  "lon": 102.0,
+  "family": "Austronesian › Malayo-Polynesian › Malayic",
+  "country": "Malaysia, Indonesia, Brunei, Singapore, Thailand",
+  "region": "Straits of Malacca, coasts of Sumatra and Borneo",
+  "summary": "A language and court culture spread through trade and Islam — 'Malayu' identity absorbed many origins.",
+  "impacts": [
+   {
+    "period": "682",
+    "text": "Old Malay inscriptions of Srivijaya.",
+    "sources": [
+     {
+      "id": "manguin2004"
+     }
+    ]
+   },
+   {
+    "period": "1400–1511",
+    "text": "Melaka sets the model of Malay Muslim kingship.",
+    "sources": [
+     {
+      "id": "andaya2017"
+     }
+    ]
+   },
+   {
+    "period": "1824",
+    "text": "The Anglo-Dutch treaty splits the Malay world.",
+    "sources": [
+     {
+      "id": "tarling1962"
+     }
+    ]
+   },
+   {
+    "period": "1957–",
+    "text": "Defined in Malaysia's constitution as Muslim, Malay-speaking, following Malay custom.",
+    "sources": [
+     {
+      "id": "andaya2017"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "andaya2008"
+   },
+   {
+    "id": "andaya2017"
+   }
+  ],
+  "glottolog_name": "Standard Malay"
+ },
+ {
+  "id": "jehai",
+  "name": "Jahai (Semang Orang Asli)",
+  "autonym": null,
+  "glottocode": "jeha1242",
+  "lat": 5.637,
+  "lon": 101.541,
+  "family": "Austroasiatic › Aslian",
+  "country": "Malaysia, Thailand",
+  "region": "Northern Malay Peninsula forests",
+  "summary": "Semang foragers who carry the deepest local (Hòabìnhian) ancestry in mainland Southeast Asia.",
+  "impacts": [
+   {
+    "period": "Late Pleistocene",
+    "text": "Descend largely from early forager populations.",
+    "sources": [
+     {
+      "id": "mccoll2018"
+     }
+    ]
+   },
+   {
+    "period": "1948–60",
+    "text": "Pulled into the Emergency by both sides.",
+    "sources": [
+     {
+      "id": "leary1995"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "endicott2016"
+   },
+   {
+    "id": "benjamin2002"
+   }
+  ],
+  "glottolog_name": "Jehai"
+ },
+ {
+  "id": "batek",
+  "name": "Batek (Semang Orang Asli)",
+  "autonym": null,
+  "glottocode": "bate1262",
+  "lat": 4.822,
+  "lon": 102.382,
+  "family": "Austroasiatic › Aslian",
+  "country": "Malaysia",
+  "region": "Pahang and Kelantan, around Taman Negara",
+  "summary": "Semang foragers and traders of forest products.",
+  "impacts": [
+   {
+    "period": "20th c.",
+    "text": "Logging and the national park reshape their territory.",
+    "sources": [
+     {
+      "id": "endicott2016"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "endicott2016"
+   }
+  ],
+  "glottolog_name": "Batek"
+ },
+ {
+  "id": "temiar",
+  "name": "Temiar (Senoi Orang Asli)",
+  "autonym": null,
+  "glottocode": "temi1246",
+  "lat": 4.974,
+  "lon": 101.438,
+  "family": "Austroasiatic › Aslian",
+  "country": "Malaysia",
+  "region": "Upland Perak and Kelantan",
+  "summary": "Senoi swiddeners famous in anthropology for dream and trance practices.",
+  "impacts": [
+   {
+    "period": "1948–60",
+    "text": "Courted by communists and the British during the Emergency.",
+    "sources": [
+     {
+      "id": "leary1995"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "endicott2016"
+   }
+  ],
+  "glottolog_name": "Temiar"
+ },
+ {
+  "id": "temuan",
+  "name": "Temuan (Proto-Malay Orang Asli)",
+  "autonym": null,
+  "glottocode": "temu1239",
+  "lat": 2.782,
+  "lon": 101.906,
+  "family": "Austronesian › Malayo-Polynesian › Malayic",
+  "country": "Malaysia",
+  "region": "Selangor and Negeri Sembilan",
+  "summary": "Malayic-speaking Orang Asli, classified as 'Proto-Malay'.",
+  "impacts": [
+   {
+    "period": "1990s–2000s",
+    "text": "Land taken for highways and the airport; landmark customary land case won in 2002.",
+    "sources": [
+     {
+      "id": "endicott2016"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "endicott2016"
+   },
+   {
+    "id": "benjamin2002"
+   }
+  ],
+  "glottolog_name": "Temuan"
+ },
+ {
+  "id": "jakun",
+  "name": "Jakun (Proto-Malay Orang Asli)",
+  "autonym": null,
+  "glottocode": "jaku1244",
+  "lat": 2.646,
+  "lon": 103.342,
+  "family": "Austronesian › Malayo-Polynesian › Malayic",
+  "country": "Malaysia",
+  "region": "Johor and Pahang",
+  "summary": "Malayic-speaking Orang Asli of the southern Peninsula.",
+  "impacts": [],
+  "sources": [
+   {
+    "id": "endicott2016"
+   }
+  ],
+  "glottolog_name": "Jakun"
+ },
+ {
+  "id": "ayta",
+  "name": "Ayta Magbukon",
+  "autonym": null,
+  "glottocode": "maga1263",
+  "lat": 14.7,
+  "lon": 120.4,
+  "family": "Austronesian › Malayo-Polynesian › Northern Luzon",
+  "country": "Philippines",
+  "region": "Bataan and Zambales, Luzon",
+  "summary": "A Philippine Negrito people descended from the earliest settlers of the islands.",
+  "impacts": [
+   {
+    "period": "c. 50,000 BP",
+    "text": "Ancestors among the first arrivals in the Philippines; highest known Denisovan ancestry.",
+    "sources": [
+     {
+      "id": "larena2021"
+     },
+     {
+      "id": "larena2021b"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "larena2021"
+   }
+  ],
+  "glottolog_name": "Mag-Anchi Ayta"
+ },
+ {
+  "id": "amis",
+  "name": "Amis (Pangcah)",
+  "autonym": null,
+  "glottocode": "amis1246",
+  "lat": 23.092,
+  "lon": 121.348,
+  "family": "Austronesian › East Formosan",
+  "country": "Taiwan",
+  "region": "East coast of Taiwan",
+  "summary": "Taiwan's largest indigenous people, speakers of a Formosan language from the Austronesian homeland.",
+  "impacts": [
+   {
+    "period": "c. 5,000 BP",
+    "text": "Taiwan is the source of the Austronesian expansion.",
+    "sources": [
+     {
+      "id": "blust1995"
+     },
+     {
+      "id": "gray2009"
+     }
+    ]
+   },
+   {
+    "period": "1624–1662",
+    "text": "Dutch rule and Han Chinese settlement begin to marginalise Taiwan's indigenous peoples.",
+    "sources": [
+     {
+      "id": "andrade2008"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "blust1995"
+   }
+  ],
+  "glottolog_name": "Amis"
+ },
+ {
+  "id": "tagalog",
+  "name": "Tagalog",
+  "autonym": null,
+  "glottocode": "taga1270",
+  "lat": 14.06,
+  "lon": 121.747,
+  "family": "Austronesian › Malayo-Polynesian › Greater Central Philippine",
+  "country": "Philippines",
+  "region": "Manila and southern Luzon",
+  "summary": "The people of Manila's hinterland, converted to Catholicism under Spain and central to the 1896 revolution.",
+  "impacts": [
+   {
+    "period": "1571–1898",
+    "text": "Spanish rule centred on Manila.",
+    "sources": [
+     {
+      "id": "phelan1959"
+     }
+    ]
+   },
+   {
+    "period": "1896",
+    "text": "Philippine Revolution.",
+    "sources": [
+     {
+      "id": "ileto1979"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "phelan1959"
+   },
+   {
+    "id": "ileto1979"
+   }
+  ],
+  "glottolog_name": "Tagalog"
+ },
+ {
+  "id": "tausug",
+  "name": "Tausug",
+  "autonym": null,
+  "glottocode": "taus1251",
+  "lat": 6.0,
+  "lon": 121.1,
+  "family": "Austronesian › Malayo-Polynesian › Greater Central Philippine",
+  "country": "Philippines, Malaysia",
+  "region": "Sulu Archipelago",
+  "summary": "Muslim people of the Sulu sultanate, which resisted Spain for three centuries.",
+  "impacts": [
+   {
+    "period": "1768–1898",
+    "text": "Sulu sultanate trades sea and forest products for China, relying on slave raids.",
+    "sources": [
+     {
+      "id": "warren1981"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "warren1981"
+   }
+  ],
+  "glottolog_name": "Tausug"
+ },
+ {
+  "id": "iban",
+  "name": "Iban",
+  "autonym": null,
+  "glottocode": "iban1264",
+  "lat": 2.09,
+  "lon": 112.934,
+  "family": "Austronesian › Malayo-Polynesian › Malayic (Ibanic)",
+  "country": "Malaysia, Indonesia",
+  "region": "Sarawak and West Kalimantan",
+  "summary": "Malayic-speaking Dayak swidden farmers whose migrations and headhunting raids shaped Borneo; levies for the Brooke Raj.",
+  "impacts": [
+   {
+    "period": "1841–1946",
+    "text": "Recruited and also fought by the Brooke Rajahs.",
+    "sources": [
+     {
+      "id": "king1993"
+     }
+    ]
+   },
+   {
+    "period": "1970s–",
+    "text": "Logging and plantations transform longhouse lands.",
+    "sources": [
+     {
+      "id": "gaveau2016"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "king1993"
+   }
+  ],
+  "glottolog_name": "Iban"
+ },
+ {
+  "id": "ngaju",
+  "name": "Ngaju Dayak",
+  "autonym": null,
+  "glottocode": "ngaj1237",
+  "lat": -1.585,
+  "lon": 112.794,
+  "family": "Austronesian › Malayo-Polynesian › Barito",
+  "country": "Indonesia",
+  "region": "Central Kalimantan rivers",
+  "summary": "Barito-speaking Dayak of Central Kalimantan, with the Kaharingan religion.",
+  "impacts": [
+   {
+    "period": "1967–",
+    "text": "State forest, logging, then oil palm and the failed Mega Rice Project.",
+    "sources": [
+     {
+      "id": "li2000"
+     },
+     {
+      "id": "gaveau2016"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "king1993"
+   }
+  ],
+  "glottolog_name": "Ngaju"
+ },
+ {
+  "id": "kenyah",
+  "name": "Kenyah",
+  "autonym": null,
+  "glottocode": "main1275",
+  "lat": 3.43,
+  "lon": 116.474,
+  "family": "Austronesian › Malayo-Polynesian › North Borneo",
+  "country": "Malaysia, Indonesia",
+  "region": "Upper Baram and Apo Kayan, central Borneo",
+  "summary": "Longhouse-dwelling stratified societies of central Borneo.",
+  "impacts": [
+   {
+    "period": "1970s–",
+    "text": "Resettlement and logging in the interior.",
+    "sources": [
+     {
+      "id": "king1993"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "king1993"
+   }
+  ],
+  "glottolog_name": "Usun Apau Kenyah"
+ },
+ {
+  "id": "maanyan",
+  "name": "Ma'anyan",
+  "autonym": null,
+  "glottocode": "maan1238",
+  "lat": -2.124,
+  "lon": 115.092,
+  "family": "Austronesian › Malayo-Polynesian › Barito",
+  "country": "Indonesia",
+  "region": "South-east Kalimantan",
+  "summary": "Barito Dayak whose language is the closest relative of Malagasy.",
+  "impacts": [
+   {
+    "period": "c. 500–900",
+    "text": "Barito speakers sail to Madagascar.",
+    "sources": [
+     {
+      "id": "adelaar2005"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "adelaar2005"
+   }
+  ],
+  "glottolog_name": "Ma'anyan"
+ },
+ {
+  "id": "malagasy",
+  "name": "Malagasy",
+  "autonym": null,
+  "glottocode": "plat1254",
+  "lat": -19.591,
+  "lon": 47.121,
+  "family": "Austronesian › Malayo-Polynesian › Barito",
+  "country": "Madagascar",
+  "region": "Madagascar",
+  "summary": "The westernmost Austronesians, descended from Island Southeast Asian and African ancestors.",
+  "impacts": [
+   {
+    "period": "c. 1,200–1,500 BP",
+    "text": "Founded partly by a small group of Indonesian women.",
+    "sources": [
+     {
+      "id": "cox2012"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "adelaar2005"
+   },
+   {
+    "id": "cox2012"
+   }
+  ],
+  "glottolog_name": "Plateau Malagasy"
+ },
+ {
+  "id": "cham",
+  "name": "Cham",
+  "autonym": null,
+  "glottocode": "west2650",
+  "lat": 11.6,
+  "lon": 108.9,
+  "family": "Austronesian › Malayo-Polynesian › Chamic",
+  "country": "Vietnam, Cambodia",
+  "region": "Central Vietnam and Cambodia",
+  "summary": "Austronesian people of the former kingdom of Champa, now Muslim and Hindu (Balamon) communities.",
+  "impacts": [
+   {
+    "period": "192–1471",
+    "text": "Kingdom of Champa on the coast of today's Vietnam.",
+    "sources": [
+     {
+      "id": "coedes1968"
+     }
+    ]
+   },
+   {
+    "period": "1471",
+    "text": "Vijaya falls to Đại Việt.",
+    "sources": [
+     {
+      "id": "hall2011"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "thurgood1999"
+   }
+  ],
+  "glottolog_name": "Western Cham"
+ },
+ {
+  "id": "kodi",
+  "name": "Kodi (West Sumba)",
+  "autonym": null,
+  "glottocode": "kodi1247",
+  "lat": -9.637,
+  "lon": 119.114,
+  "family": "Austronesian › Malayo-Polynesian › Sumba-Hawu",
+  "country": "Indonesia",
+  "region": "Western tip of Sumba",
+  "summary": "West Sumbanese domain studied by Janet Hoskins, with calendrical rites (the Nale festival) and exchange.",
+  "impacts": [
+   {
+    "period": "19th c.",
+    "text": "Exposure to slave raiding.",
+    "sources": [
+     {
+      "id": "needham1983"
+     }
+    ]
+   },
+   {
+    "period": "1906–13",
+    "text": "Colonial pacification and a new calendar of history.",
+    "sources": [
+     {
+      "id": "hoskins1993"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "hoskins1993"
+   }
+  ],
+  "glottolog_name": "Kodi"
+ },
+ {
+  "id": "lamboya",
+  "name": "Laboya / Lamboya (West Sumba)",
+  "autonym": null,
+  "glottocode": "lamb1273",
+  "lat": -9.704,
+  "lon": 119.344,
+  "family": "Austronesian › Malayo-Polynesian › Sumba-Hawu",
+  "country": "Indonesia",
+  "region": "South-west Sumba",
+  "summary": "A West Sumbanese domain and language (Laboya), with Marapu ancestral houses and the Nale festival.",
+  "impacts": [
+   {
+    "period": "20th c.",
+    "text": "Colonial and Indonesian state administration redraws domains into districts.",
+    "sources": [
+     {
+      "id": "vel2008"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "vel2008"
+   }
+  ],
+  "glottolog_name": "Lamboya"
+ },
+ {
+  "id": "biak",
+  "name": "Biak",
+  "autonym": null,
+  "glottocode": "biak1248",
+  "lat": -0.952,
+  "lon": 135.879,
+  "family": "Austronesian › Malayo-Polynesian › South Halmahera–West New Guinea",
+  "country": "Indonesia",
+  "region": "Biak and the Cenderawasih Bay",
+  "summary": "Austronesian seafarers of northern Papua, long linked to Tidore and its raiding networks.",
+  "impacts": [
+   {
+    "period": "1600–1870",
+    "text": "Agents and victims in the Tidore tribute and slave system.",
+    "sources": [
+     {
+      "id": "andaya1993"
+     }
+    ]
+   },
+   {
+    "period": "1998",
+    "text": "Biak massacre after a Morning Star flag-raising.",
+    "sources": [
+     {
+      "id": "chauvel2005"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "andaya1993"
+   },
+   {
+    "id": "chauvel2005"
+   }
+  ],
+  "glottolog_name": "Biak"
+ },
+ {
+  "id": "ternatean",
+  "name": "Ternateans",
+  "autonym": null,
+  "glottocode": "tern1247",
+  "lat": 0.806,
+  "lon": 127.333,
+  "family": "North Halmahera (Papuan)",
+  "country": "Indonesia",
+  "region": "Ternate, North Maluku",
+  "summary": "Speakers of a non-Austronesian (West Papuan) language; rulers of the clove sultanate of Ternate.",
+  "impacts": [
+   {
+    "period": "1450–1606",
+    "text": "Muslim clove sultanate; Portuguese fort (1522) and expulsion (1575).",
+    "sources": [
+     {
+      "id": "andaya1993"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "andaya1993"
+   }
+  ],
+  "glottolog_name": "Ternate"
+ },
+ {
+  "id": "bandanese",
+  "name": "Bandanese (Banda Eli, Kei)",
+  "autonym": null,
+  "glottocode": "band1355",
+  "lat": -5.421,
+  "lon": 133.142,
+  "family": "Austronesian › Malayo-Polynesian › Central Malayo-Polynesian",
+  "country": "Indonesia",
+  "region": "Banda Eli & Banda Elat, Kei Islands",
+  "summary": "Descendants of Bandanese who fled the VOC conquest of 1621, still speaking a Banda language in Kei.",
+  "impacts": [
+   {
+    "period": "1621",
+    "text": "VOC conquest of Banda; mass killing, enslavement and flight.",
+    "sources": [
+     {
+      "id": "loth1995"
+     }
+    ]
+   },
+   {
+    "period": "17th c.–",
+    "text": "Exile community keeps memory of the lost islands.",
+    "sources": [
+     {
+      "id": "kaartinen2010"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "kaartinen2010"
+   }
+  ],
+  "glottolog_name": "Banda (Indonesia)"
+ },
+ {
+  "id": "tetum",
+  "name": "Tetum",
+  "autonym": null,
+  "glottocode": "tetu1246",
+  "lat": -8.584,
+  "lon": 125.583,
+  "family": "Austronesian › Malayo-Polynesian › Central Malayo-Polynesian",
+  "country": "Timor-Leste",
+  "region": "Timor",
+  "summary": "Timor's lingua franca, official language of Timor-Leste.",
+  "impacts": [
+   {
+    "period": "1600–1800",
+    "text": "Timorese lords, Topasses and Portuguese contest sandalwood.",
+    "sources": [
+     {
+      "id": "hagerdal2012"
+     }
+    ]
+   },
+   {
+    "period": "1975–1999",
+    "text": "Indonesian occupation.",
+    "sources": [
+     {
+      "id": "cavr2005"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "hagerdal2012"
+   }
+  ],
+  "glottolog_name": "Tetun Dili"
+ },
+ {
+  "id": "atoni",
+  "name": "Atoni (Uab Meto)",
+  "autonym": null,
+  "glottocode": "uabm1237",
+  "lat": -9.773,
+  "lon": 124.144,
+  "family": "Austronesian › Malayo-Polynesian › Central Malayo-Polynesian",
+  "country": "Indonesia, Timor-Leste",
+  "region": "West Timor",
+  "summary": "Dawan/Atoni Pah Meto of West Timor.",
+  "impacts": [
+   {
+    "period": "1600–1800",
+    "text": "Divided between VOC Kupang and Portuguese-Topass spheres.",
+    "sources": [
+     {
+      "id": "hagerdal2012"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "hagerdal2012"
+   }
+  ],
+  "glottolog_name": "Uab Meto"
+ },
+ {
+  "id": "batak-toba",
+  "name": "Toba Batak",
+  "autonym": null,
+  "glottocode": "bata1289",
+  "lat": 2.355,
+  "lon": 99.176,
+  "family": "Austronesian › Malayo-Polynesian › Northwest Sumatra–Barrier Islands",
+  "country": "Indonesia",
+  "region": "Lake Toba, North Sumatra",
+  "summary": "Highland people of North Sumatra, largely Protestant since 19th-century German missions.",
+  "impacts": [
+   {
+    "period": "1870–1940",
+    "text": "Plantation belt expands onto lands of Batak and Malay cultivators.",
+    "sources": [
+     {
+      "id": "stoler1985"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "stoler1985"
+   }
+  ],
+  "glottolog_name": "Batak Toba"
+ },
+ {
+  "id": "amungme",
+  "name": "Amungme",
+  "autonym": null,
+  "glottocode": "dama1272",
+  "lat": -4.173,
+  "lon": 137.496,
+  "family": "Nuclear Trans New Guinea",
+  "country": "Indonesia",
+  "region": "Highlands around Grasberg, Papua",
+  "summary": "Highland people whose sacred mountain became the Freeport mine.",
+  "impacts": [
+   {
+    "period": "1967–",
+    "text": "Freeport mine; displacement, pollution and militarisation.",
+    "sources": [
+     {
+      "id": "leith2003"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "leith2003"
+   }
+  ],
+  "glottolog_name": "Damal"
+ },
+ {
+  "id": "kamoro",
+  "name": "Kamoro",
+  "autonym": null,
+  "glottocode": "kamo1255",
+  "lat": -4.304,
+  "lon": 135.883,
+  "family": "Asmat-Kamoro (Papuan)",
+  "country": "Indonesia",
+  "region": "South coast lowlands, Mimika, Papua",
+  "summary": "Sago-forest and river people of the Mimika coast, downstream of Freeport's tailings.",
+  "impacts": [
+   {
+    "period": "1970s–",
+    "text": "Tailings and the mining town of Timika transform their rivers and estuaries.",
+    "sources": [
+     {
+      "id": "leith2003"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "leith2003"
+   }
+  ],
+  "glottolog_name": "Kamoro"
+ },
+ {
+  "id": "marind",
+  "name": "Marind",
+  "autonym": null,
+  "glottocode": "nucl1622",
+  "lat": -8.157,
+  "lon": 140.009,
+  "family": "Anim (Papuan)",
+  "country": "Indonesia",
+  "region": "Merauke, south Papua",
+  "summary": "Lowland people of south Papua, at the centre of transmigration and the MIFEE agribusiness project.",
+  "impacts": [
+   {
+    "period": "1902–",
+    "text": "Dutch post at Merauke; epidemics in the early 20th century.",
+    "sources": [
+     {
+      "id": "chauvel2005"
+     }
+    ]
+   },
+   {
+    "period": "2010–",
+    "text": "MIFEE and food-estate concessions on Marind land.",
+    "sources": [
+     {
+      "id": "ginting2013"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "ginting2013"
+   }
+  ],
+  "glottolog_name": "Marind"
+ },
+ {
+  "id": "madurese",
+  "name": "Madurese",
+  "autonym": null,
+  "glottocode": "nucl1460",
+  "lat": -7.0,
+  "lon": 113.0,
+  "family": "Austronesian › Malayo-Polynesian › Madurese",
+  "country": "Indonesia",
+  "region": "Madura and East Java; migrants in Kalimantan",
+  "summary": "People of Madura, many of whom migrated to East Java and Kalimantan, including as transmigrants.",
+  "impacts": [
+   {
+    "period": "1990s–2001",
+    "text": "Violent conflicts with Dayak (and Malay) communities in West Kalimantan (1996–97, 1999) and Central Kalimantan (2001).",
+    "sources": [
+     {
+      "id": "henley2007"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "fearnside1997"
+   }
+  ],
+  "glottolog_name": "Madurese"
+ },
+ {
+  "id": "yolngu",
+  "name": "Yolŋu",
+  "autonym": null,
+  "glottocode": "djam1256",
+  "lat": -12.021,
+  "lon": 135.59,
+  "family": "Pama-Nyungan",
+  "country": "Australia",
+  "region": "North-east Arnhem Land",
+  "summary": "Aboriginal clans of Arnhem Land with centuries of contact with Makassan trepangers.",
+  "impacts": [
+   {
+    "period": "65,000–50,000 BP",
+    "text": "Descendants of the first peoples of Sahul.",
+    "sources": [
+     {
+      "id": "clarkson2017"
+     }
+    ]
+   },
+   {
+    "period": "1720–1907",
+    "text": "Trade and exchange with Makassan trepangers.",
+    "sources": [
+     {
+      "id": "macknight1976"
+     }
+    ]
+   },
+   {
+    "period": "1906–07",
+    "text": "Northern Territory authorities (then under South Australia) end Makassan voyages.",
+    "sources": [
+     {
+      "id": "macknight1976"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "macknight1976"
+   },
+   {
+    "id": "broome2010"
+   }
+  ],
+  "glottolog_name": "Djambarrpuyngu"
+ },
+ {
+  "id": "toraja",
+  "name": "Toraja (Sa'dan)",
+  "autonym": null,
+  "glottocode": "tora1261",
+  "lat": -2.971,
+  "lon": 119.829,
+  "family": "Austronesian › Malayo-Polynesian › South Sulawesi",
+  "country": "Indonesia",
+  "region": "Highland South Sulawesi",
+  "summary": "Highland rice farmers famous for tongkonan houses and funeral feasts, largely Protestant since Dutch missions.",
+  "impacts": [
+   {
+    "period": "19th c.",
+    "text": "Highlanders raided for slaves by lowland Bugis.",
+    "sources": [
+     {
+      "id": "sutherland1983"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "id": "pelras1996"
+   }
+  ],
+  "glottolog_name": "Toraja-Sa'dan"
+ }
+]

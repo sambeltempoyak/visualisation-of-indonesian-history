@@ -1,0 +1,7 @@
+[
+{"id":"bellwood2007","type":"book","authors":"Bellwood, Peter","year":2007,"title":"Prehistory of the Indo-Malaysian Archipelago","container":"ANU E Press","publisher":"ANU E Press","pages":"","isbn":"9781921313127","doi":"10.22459/PIMA.12.2007","peer_reviewed":true,"open_access":true,"note":"Standard synthesis."},
+{"id":"clarkson2017","type":"journal","authors":"Clarkson, Chris; et al.","year":2017,"title":"Human occupation of northern Australia by 65,000 years ago","container":"Nature","volume":"547","pages":"306–310","doi":"10.1038/nature22968","peer_reviewed":true,"open_access":false,"note":"Madjedbebe."},
+{"id":"lipson2014","type":"journal","authors":"Lipson, Mark; et al.","year":2014,"title":"Reconstructing Austronesian population history in Island Southeast Asia","container":"Nature Communications","volume":"5","pages":"4689","doi":"10.1038/ncomms5689","peer_reviewed":true,"open_access":true,"note":"Genetic."},
+{"id":"coedes1968","type":"book","authors":"Coedès, George","year":1968,"title":"The Indianized States of Southeast Asia","container":"University of Hawaii Press","publisher":"University of Hawaii Press","peer_reviewed":false,"open_access":false,"note":"Classic."},
+{"id":"reid1988","type":"book","authors":"Reid, Anthony","year":1988,"title":"Southeast Asia in the Age of Commerce, 1450–1680, Vol. 1","container":"Yale University Press","publisher":"Yale University Press","isbn":"9780300047509","peer_reviewed":false,"open_access":false,"note":"Foundational."}
+]
