@@ -48,5 +48,30 @@
    1500,
    2018
   ]
+ },
+ {
+  "id": "western-population",
+  "title": "The Europeans of the Indies",
+  "subtitle": "Who counted as European, how many, where — c. 1600 to today",
+  "author": "Ejak (Reza Arlianda), with Claude",
+  "date": "2026-11-21",
+  "cover": "From a few hundred behind a fort wall to a quarter of a million, and then the great departure.",
+  "region": [
+   [
+    -11,
+    94
+   ],
+   [
+    7,
+    141
+   ]
+  ],
+  "basemap": "relief",
+  "file": "western-population.json",
+  "slides": 20,
+  "span": [
+   1632,
+   2001
+  ]
  }
 ]

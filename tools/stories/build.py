@@ -75,7 +75,7 @@ def parse(md_path, src, errors):
             if f.get('kind') not in FLOW_KINDS: errors.append(f'{where}: flow kind "{f.get("kind")}"')
             pts = [f.get('from')] + list(f.get('via') or []) + [f.get('to')]
             if any(not (isinstance(q, list) and len(q) == 2) for q in pts): errors.append(f'{where}: flow {k + 1} needs from/to [lon, lat]'); continue
-            if any(not (-45 < q[1] < 45 and -20 < q[0] < 180) for q in pts): errors.append(f'{where}: flow {k + 1} coordinates look like [lat, lon]; use [lon, lat]')
+            if any(not (-60 < q[1] < 62 and -30 < q[0] < 180) for q in pts): errors.append(f'{where}: flow {k + 1} coordinates look like [lat, lon]; use [lon, lat]')
             slide['flows'].append({'kind': f['kind'], 'path': pts, 'label': f.get('label', ''), 'weight': max(1, min(4, int(f.get('weight', 2))))})
         slide['areas'] = []
         for a in spec.get('areas') or []:
