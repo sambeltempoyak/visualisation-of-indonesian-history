@@ -1,5 +1,30 @@
 [
  {
+  "id": "archipelago-layers",
+  "title": "Layers on the Archipelago",
+  "subtitle": "Why Sumba? Hegemonic waves across Indonesia, and an island at their edge, c. 2000 BCE – 2018",
+  "author": "Ejak (Reza Arlianda), with Claude",
+  "date": "2026-11-21",
+  "cover": "Five waves of outside power, read through Van Vollenhoven, and the island where they arrived late, thin, or as extraction.",
+  "region": [
+   [
+    -11.5,
+    94.5
+   ],
+   [
+    6.5,
+    141.5
+   ]
+  ],
+  "basemap": "relief",
+  "file": "archipelago-layers.json",
+  "slides": 12,
+  "span": [
+   -2000,
+   2018
+  ]
+ },
+ {
   "id": "sea-slave-network",
   "title": "Bonds across the water",
   "subtitle": "The Southeast Asian slave network, c. 1500–1900",

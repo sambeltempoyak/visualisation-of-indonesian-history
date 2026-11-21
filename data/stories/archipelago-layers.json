@@ -1,0 +1,1662 @@
+{
+ "id": "archipelago-layers",
+ "title": "Layers on the Archipelago",
+ "subtitle": "Why Sumba? Hegemonic waves across Indonesia, and an island at their edge, c. 2000 BCE – 2018",
+ "author": "Ejak (Reza Arlianda), with Claude",
+ "date": "2026-11-21",
+ "region": [
+  [
+   -11.5,
+   94.5
+  ],
+  [
+   6.5,
+   141.5
+  ]
+ ],
+ "basemap": "relief",
+ "geo": [
+  "indonesia-prov",
+  "sumba-kab"
+ ],
+ "cover": "Five waves of outside power, read through Van Vollenhoven, and the island where they arrived late, thin, or as extraction.",
+ "intro": "Draft for the Research Conversation (24 Nov 2026), after Eva's request of 20 November: show the geography of Indonesia, then how its history unfolded, so that the choice of Sumba makes sense. The spine is Van Vollenhoven's own argument that adat grew from an Austronesian base onto which Hindu-Buddhist, Islamic, Chinese and Western elements were laid. Each slide asks the same two questions: where did this wave land hardest, and what reached Sumba?",
+ "slides": [
+  {
+   "id": "s01",
+   "label": "Today",
+   "title": "An archipelago between two continents",
+   "text": "Indonesia is a chain of some seventeen thousand islands between mainland Asia and Australia. Reid describes the region as lands joined, not split, by the sea and timed by the monsoon winds, so outsiders arrived along a few great routes from India and China. Ananta and colleagues count over six hundred ethnic groups in the 2010 census. Sumba sits south of these routes, beyond the busy straits of Java and Sumatra.\n\nMore: Speaking notes: about 17,000 islands; over 600 ethnic groups (check Ananta's exact figure, 633 or 630, before saying it aloud).",
+   "more": "",
+   "year": [
+    2010,
+    2010
+   ],
+   "camera": [
+    -3.0,
+    117.0,
+    4
+   ],
+   "places": [
+    {
+     "name": "India (Coromandel coast)",
+     "lat": 11.0,
+     "lon": 79.8,
+     "kind": "city",
+     "note": "Source of Indic religion and trade"
+    },
+    {
+     "name": "South China (Guangzhou)",
+     "lat": 23.13,
+     "lon": 113.26,
+     "kind": "city",
+     "note": "Source of Chinese trade and settlers"
+    },
+    {
+     "name": "Northern Australia",
+     "lat": -12.3,
+     "lon": 134.5,
+     "kind": "village",
+     "note": "Visited by Makassan trepang fleets"
+    },
+    {
+     "name": "Sumba",
+     "lat": -9.7,
+     "lon": 119.9,
+     "kind": "adat",
+     "note": "South of the main east–west sea lanes"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "trade",
+     "path": [
+      [
+       79.8,
+       11.0
+      ],
+      [
+       92.0,
+       6.0
+      ],
+      [
+       98.5,
+       3.5
+      ],
+      [
+       104.7,
+       -2.9
+      ]
+     ],
+     "label": "Monsoon route from India",
+     "weight": 3
+    },
+    {
+     "kind": "trade",
+     "path": [
+      [
+       113.26,
+       23.13
+      ],
+      [
+       110.0,
+       12.0
+      ],
+      [
+       107.5,
+       2.0
+      ],
+      [
+       106.8,
+       -6.1
+      ]
+     ],
+     "label": "South China Sea route",
+     "weight": 3
+    }
+   ],
+   "areas": [
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Timur",
+     "role": "focus",
+     "label": "Sumba"
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat",
+     "role": "focus",
+     "label": ""
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat Daya",
+     "role": "focus",
+     "label": ""
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Tengah",
+     "role": "focus",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "reid1988",
+     "pages": "pp. 1–10",
+     "tier": "peer-reviewed",
+     "cite": "Reid 1988, pp. 1–10"
+    },
+    {
+     "id": "bellwood2007",
+     "pages": "pp. 1–39",
+     "tier": "peer-reviewed",
+     "cite": "Bellwood 2007, pp. 1–39"
+    },
+    {
+     "id": "ananta2014",
+     "pages": "",
+     "tier": "other",
+     "cite": "Ananta 2014"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s02",
+   "label": "c. 2000 BCE – 500 CE",
+   "title": "The base layer",
+   "text": "Van Vollenhoven begins his account of adat with a time before any foreign influence, when only the indigenous law of the Malayo-Polynesians existed in the archipelago. Bellwood traces those Austronesian speakers south from Taiwan through the Philippines and Sulawesi into the island chains. Sumba shares this base with the rest of the archipelago. What differs from island to island is how much was laid on top.",
+   "more": "",
+   "year": [
+    -2000,
+    500
+   ],
+   "camera": [
+    -3.0,
+    117.0,
+    4
+   ],
+   "places": [
+    {
+     "name": "Taiwan",
+     "lat": 23.7,
+     "lon": 121.0,
+     "kind": "village",
+     "note": "Starting point of the Austronesian dispersal"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "migration",
+     "path": [
+      [
+       121.0,
+       23.7
+      ],
+      [
+       121.0,
+       14.0
+      ]
+     ],
+     "label": "Into the Philippines",
+     "weight": 3
+    },
+    {
+     "kind": "migration",
+     "path": [
+      [
+       121.0,
+       14.0
+      ],
+      [
+       122.0,
+       5.0
+      ],
+      [
+       120.0,
+       0.0
+      ],
+      [
+       119.4,
+       -5.1
+      ]
+     ],
+     "label": "South into Sulawesi",
+     "weight": 2
+    },
+    {
+     "kind": "migration",
+     "path": [
+      [
+       119.4,
+       -5.1
+      ],
+      [
+       119.6,
+       -8.0
+      ],
+      [
+       119.9,
+       -9.7
+      ]
+     ],
+     "label": "To Nusa Tenggara and Sumba",
+     "weight": 2
+    },
+    {
+     "kind": "migration",
+     "path": [
+      [
+       119.4,
+       -5.1
+      ],
+      [
+       113.0,
+       -5.0
+      ],
+      [
+       106.8,
+       -6.1
+      ]
+     ],
+     "label": "West to Java and Sumatra",
+     "weight": 2
+    }
+   ],
+   "areas": [],
+   "sources": [
+    {
+     "id": "vollenhoven1906",
+     "pages": "pp. 4–5",
+     "tier": "primary",
+     "cite": "Vollenhoven 1906, pp. 4–5"
+    },
+    {
+     "id": "bellwood2007",
+     "pages": "pp. 201–254",
+     "tier": "peer-reviewed",
+     "cite": "Bellwood 2007, pp. 201–254"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s03",
+   "label": "c. 400 – 1400",
+   "title": "The Hindu-Buddhist layer",
+   "text": "Van Vollenhoven dates the Hindu contribution to adat from the eighth century, after Hindu civilisation reached Java. Coedès places the earliest Indonesian inscriptions at Kutai in Borneo. Wolters argues that local rulers chose and localised Indian ideas rather than receiving them whole. The map shows where that layer settled: along the western sea lanes, in Sumatra, Java and Bali. Nothing marks it on Sumba.",
+   "more": "",
+   "year": [
+    400,
+    1400
+   ],
+   "camera": [
+    -4.5,
+    108.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Kutai",
+     "lat": -0.4,
+     "lon": 116.98,
+     "kind": "kingdom",
+     "note": "Earliest Sanskrit inscriptions in Indonesia"
+    },
+    {
+     "name": "Palembang",
+     "lat": -2.99,
+     "lon": 104.76,
+     "kind": "kingdom",
+     "note": "Centre of Srivijaya"
+    },
+    {
+     "name": "Borobudur",
+     "lat": -7.61,
+     "lon": 110.2,
+     "kind": "kingdom",
+     "note": "Buddhist monument, Central Java"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "mission",
+     "path": [
+      [
+       79.8,
+       11.0
+      ],
+      [
+       92.0,
+       6.0
+      ],
+      [
+       98.5,
+       3.5
+      ],
+      [
+       104.76,
+       -2.99
+      ]
+     ],
+     "label": "Indic religion and scripts by sea",
+     "weight": 3
+    },
+    {
+     "kind": "mission",
+     "path": [
+      [
+       104.76,
+       -2.99
+      ],
+      [
+       107.0,
+       -5.5
+      ],
+      [
+       110.2,
+       -7.61
+      ]
+     ],
+     "label": "Into Java",
+     "weight": 2
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Sumatera Selatan",
+     "role": "claim",
+     "label": "Srivijaya"
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Jambi",
+     "role": "claim",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Jawa Tengah",
+     "role": "claim",
+     "label": "Temple kingdoms of Central Java"
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Daerah Istimewa Yogyakarta",
+     "role": "claim",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Jawa Timur",
+     "role": "claim",
+     "label": "Majapahit"
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Bali",
+     "role": "claim",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Kalimantan Timur",
+     "role": "claim",
+     "label": "Kutai inscriptions"
+    }
+   ],
+   "sources": [
+    {
+     "id": "vollenhoven1906",
+     "pages": "pp. 4–5",
+     "tier": "primary",
+     "cite": "Vollenhoven 1906, pp. 4–5"
+    },
+    {
+     "id": "coedes1968",
+     "pages": "p. 52",
+     "tier": "peer-reviewed",
+     "cite": "Coedès 1968, p. 52"
+    },
+    {
+     "id": "wolters1999",
+     "pages": "pp. 41–55",
+     "tier": "peer-reviewed",
+     "cite": "Wolters 1999, pp. 41–55"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s04",
+   "label": "1365",
+   "title": "A name on Majapahit's list",
+   "text": "The Deśawarṇana, a court poem of 1365 translated by Robson, lists Sumba among the lands that paid homage to Majapahit. It is a court record, and Ricklefs warns that such lists show the reach of a court's imagination more than its rule. For Sumba, this is the first appearance in a written source, and it comes as a name on someone else's list.\n\nMore: Check before presenting: the exact canto and verse where Sumba appears in Robson's translation (it is usually given as canto 14). This slide is the first instance of a pattern the rest of the story repeats: Sumba is claimed from outside long before it is governed.",
+   "more": "",
+   "year": [
+    1365,
+    1365
+   ],
+   "camera": [
+    -8.5,
+    116.0,
+    6
+   ],
+   "places": [
+    {
+     "name": "Trowulan",
+     "lat": -7.56,
+     "lon": 112.38,
+     "kind": "kingdom",
+     "note": "Majapahit's capital"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "colonial",
+     "path": [
+      [
+       112.38,
+       -7.56
+      ],
+      [
+       115.5,
+       -8.3
+      ],
+      [
+       118.0,
+       -8.9
+      ],
+      [
+       119.9,
+       -9.7
+      ]
+     ],
+     "label": "Claimed overlordship (Deśawarṇana)",
+     "weight": 1
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Jawa Timur",
+     "role": "focus",
+     "label": "Majapahit court"
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Timur",
+     "role": "claim",
+     "label": "Listed as tributary"
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat",
+     "role": "claim",
+     "label": ""
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat Daya",
+     "role": "claim",
+     "label": ""
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Tengah",
+     "role": "claim",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "robson1995",
+     "pages": "canto 14",
+     "tier": "primary",
+     "cite": "Mpu Prapañca; Robson 1995, canto 14"
+    },
+    {
+     "id": "ricklefs2008",
+     "pages": "pp. 3–20",
+     "tier": "peer-reviewed",
+     "cite": "Ricklefs 2008, pp. 3–20"
+    }
+   ],
+   "evidence": "primary"
+  },
+  {
+   "id": "s05",
+   "label": "1290s – 1660s",
+   "title": "The Islamic layer",
+   "text": "Van Vollenhoven places the Islamic contribution to adat in the fourteenth and fifteenth centuries. Ricklefs traces Islam from Pasai in north Sumatra, and Reid shows it spreading with trade through Melaka and the ports of Java's north coast. Gowa-Tallo in Makassar accepted Islam in 1605. Sumba met this wave on its shoreline, through traders from Makassar and Bugis lands, while the interior kept its own ancestral religion.",
+   "more": "",
+   "year": [
+    1290,
+    1669
+   ],
+   "camera": [
+    -4.0,
+    112.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Pasai",
+     "lat": 5.18,
+     "lon": 97.14,
+     "kind": "kingdom",
+     "note": "Early Muslim port-state"
+    },
+    {
+     "name": "Melaka",
+     "lat": 2.19,
+     "lon": 102.25,
+     "kind": "port",
+     "note": "Great entrepôt"
+    },
+    {
+     "name": "Makassar",
+     "lat": -5.14,
+     "lon": 119.42,
+     "kind": "city",
+     "note": "Its traders came to Sumba's coast"
+    },
+    {
+     "name": "Kodi",
+     "lat": -9.56,
+     "lon": 119.03,
+     "kind": "port",
+     "note": "Makassarese and Bugis traders settled here (Soelarto)"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "mission",
+     "path": [
+      [
+       97.14,
+       5.18
+      ],
+      [
+       102.25,
+       2.19
+      ]
+     ],
+     "label": "Islam along the straits",
+     "weight": 3
+    },
+    {
+     "kind": "mission",
+     "path": [
+      [
+       102.25,
+       2.19
+      ],
+      [
+       106.0,
+       -3.0
+      ],
+      [
+       110.6,
+       -6.9
+      ]
+     ],
+     "label": "To Java's north coast",
+     "weight": 3
+    },
+    {
+     "kind": "mission",
+     "path": [
+      [
+       110.6,
+       -6.9
+      ],
+      [
+       115.0,
+       -5.8
+      ],
+      [
+       119.42,
+       -5.14
+      ]
+     ],
+     "label": "East to Makassar",
+     "weight": 2
+    },
+    {
+     "kind": "trade",
+     "path": [
+      [
+       119.42,
+       -5.14
+      ],
+      [
+       119.2,
+       -7.0
+      ],
+      [
+       119.25,
+       -8.4
+      ],
+      [
+       118.95,
+       -9.2
+      ],
+      [
+       119.03,
+       -9.56
+      ]
+     ],
+     "label": "Muslim traders to Sumba's coast",
+     "weight": 1
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Aceh",
+     "role": "claim",
+     "label": "Pasai, then Aceh"
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Jawa Tengah",
+     "role": "claim",
+     "label": "Demak and the north coast"
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Banten",
+     "role": "claim",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Sulawesi Selatan",
+     "role": "claim",
+     "label": "Gowa-Tallo (Makassar), Muslim from 1605"
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Maluku Utara",
+     "role": "claim",
+     "label": "Ternate and Tidore"
+    }
+   ],
+   "sources": [
+    {
+     "id": "vollenhoven1906",
+     "pages": "pp. 4–5",
+     "tier": "primary",
+     "cite": "Vollenhoven 1906, pp. 4–5"
+    },
+    {
+     "id": "ricklefs2008",
+     "pages": "pp. 3–17",
+     "tier": "peer-reviewed",
+     "cite": "Ricklefs 2008, pp. 3–17"
+    },
+    {
+     "id": "reid1993",
+     "pages": "pp. 62–90",
+     "tier": "peer-reviewed",
+     "cite": "Reid 1993, pp. 62–90"
+    },
+    {
+     "id": "cummings2002",
+     "pages": "",
+     "tier": "peer-reviewed",
+     "cite": "Cummings 2002"
+    },
+    {
+     "id": "soelarto1980",
+     "pages": "p. 28",
+     "tier": "other",
+     "cite": "Soelarto 1980, p. 28"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s06",
+   "label": "1405 – 1700s",
+   "title": "The Chinese layer",
+   "text": "Van Vollenhoven notes that the late Middle Ages brought Chinese settlers with their own popular law, which colonial law later treated as the law of \"foreign orientals\". Wade reassesses the Zheng He voyages of the early 1400s as a show of Ming power. Chinese communities grew in the ports of Java and later in the mining districts of Borneo and Bangka. In the sources used here, Sumba lay outside this network.",
+   "more": "",
+   "year": [
+    1405,
+    1740
+   ],
+   "camera": [
+    -1.0,
+    108.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Semarang",
+     "lat": -6.97,
+     "lon": 110.42,
+     "kind": "port",
+     "note": "North-coast port linked to Zheng He's memory"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "trade",
+     "path": [
+      [
+       113.26,
+       23.13
+      ],
+      [
+       110.0,
+       12.0
+      ],
+      [
+       108.0,
+       2.0
+      ],
+      [
+       109.5,
+       -4.5
+      ],
+      [
+       110.42,
+       -6.97
+      ]
+     ],
+     "label": "Zheng He's fleets, then junk trade",
+     "weight": 3
+    },
+    {
+     "kind": "migration",
+     "path": [
+      [
+       113.26,
+       23.13
+      ],
+      [
+       110.0,
+       12.0
+      ],
+      [
+       107.5,
+       2.0
+      ],
+      [
+       106.8,
+       -6.1
+      ]
+     ],
+     "label": "Settlers to Java's ports",
+     "weight": 2
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Daerah Khusus Ibukota Jakarta",
+     "role": "claim",
+     "label": "Chinese quarter of Batavia"
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Jawa Tengah",
+     "role": "claim",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Kalimantan Barat",
+     "role": "claim",
+     "label": "Later gold kongsi"
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Kepulauan Bangka Belitung",
+     "role": "claim",
+     "label": "Later tin mining"
+    }
+   ],
+   "sources": [
+    {
+     "id": "vollenhoven1906",
+     "pages": "pp. 4–5",
+     "tier": "primary",
+     "cite": "Vollenhoven 1906, pp. 4–5"
+    },
+    {
+     "id": "wade2005",
+     "pages": "",
+     "tier": "peer-reviewed",
+     "cite": "Wade 2005"
+    },
+    {
+     "id": "reid1993",
+     "pages": "pp. 62–90",
+     "tier": "peer-reviewed",
+     "cite": "Reid 1993, pp. 62–90"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s07",
+   "label": "1511 – 1700s",
+   "title": "Western contact",
+   "text": "For Van Vollenhoven, only with the Portuguese, English and Dutch from the sixteenth century did written Western rules begin to replace or supplement uncodified law. Gaastra describes the VOC, founded in 1602, as a trading company that made itself a state. Raben shows how its conquest of Makassar pulled eastern Indonesia into Batavia's slave market. This is the wave that reached Sumba first and hardest.",
+   "more": "",
+   "year": [
+    1511,
+    1760
+   ],
+   "camera": [
+    -6.0,
+    114.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Batavia",
+     "lat": -6.13,
+     "lon": 106.81,
+     "kind": "fort",
+     "note": "VOC headquarters"
+    },
+    {
+     "name": "Kupang",
+     "lat": -10.16,
+     "lon": 123.6,
+     "kind": "fort",
+     "note": "VOC post on Timor"
+    },
+    {
+     "name": "Melaka",
+     "lat": 2.19,
+     "lon": 102.25,
+     "kind": "fort",
+     "note": "Taken by the Portuguese, 1511"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "colonial",
+     "path": [
+      [
+       102.25,
+       2.19
+      ],
+      [
+       105.0,
+       -2.5
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "From Portuguese Melaka to Dutch Batavia",
+     "weight": 2
+    },
+    {
+     "kind": "military",
+     "path": [
+      [
+       106.81,
+       -6.13
+      ],
+      [
+       112.5,
+       -5.8
+      ],
+      [
+       117.0,
+       -5.8
+      ],
+      [
+       119.42,
+       -5.14
+      ]
+     ],
+     "label": "Makassar War, 1667–69",
+     "weight": 3
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       119.42,
+       -5.14
+      ],
+      [
+       117.0,
+       -5.6
+      ],
+      [
+       112.5,
+       -5.6
+      ],
+      [
+       108.5,
+       -5.4
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Captives to Batavia",
+     "weight": 3
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Daerah Khusus Ibukota Jakarta",
+     "role": "claim",
+     "label": "Batavia, 1619"
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Maluku",
+     "role": "claim",
+     "label": "Spice islands"
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Sulawesi Selatan",
+     "role": "contested",
+     "label": "Makassar, conquered 1667–69"
+    }
+   ],
+   "sources": [
+    {
+     "id": "vollenhoven1906",
+     "pages": "pp. 4–5",
+     "tier": "primary",
+     "cite": "Vollenhoven 1906, pp. 4–5"
+    },
+    {
+     "id": "gaastra2003",
+     "pages": "",
+     "tier": "peer-reviewed",
+     "cite": "Gaastra 2003"
+    },
+    {
+     "id": "raben2008",
+     "pages": "p. 127",
+     "tier": "peer-reviewed",
+     "cite": "Raben 2008, p. 127"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s08",
+   "label": "1750 – 1860",
+   "title": "Sumba enters the record as a source of people",
+   "text": "Hoskins dates the Company's treaty mission to Sumba to 1750. Pietrow reports more than thirty Makassarese slave ships a year by 1775, and Bosma sets this inside a surge of raiding across the archipelago until the 1860s. Vel and Makambombu add the Sumbanese side: leaders raided rival domains and traded captives for rice or gunpowder. Sumba navigated the Western wave by joining it, and the trade split its clans.",
+   "more": "",
+   "year": [
+    1750,
+    1860
+   ],
+   "camera": [
+    -8.0,
+    118.5,
+    6
+   ],
+   "places": [
+    {
+     "name": "Ende",
+     "lat": -8.84,
+     "lon": 121.66,
+     "kind": "port",
+     "note": "Raiders' home port"
+    },
+    {
+     "name": "Makassar",
+     "lat": -5.14,
+     "lon": 119.42,
+     "kind": "city",
+     "note": "Over thirty slave ships a year by 1775 (Pietrow)"
+    },
+    {
+     "name": "Kupang",
+     "lat": -10.16,
+     "lon": 123.6,
+     "kind": "fort",
+     "note": "Company post that sent the 1750 mission"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "colonial",
+     "path": [
+      [
+       123.6,
+       -10.16
+      ],
+      [
+       122.5,
+       -9.9
+      ],
+      [
+       121.3,
+       -9.8
+      ],
+      [
+       120.26,
+       -9.65
+      ]
+     ],
+     "label": "1750 treaty mission",
+     "weight": 1
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       119.6,
+       -9.5
+      ],
+      [
+       119.3,
+       -9.1
+      ],
+      [
+       119.25,
+       -8.4
+      ],
+      [
+       119.2,
+       -7.0
+      ],
+      [
+       119.42,
+       -5.14
+      ]
+     ],
+     "label": "Captives to Makassar",
+     "weight": 3
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       120.0,
+       -9.45
+      ],
+      [
+       120.8,
+       -9.2
+      ],
+      [
+       121.66,
+       -8.84
+      ]
+     ],
+     "label": "Captives to Ende traders",
+     "weight": 3
+    },
+    {
+     "kind": "trade",
+     "path": [
+      [
+       121.66,
+       -8.84
+      ],
+      [
+       121.0,
+       -9.15
+      ],
+      [
+       120.3,
+       -9.55
+      ]
+     ],
+     "label": "Muskets and gunpowder in return",
+     "weight": 2
+    }
+   ],
+   "areas": [
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Timur",
+     "role": "contested",
+     "label": ""
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat",
+     "role": "contested",
+     "label": ""
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat Daya",
+     "role": "contested",
+     "label": ""
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Tengah",
+     "role": "contested",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "hoskins2002",
+     "pages": "p. 800",
+     "tier": "peer-reviewed",
+     "cite": "Hoskins 2002, p. 800"
+    },
+    {
+     "id": "pietrow2024",
+     "pages": "p. 25",
+     "tier": "academic",
+     "cite": "Pietrow 2024, p. 25"
+    },
+    {
+     "id": "bosma2020",
+     "pages": "pp. 111, 113",
+     "tier": "peer-reviewed",
+     "cite": "Bosma 2020, pp. 111, 113"
+    },
+    {
+     "id": "vel2019",
+     "pages": "p. 443",
+     "tier": "peer-reviewed",
+     "cite": "Vel 2019, p. 443"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s09",
+   "label": "1901 – 1919",
+   "title": "Codifying adat while conquering Sumba",
+   "text": "Holleman shows Van Vollenhoven fighting a 1904 bill to unify all law on the Dutch Civil Code, then, in 1919, a bill for Western-style land ownership that suited plantations. Burns shows how his school mapped the Indies into adat law circles. In the same years troops pacified Sumba, governed from Kupang as part of the Residency of Timor. Adat was being written down for the colony while Sumba was conquered.\n\nMore: Next step for the drawing: Van Vollenhoven's nineteen adat law circles, with Sumba inside the Timor group. Take the list and map from Holleman's edition before drawing it; the app does not yet hold that boundary.",
+   "more": "",
+   "year": [
+    1901,
+    1919
+   ],
+   "camera": [
+    -6.5,
+    113.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Batavia",
+     "lat": -6.13,
+     "lon": 106.81,
+     "kind": "fort",
+     "note": "Colonial capital"
+    },
+    {
+     "name": "Kupang",
+     "lat": -10.16,
+     "lon": 123.6,
+     "kind": "fort",
+     "note": "Seat of the Resident who governed Sumba"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "colonial",
+     "path": [
+      [
+       106.81,
+       -6.13
+      ],
+      [
+       109.5,
+       -5.8
+      ],
+      [
+       113.5,
+       -6.4
+      ],
+      [
+       116.0,
+       -7.9
+      ],
+      [
+       118.4,
+       -7.8
+      ],
+      [
+       121.3,
+       -9.4
+      ],
+      [
+       123.6,
+       -10.16
+      ]
+     ],
+     "label": "Batavia → Kupang",
+     "weight": 2
+    },
+    {
+     "kind": "military",
+     "path": [
+      [
+       123.6,
+       -10.16
+      ],
+      [
+       122.5,
+       -9.9
+      ],
+      [
+       121.0,
+       -9.9
+      ],
+      [
+       120.2,
+       -9.8
+      ],
+      [
+       119.41,
+       -9.64
+      ]
+     ],
+     "label": "Troops into West Sumba",
+     "weight": 3
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Nusa Tenggara Timur",
+     "role": "claim",
+     "label": "Residency of Timor and dependencies (modern boundary)"
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat",
+     "role": "lost",
+     "label": "Pacification campaign, 1906–1912"
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat Daya",
+     "role": "lost",
+     "label": ""
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Timur",
+     "role": "lost",
+     "label": ""
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Tengah",
+     "role": "lost",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "holleman2023",
+     "pages": "pp. XXXIV–XLVII",
+     "tier": "peer-reviewed",
+     "cite": "Holleman 2023, pp. XXXIV–XLVII"
+    },
+    {
+     "id": "burns2004",
+     "pages": "",
+     "tier": "peer-reviewed",
+     "cite": "Burns 2004"
+    },
+    {
+     "id": "vel2008",
+     "pages": "pp. 30–32",
+     "tier": "peer-reviewed",
+     "cite": "Vel 2008, pp. 30–32"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s10",
+   "label": "1945 – 1998",
+   "title": "One nation, one centre",
+   "text": "Elson traces how the idea of Indonesia took over the Dutch colonial territory whole. Ananta and colleagues show the Javanese as by far the largest group, and Java held the capital. Vel writes that from 1965 Sumba was ruled by a bureaucracy directed from Jakarta, which brought schools and roads and required everyone to belong to one of five recognised religions. Marapu was not one. Robinson describes the killings of 1965 that made that requirement dangerous.\n\nMore: Eva's point for this slide: the new nation-state reproduced the colonial structure (a centre on Java governing a periphery), which is different from settler colonialism as in Australia, where the colonisers stayed as the majority.",
+   "more": "",
+   "year": [
+    1945,
+    1998
+   ],
+   "camera": [
+    -5.0,
+    114.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Jakarta",
+     "lat": -6.2,
+     "lon": 106.85,
+     "kind": "city",
+     "note": "National capital"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "colonial",
+     "path": [
+      [
+       106.85,
+       -6.2
+      ],
+      [
+       110.0,
+       -6.5
+      ],
+      [
+       114.0,
+       -7.6
+      ],
+      [
+       117.0,
+       -8.7
+      ],
+      [
+       119.41,
+       -9.64
+      ]
+     ],
+     "label": "Rule from Jakarta",
+     "weight": 3
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Jawa Barat",
+     "role": "claim",
+     "label": "Java: the political centre"
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Jawa Tengah",
+     "role": "claim",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Jawa Timur",
+     "role": "claim",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Daerah Istimewa Yogyakarta",
+     "role": "claim",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Daerah Khusus Ibukota Jakarta",
+     "role": "claim",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Banten",
+     "role": "claim",
+     "label": ""
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat",
+     "role": "focus",
+     "label": "Marapu excluded from the recognised religions"
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Timur",
+     "role": "focus",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "elson2008",
+     "pages": "",
+     "tier": "peer-reviewed",
+     "cite": "Elson 2008"
+    },
+    {
+     "id": "ananta2014",
+     "pages": "",
+     "tier": "other",
+     "cite": "Ananta 2014"
+    },
+    {
+     "id": "vel2008",
+     "pages": "pp. 34, 39",
+     "tier": "peer-reviewed",
+     "cite": "Vel 2008, pp. 34, 39"
+    },
+    {
+     "id": "robinson2018",
+     "pages": "",
+     "tier": "peer-reviewed",
+     "cite": "Robinson 2018"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s11",
+   "label": "2001 – 2018",
+   "title": "New frontiers, and adat as a strategy",
+   "text": "After decentralisation, the newest wave is capital. Vel and Makambombu report a 2015 location permit of nearly 53,000 hectares for sugarcane in East Sumba, and the founding of AMAN's Sumba branch in 2017. Morizcha records a continuing dispute with the Marapu community. Davidson and Henley show how adat, a colonial category, became the language of indigenous claims, and the Constitutional Court in 2012 ruled that customary forest is not state forest.",
+   "more": "",
+   "year": [
+    2001,
+    2018
+   ],
+   "camera": [
+    -9.7,
+    119.9,
+    8
+   ],
+   "places": [
+    {
+     "name": "Wanga",
+     "lat": -9.99,
+     "lon": 120.66,
+     "kind": "plantation",
+     "note": "Village in the permit area (approximate)"
+    },
+    {
+     "name": "Nihiwatu",
+     "lat": -9.74,
+     "lon": 119.02,
+     "kind": "resort",
+     "note": "Luxury resort (approximate)"
+    },
+    {
+     "name": "Waingapu",
+     "lat": -9.65,
+     "lon": 120.26,
+     "kind": "city",
+     "note": "East Sumba's capital"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "capital",
+     "path": [
+      [
+       106.85,
+       -6.2
+      ],
+      [
+       110.0,
+       -6.5
+      ],
+      [
+       114.0,
+       -7.6
+      ],
+      [
+       118.0,
+       -9.0
+      ],
+      [
+       120.66,
+       -9.99
+      ]
+     ],
+     "label": "Plantation capital",
+     "weight": 2
+    },
+    {
+     "kind": "capital",
+     "path": [
+      [
+       115.2,
+       -8.7
+      ],
+      [
+       117.0,
+       -9.2
+      ],
+      [
+       119.02,
+       -9.74
+      ]
+     ],
+     "label": "Tourism capital via Bali",
+     "weight": 1
+    }
+   ],
+   "areas": [
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Timur",
+     "role": "concession",
+     "label": "Sugarcane location permit, 2015"
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat Daya",
+     "role": "focus",
+     "label": "New district, 2007"
+    }
+   ],
+   "sources": [
+    {
+     "id": "vel2019",
+     "pages": "pp. 436, 440–441, 447",
+     "tier": "peer-reviewed",
+     "cite": "Vel 2019, pp. 436, 440–441, 447"
+    },
+    {
+     "id": "morizcha2021",
+     "pages": "p. 10",
+     "tier": "peer-reviewed",
+     "cite": "Morizcha 2021, p. 10"
+    },
+    {
+     "id": "henley2007",
+     "pages": "",
+     "tier": "peer-reviewed",
+     "cite": "Davidson 2007"
+    },
+    {
+     "id": "mk2012",
+     "pages": "",
+     "tier": "other",
+     "cite": "Mahkamah Konstitusi Republik Indonesia 2013"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s12",
+   "label": "",
+   "title": "Why Sumba",
+   "text": "Read through Van Vollenhoven's layers, Sumba is unusual. The Hindu-Buddhist and Chinese waves barely touched it, Islam stayed on its coast, and the West came first as a slave trade and late as a government. Keane and Vel describe an island where ancestral ritual and clan still order land and status. That makes Sumba a place to see how indigenous space is made and defended when each new power claims it.\n\nMore: This is the argument of the thesis, not a finding of the sources. It leads straight into the research questions slide.",
+   "more": "",
+   "year": [
+    1365,
+    2018
+   ],
+   "camera": [
+    -6.0,
+    114.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Sumba",
+     "lat": -9.7,
+     "lon": 119.9,
+     "kind": "adat",
+     "note": "Marapu, clans and kampung still structure land"
+    }
+   ],
+   "flows": [],
+   "areas": [
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Timur",
+     "role": "adat",
+     "label": "Sumba"
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat",
+     "role": "adat",
+     "label": ""
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat Daya",
+     "role": "adat",
+     "label": ""
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Tengah",
+     "role": "adat",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "vel2008",
+     "pages": "pp. 34, 39",
+     "tier": "peer-reviewed",
+     "cite": "Vel 2008, pp. 34, 39"
+    },
+    {
+     "id": "keane1997",
+     "pages": "",
+     "tier": "peer-reviewed",
+     "cite": "Keane 1997"
+    },
+    {
+     "id": "vollenhoven1906",
+     "pages": "pp. 4–5",
+     "tier": "primary",
+     "cite": "Vollenhoven 1906, pp. 4–5"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  }
+ ]
+}

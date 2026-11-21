@@ -295,5 +295,33 @@
   "open_access": false,
   "note": "Legal study of the PT MSM sugar dispute with the Umalulu adat community; first name not in the catalogue.",
   "library": "mendeley"
+ },
+ {
+  "id": "vollenhoven1906",
+  "type": "primary",
+  "authors": "Vollenhoven, Cornelis van",
+  "year": 1906,
+  "title": "Adat, adat law, native law",
+  "container": "Van Vollenhoven on Indonesian Adat Law (ed. J. F. Holleman), Brill, 2023 [repr. of 1981 KITLV translation]",
+  "publisher": "Brill, Leiden",
+  "url": "https://brill.com/view/title/23340",
+  "peer_reviewed": false,
+  "open_access": false,
+  "library": "mendeley",
+  "note": "Colonial-era scholarly text (opening of Het Adatrecht van Nederlandsch-Indië). Read from Ejak's literature note (Snippet). Pages 4–5 = the layering of Malayo-Polynesian, Hindu, Islamic, Chinese and European law."
+ },
+ {
+  "id": "holleman2023",
+  "type": "chapter",
+  "authors": "Holleman, J. F.",
+  "year": 2023,
+  "title": "Introduction",
+  "container": "Van Vollenhoven on Indonesian Adat Law",
+  "publisher": "Brill, Leiden",
+  "doi": "10.1163/9789004649705",
+  "peer_reviewed": true,
+  "open_access": false,
+  "library": "mendeley",
+  "note": "Read from Ejak's literature note (Snippet). Pages XXXIV–XLVII as cited in his Chapter 1 draft."
  }
 ]
