@@ -206,6 +206,48 @@ function harvestBig() {
   rearm_('harvestBig'); return 'retrying later';
 }
 
+// ------------------------------------------------------------------------------------------------ KLHK FOREST AREA
+/** Kawasan Hutan (forest area designation) from the Ministry of Environment and Forestry's public ArcGIS service,
+ *  clipped to an area of interest. Saves every polygon layer of the service that intersects the area as GeoJSON pages in
+ *  "02 SPATIAL/01 RAW/KLHK Kawasan Hutan/<area>/", plus the service description (metadata.json). Resumable like harvestBig. */
+const KLHK = [
+  { key: 'kawasan-hutan', url: 'https://geoportal.menlhk.go.id/server/rest/services/SIGAP_Interaktif/Kawasan_Hutan/MapServer' }
+];
+const AOI = { name: 'sumba', envelope: '118.8,-10.5,120.95,-9.0' };
+
+function harvestForest() {
+  const start = Date.now(), props = PropertiesService.getScriptProperties();
+  const st = JSON.parse(props.getProperty('FOREST') || '{"s":0,"layers":null,"l":0,"offset":0}');
+  const raw = child_(child_(DriveApp.getFolderById(ROOT_ID), '02 SPATIAL', true), '01 RAW', true);
+  while (st.s < KLHK.length) {
+    const svc = KLHK[st.s], dest = child_(child_(raw, 'KLHK Kawasan Hutan', true), AOI.name, true);
+    if (!st.layers) {
+      const meta = UrlFetchApp.fetch(svc.url + '?f=json', { muteHttpExceptions: true });
+      if (meta.getResponseCode() !== 200) { log_('forest', svc.key + ' metadata HTTP ' + meta.getResponseCode()); return 'service not reachable: HTTP ' + meta.getResponseCode(); }
+      writeText_(dest, svc.key + ' metadata.json', meta.getContentText());
+      const m = JSON.parse(meta.getContentText());
+      st.layers = (m.layers || []).filter(function (l) { return !l.subLayerIds && (!l.geometryType || /Polygon/.test(l.geometryType)); }).map(function (l) { return [l.id, l.name]; });
+      st.max = Math.min(m.maxRecordCount || 1000, 1000); st.l = 0; st.offset = 0;
+      props.setProperty('FOREST', JSON.stringify(st)); log_('forest', svc.key + ' layers: ' + JSON.stringify(st.layers));
+    }
+    while (st.l < st.layers.length) {
+      const lid = st.layers[st.l][0], lname = st.layers[st.l][1];
+      const q = svc.url + '/' + lid + '/query?where=1%3D1&geometry=' + encodeURIComponent(AOI.envelope) + '&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&outSR=4326&f=geojson&resultOffset=' + st.offset + '&resultRecordCount=' + st.max;
+      const res = UrlFetchApp.fetch(q, { muteHttpExceptions: true });
+      if (res.getResponseCode() !== 200) { log_('forest', lname + ' HTTP ' + res.getResponseCode()); st.l++; st.offset = 0; continue; }
+      const text = res.getContentText(); let n = 0;
+      try { n = (JSON.parse(text).features || []).length; } catch (e) { log_('forest', lname + ' not geojson: ' + text.slice(0, 120)); st.l++; st.offset = 0; continue; }
+      if (n > 0) writeBlob_(dest, svc.key + ' L' + lid + ' ' + lname.replace(/[\\/:*?"<>|]/g, '_') + ' ' + ('00000' + st.offset).slice(-5) + '.geojson', Utilities.newBlob(text, 'application/geo+json'));
+      if (n < st.max) { log_('forest', lname + ' done (' + (st.offset + n) + ' features)'); st.l++; st.offset = 0; } else st.offset += n;
+      props.setProperty('FOREST', JSON.stringify(st));
+      if (Date.now() - start > 4.5 * 60 * 1000) { rearm_('harvestForest'); return 'paused — resumes by trigger'; }
+    }
+    st.s++; st.layers = null; props.setProperty('FOREST', JSON.stringify(st));
+  }
+  clearTriggers_('harvestForest'); props.deleteProperty('FOREST');
+  log_('forest', 'complete for ' + AOI.name); return 'forest harvest complete';
+}
+
 function resetHarvest() { PropertiesService.getScriptProperties().deleteProperty('HARVEST'); clearTriggers_('harvestBig'); return 'harvest state cleared'; }
 
 // ------------------------------------------------------------------------------------------------ GITHUB

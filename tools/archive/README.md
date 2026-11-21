@@ -19,6 +19,8 @@ backs up the repo.
    `GITHUB_TOKEN` (fine-grained token, this repo only, *Contents: read and write*) and run `linkToGitHub`.
 7. Optional: run `harvestBig` once. It keeps re-scheduling itself every minute until the BIG boundaries are all in
    `02 SPATIAL/01 RAW/BIG Batas Wilayah` (Sumba at full resolution; the rest at ~20 m). Expect 1–2 hours and a few hundred MB.
+   Run `harvestForest` for KLHK *Kawasan Hutan* (forest area designation) polygons clipped to Sumba (`AOI` in the code)
+   → `02 SPATIAL/01 RAW/KLHK Kawasan Hutan/sumba/`. Also resumable.
    Run `backupRepo` whenever you want a dated zip of the repo in `06 RELEASES` (or add a weekly time trigger for it).
 
 ## Endpoints (`<URL>?action=…`)
@@ -35,3 +37,10 @@ Anything under `99 PRIVATE` is refused.
 - The web app runs as you but only reads inside this folder; it has no write action.
 - A `GITHUB_TOKEN`, if you add one, sits in Script Properties (only you can see it). Scope it to this repo only; revoke it in
   GitHub → Settings → Developer settings when not needed.
+
+## Bhumi (ATR/BPN) — why there is no harvester
+Bhumi's land-parcel layer (`bhumi_persil`, "Bidang Tanah") is served only as map images through the viewer's own proxy
+(`/mprx/service`); vector download (WFS) and the capabilities list answer 403, and image requests that do not come from
+the Bhumi viewer page are refused ("Forbidden"). Fetching it from a script would mean bypassing that access control, so
+this archive does not do it. Routes that work: an official data request to ATR/BPN (PPID, the "Pelayanan Informasi
+Publik" link in Bhumi's own disclaimer), or partner data (e.g. AMAN/BRWA, JKPP) with permission.
