@@ -4,78 +4,92 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Visualisation of Indonesian History</title>
-<meta name="description" content="An interactive web map of the Southeast Asian world: indigenous trajectories, trade, religion, colonialism and independence, with GIS layers, spatial analysis, stories and verifiable scholarly sources.">
+<meta name="description" content="Indigenous trajectories across the Southeast Asian world: history told slide by slide, the homelands of Indonesia's peoples, and a full analysis workbench.">
 <meta name="theme-color" content="#33393B">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2712%27 fill=%27%2349546D%27 stroke=%27%23CCD6E6%27 stroke-width=%272.5%27/%3E%3Cpath d=%27M8 18c4-8 12-8 16-2%27 fill=%27none%27 stroke=%27%23EEDED1%27 stroke-width=%272%27/%3E%3C/svg%3E">
-<link rel="stylesheet" href="vendor/leaflet.css">
-<link rel="stylesheet" href="vendor/leaflet-geoman.css">
-<link rel="stylesheet" href="vendor/MarkerCluster.css">
-<link rel="stylesheet" href="css/app.css">
-<link rel="stylesheet" href="css/gis.css">
+<link rel="stylesheet" href="css/v3.css">
+<link rel="stylesheet" href="css/landing.css">
 </head>
-<body>
-<div id="app">
-  <div id="map" aria-label="Interactive web map of Southeast Asia">
-    <div id="loading" class="loading"><div class="loading-dot"></div><span>Raising the map…</span></div>
+<body class="landing on-dark">
+<header class="hero">
+  <div class="hero-map" aria-hidden="true">
+    <svg id="heroMap" viewBox="0 0 920 360" preserveAspectRatio="xMidYMid meet" role="presentation"></svg>
+  </div>
+  <div class="hero-copy">
+    <p class="kicker">An atlas in three modes</p>
+    <h1 class="g-title on-dark">Visualisation of Indonesian History</h1>
+    <p class="sub">Indigenous trajectories across the Southeast Asian world, c. 65,000&nbsp;BP – today</p>
   </div>
 
-  <header id="topbar" class="topbar">
-    <div class="brand">
-      <h1>Visualisation of Indonesian History</h1>
-      <p>Indigenous trajectories across the Southeast Asian world, c. 65,000&nbsp;BP – today</p>
-    </div>
-    <div class="search" role="search">
-      <input id="search" type="search" placeholder="Search events, peoples, groups, layers, sources…" aria-label="Search events, peoples, ethnic groups, layers and sources" autocomplete="off">
-      <div id="searchResults" class="search-results" hidden></div>
-    </div>
-    <nav class="topnav" aria-label="Main">
-      <button class="btn" data-open="stories" aria-label="Stories">Stories</button>
-      <button class="btn" data-open="analyse" aria-label="Spatial analysis">Analyse</button>
-      <button class="btn" data-open="questions" aria-label="Questions guided tour">Questions</button>
-      <button class="btn" data-open="sources" aria-label="Sources bibliography">Sources</button>
-      <button class="btn" data-open="notes" aria-label="Notes">Notes</button>
-      <button class="btn" data-open="about" aria-label="About">About</button>
-      <button class="btn btn-icon" id="btnHome" aria-label="Reset map to home view" title="Home view">⌂</button>
-    </nav>
-  </header>
-
-  <aside id="layers" class="layers" aria-label="Layers"></aside>
-  <aside id="analyse" class="layers analyse" aria-label="Analyse" hidden></aside>
-  <aside id="story" class="story" aria-label="Story" hidden></aside>
-
-  <aside id="card" class="card" aria-label="Detail card" aria-hidden="true"></aside>
-
-  <div id="tourHud" class="tour-hud" hidden></div>
-  <div id="liveMeasure" class="live-measure" hidden></div>
-
-  <footer id="timeline" class="timeline" aria-label="Timeline"></footer>
-
-  <nav id="tabbar" class="tabbar" aria-label="Mobile navigation">
-    <button data-tab="layers"><span>◫</span>Layers</button>
-    <button data-open="stories"><span>❦</span>Stories</button>
-    <button data-open="analyse"><span>⌖</span>Analyse</button>
-    <button data-open="sources"><span>❡</span>Sources</button>
-    <button data-open="more"><span>⋯</span>More</button>
+  <nav class="modes" aria-label="Choose a mode">
+    <a class="mode glass-light" href="story.html" id="modeStories">
+      <svg class="ill" viewBox="0 0 120 80" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path class="p1" d="M10 62c14-4 18-26 32-26s14 22 30 20 18-30 38-34" stroke="#49546D" stroke-width="2.4" stroke-dasharray="3 6"/>
+        <circle cx="10" cy="62" r="5" fill="#CCD6E6" stroke="#49546D" stroke-width="2"/>
+        <circle cx="42" cy="36" r="5" fill="#EEDED1" stroke="#49546D" stroke-width="2"/>
+        <circle cx="72" cy="56" r="5" fill="#CCD6E6" stroke="#49546D" stroke-width="2"/>
+        <circle cx="110" cy="22" r="6" fill="#49546D" stroke="#33393B" stroke-width="2"/>
+        <path d="M88 10h18v10M88 10l8 8" stroke="#8A4B3C" stroke-width="2" opacity="0"/>
+      </svg>
+      <h2 class="mode-t">Stories</h2>
+      <p class="mode-d">History told slide by slide, in chronological order, with the map following the story.</p>
+      <span class="weight"><i></i>light</span>
+      <span class="go" aria-hidden="true">Begin →</span>
+    </a>
+    <a class="mode glass-light" href="peoples.html" id="modePeoples">
+      <svg class="ill" viewBox="0 0 120 80" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path class="p1" d="M8 40C8 22 28 12 44 18c10 4 8 18 18 22s-2 22-18 22C22 62 8 56 8 40z" fill="#CCD6E6" stroke="#49546D" stroke-width="2.2"/>
+        <path class="p2" d="M60 18c14-8 36-8 44 6s-4 22-16 20-14 6-22-2-14-16-6-24z" fill="#EEDED1" stroke="#49546D" stroke-width="2.2"/>
+        <path class="p3" d="M70 54c10-6 30-6 38 4s-6 16-20 16-24-10-18-20z" fill="#B2ABB4" stroke="#49546D" stroke-width="2.2"/>
+        <circle cx="34" cy="38" r="3.4" fill="#33393B"/><circle cx="84" cy="32" r="3.4" fill="#33393B"/><circle cx="90" cy="64" r="3.4" fill="#33393B"/>
+      </svg>
+      <h2 class="mode-t">Peoples</h2>
+      <p class="mode-d">Where Indonesia's ethnic groups have their homelands, drawn as approximate areas.</p>
+      <span class="weight"><i></i>light</span>
+      <span class="go" aria-hidden="true">Explore →</span>
+    </a>
+    <a class="mode glass-light" href="analyse.html" id="modeAnalyse">
+      <svg class="ill" viewBox="0 0 120 80" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path class="p1" d="M60 8l44 16-44 16L16 24z" fill="#CCD6E6" stroke="#49546D" stroke-width="2.2"/>
+        <path class="p2" d="M16 38l44 16 44-16" stroke="#49546D" stroke-width="2.2"/>
+        <path class="p3" d="M16 52l44 16 44-16" stroke="#49546D" stroke-width="2.2"/>
+        <circle cx="60" cy="24" r="4" fill="#33393B"/><path d="M60 24l22-6" stroke="#8A4B3C" stroke-width="2.2"/>
+      </svg>
+      <h2 class="mode-t">Analyse</h2>
+      <p class="mode-d">Every layer, tools, uploads, export, and the BIG administrative boundaries.</p>
+      <span class="weight heavy"><i></i>loads all tools</span>
+      <span class="go" aria-hidden="true">Open →</span>
+    </a>
   </nav>
+</header>
 
-  <div id="modal" class="modal" hidden><div class="modal-backdrop"></div><section class="modal-sheet" role="dialog" aria-modal="true" id="modalSheet"></section></div>
-  <div id="popover" class="popover" hidden></div>
-  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
-</div>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs id="svgDefs"></defs></svg>
+<main>
+  <section class="strip" id="storiesStrip" aria-labelledby="stripT" hidden>
+    <div class="wrap">
+      <h2 id="stripT" class="g-title on-dark">Stories</h2>
+      <div class="strip-row" id="storyCards"></div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="aboutT">
+    <div class="wrap"><div class="about-card glass-light">
+      <h2 id="aboutT" class="g-title on-light">About</h2>
+      <p>Built by Ejak (Reza Arlianda), PhD researcher at the Bartlett School of Architecture, UCL, with Claude. Every claim on the map is sourced: each card names its sources and says how certain the claim is. Ethnic-group areas and administrative boundaries are generalised and approximate, and say so.</p>
+    </div></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Boundaries © <a href="https://geoservices.big.go.id/" target="_blank" rel="noopener">Badan Informasi Geospasial</a> (generalised) · Language locations from <a href="https://glottolog.org" target="_blank" rel="noopener">Glottolog</a> · Ethnic groups after Ananta et al. (2014) · Tiles © Esri.</p>
+    <p><a href="https://github.com/sambeltempoyak/visualisation-of-indonesian-history" target="_blank" rel="noopener">Source on GitHub</a> · <a href="#about">About</a></p>
+  </div>
+</footer>
 
 <script src="vendor/topojson-client.min.js"></script>
-<script src="vendor/leaflet.js"></script>
-<script src="vendor/leaflet-geoman.min.js"></script>
-<script src="vendor/leaflet.markercluster.js"></script>
-<script src="vendor/leaflet-heat.js"></script>
-<script src="vendor/esri-leaflet.js"></script>
-<script src="vendor/turf.min.js"></script>
-<script src="vendor/shp.min.js"></script>
-<script src="vendor/togeojson.umd.js"></script>
-<script type="module" src="js/main.js"></script>
+<script type="module" src="js/landing.js"></script>
 </body>
 </html>

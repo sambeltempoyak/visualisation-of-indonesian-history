@@ -8,10 +8,15 @@ export function createSearch({ D, actions, reg, ethno, map, ctx }) {
   const idx = [
     ...D.events.map(e => ({ kind: 'Event', id: e.id, label: e.title, sub: `${formatYear(e.start)} · ${e.place || ''}`, hay: `${e.title} ${e.place} ${e.summary} ${e.id}`.toLowerCase(), go: () => actions.select('event', e.id) })),
     ...D.peoples.map(p => ({ kind: 'People', id: p.id, label: p.name, sub: p.family || '', hay: `${p.name} ${p.autonym} ${p.region} ${p.family}`.toLowerCase(), go: () => actions.select('people', p.id) })),
-    ...(ethno?.groups || []).map(g => ({ kind: 'Group', id: g.id, label: g.name, sub: [g.island, g.place || (g.precision === 'none' ? 'not mapped' : '')].filter(Boolean).join(' · '), hay: `${g.name} ${(g.aliases || []).join(' ')} ${(g.codes || []).map(c => c.label).join(' ')} ${g.place || ''} ${g.island || ''} ${g.glottocode || ''}`.toLowerCase(), go: () => ethno.focus(g.id) })),
-    ...(ethno?.labels || []).map((l, i) => ({ kind: 'Suku', id: 'wm' + i, label: l.label, sub: 'Kartapranata map label', hay: l.label.toLowerCase(), go: async () => { await reg.setVisible('wm-suku-labels', true); map.flyToView([l.lat, l.lon], Math.max(map.map.getZoom(), 7), { duration: 1 }); } })),
     ...D.sources.map(s => ({ kind: 'Source', id: s.id, label: s.title, sub: `${s.authors} (${s.year})`, hay: `${s.title} ${s.authors} ${s.year} ${s.id}`.toLowerCase(), go: () => actions.openSources(s.title) }))
   ];
+  // v3: groups + suku labels are not in memory at boot; they load (once) when the search box is first focused
+  let lazyIdx = [], lazyState = 0;
+  const buildLazy = () => { lazyIdx = [
+    ...(ethno?.groups || []).map(g => ({ kind: 'Group', id: g.id, label: g.name, sub: [g.island, g.place || (g.precision === 'none' ? 'not mapped' : '')].filter(Boolean).join(' · '), hay: `${g.name} ${(g.aliases || []).join(' ')} ${(g.codes || []).map(c => c.label).join(' ')} ${g.place || ''} ${g.island || ''} ${g.glottocode || ''}`.toLowerCase(), go: () => ethno.focus(g.id) })),
+    ...(ethno?.labels || []).map((l, i) => ({ kind: 'Suku', id: 'wm' + i, label: l.label, sub: 'Kartapranata map label', hay: l.label.toLowerCase(), go: async () => { await reg.setVisible('wm-suku-labels', true); map.flyToView([l.lat, l.lon], Math.max(map.map.getZoom(), 7), { duration: 1 }); } }))
+  ]; };
+  const loadLazy = () => { if (lazyState) return; lazyState = 1; ethno?.loadSearch?.().then(() => { buildLazy(); lazyState = 2; if (input.value.trim().length >= 2) run(); }).catch(e => { console.info('[search] ethnic index unavailable', e.message); }); };
   /** layers (always) and the feature names of user / result vector layers (live: they change at run time) */
   const dynamic = terms => {
     const out = [];
@@ -31,12 +36,12 @@ export function createSearch({ D, actions, reg, ethno, map, ctx }) {
     if (q.length < 2) return close();
     const terms = q.split(/\s+/);
     const rank = x => (x.label.toLowerCase().startsWith(q) ? 0 : 1);
-    items = [...idx.filter(x => terms.every(t => x.hay.includes(t))), ...dynamic(terms)].sort((a, b) => rank(a) - rank(b)).slice(0, 16);
+    items = [...[...idx, ...lazyIdx].filter(x => terms.every(t => x.hay.includes(t))), ...dynamic(terms)].sort((a, b) => rank(a) - rank(b)).slice(0, 16);
     box.replaceChildren(...(items.length ? items.map((x, i) => el('button', { class: 'sr', role: 'option', onclick: () => pick(i) }, el('span', { class: 'sr-kind' }, x.kind), el('span', { class: 'sr-main' }, el('b', {}, x.label), el('small', {}, x.sub)))) : [el('div', { class: 'sr-none' }, 'No matches')]));
     box.hidden = false; sel = -1;
   }
   function pick(i) { const x = items[i]; if (!x) return; close(); input.blur(); x.go(); }
-  input.addEventListener('input', run);
+  input.addEventListener('focus', loadLazy); input.addEventListener('input', () => { loadLazy(); run(); });
   input.addEventListener('keydown', e => {
     if (e.key === 'ArrowDown') { e.preventDefault(); sel = Math.min(items.length - 1, sel + 1); paint(); }
     else if (e.key === 'ArrowUp') { e.preventDefault(); sel = Math.max(0, sel - 1); paint(); }
@@ -96,7 +101,7 @@ export function createTour({ D, actions }) {
 
 // ---------------------------------------------------------------- About
 export function openAbout(D) {
-  const nEg = D.ethnic?.groups?.length || 0;
+  const nEg = D.ethnic?.groups?.length || 633;
   const c = el('div', { class: 'panel-body prose' },
     el('p', { class: 'lede' }, 'An interactive web map that follows indigenous peoples of the Southeast Asian world and the long web of migration, trade, religion, slavery, empire, plantation and independence that connected them — from the first crossings to Sahul, c. 65,000 years ago, to today.'),
     el('h3', { class: 'sec-h' }, 'Purpose'),

@@ -140,5 +140,45 @@
   "opacity": 0.9,
   "default": false,
   "note": "NASA Global Imagery Browse Services WMTS (EPSG:3857, KVP-free REST pattern {layer}/default/{TileMatrixSet}/{z}/{row}/{col}). External service; not testable offline."
+ },
+ {
+  "id": "ethnic-areas",
+  "name": "Ethnic group areas (approximate)",
+  "group": "Ethnicity & language",
+  "type": "builtin",
+  "source_id": "ananta2014",
+  "attribution": "Ananta et al. 2014; Glottolog 5.4; Badan Informasi Geospasial (generalised)",
+  "note": "Approximate homeland areas of 394 groups: each desa assigned to the nearest documented group location on its island group. Loaded on demand (1.1 MB).",
+  "default": false
+ },
+ {
+  "id": "admin-kab",
+  "name": "Kabupaten / kota (BIG, 524)",
+  "group": "Administrative boundaries (BIG)",
+  "type": "builtin",
+  "source_id": "big-batas-wilayah",
+  "attribution": "Badan Informasi Geospasial (generalised)",
+  "note": "524 regencies and cities, outline only. Loaded on demand (0.7 MB).",
+  "default": false
+ },
+ {
+  "id": "admin-kec",
+  "name": "Kecamatan (BIG, 7,423)",
+  "group": "Administrative boundaries (BIG)",
+  "type": "builtin",
+  "source_id": "big-batas-wilayah",
+  "attribution": "Badan Informasi Geospasial (generalised)",
+  "note": "7,423 districts, thin outline, drawn from zoom 7. Loaded on demand (2.3 MB).",
+  "default": false
+ },
+ {
+  "id": "admin-desa",
+  "name": "Desa / kelurahan (BIG, 84,503)",
+  "group": "Administrative boundaries (BIG)",
+  "type": "builtin",
+  "source_id": "big-batas-wilayah",
+  "attribution": "Badan Informasi Geospasial (generalised)",
+  "note": "Loaded province by province from zoom 9 (max 4 provinces in memory). Popup: desa, kecamatan, kabupaten, kode.",
+  "default": false
  }
 ]

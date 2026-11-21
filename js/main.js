@@ -7,6 +7,7 @@ import { createRegistry } from './layers.js';
 import { createHistorical } from './historical.js';
 import { createEthno } from './ethno.js';
 import { createDataLayers } from './datalayers.js';
+import { createAdminLayers } from './adminlayers.js';
 import { createLayerPanel } from './layerpanel.js';
 import { createAnalysis } from './analysis.js';
 import { createStories } from './story.js';
@@ -16,6 +17,7 @@ import { createCards, openModal, closeModal, modalOpen, sourcesPanel, sourceItem
 import { createSearch, createTour, openAbout } from './panels.js';
 import { notesPanel } from './notes.js';
 import { verifyAll } from './verify.js';
+import { openArchive } from './archivepanel.js';
 
 // ---------------------------------------------------------------- tooltip (hover cards for map features)
 const tipEl = $('#tooltip');
@@ -75,7 +77,8 @@ async function boot() {
   const historical = createHistorical({ D, map, reg, state, tip, onSelect });
   const ethno = createEthno({ D, map, reg, tip, ctx });
   const dl = createDataLayers({ D, map, reg, tip, ctx });
-  reg.arrange(['wm-suku-map', 'language-areas', 'rivers', 'borders', 'place-names', 'languages', 'ethnic-groups', 'wm-suku-labels', 'routes', 'peoples', 'events']);
+  createAdminLayers({ D, map, reg, tip, ctx });
+  reg.arrange(['wm-suku-map', 'language-areas', 'ethnic-areas', 'admin-kab', 'admin-kec', 'admin-desa', 'rivers', 'borders', 'place-names', 'languages', 'ethnic-groups', 'wm-suku-labels', 'routes', 'peoples', 'events']);
   dl.applyCatalogue();
   const flyPts = (pts, o = {}) => (pts.length === 1 ? map.flyToView(pts[0], Math.max(lmap.getZoom(), o.zoom || 7.5), { duration: 1.2 }) : map.flyToBounds(pts, { pad: 70, maxZoom: 8, minZoom: 2, duration: 1.3 }));
 
@@ -148,7 +151,7 @@ async function boot() {
     const pop = $('#popover');
     if (!pop.hidden) { pop.hidden = true; return; }
     pop.replaceChildren(el('div', { class: 'pop-h' }, 'More'), el('div', { class: 'more-list' },
-      ...[['Questions (guided tour)', () => tour.togglePopover($('#tabbar'))], ['Notes', () => actions.openNotes()], ['About', () => openAbout(D)]].map(([t, f]) => el('button', { class: 'btn', onclick: () => { pop.hidden = true; f(); } }, t))));
+      ...[['Questions (guided tour)', () => tour.togglePopover($('#tabbar'))], ['Peoples (new page)', () => { location.href = 'peoples.html'; }], ['Notes', () => actions.openNotes()], ['Archive', () => openArchive()], ['About', () => openAbout(D)]].map(([t, f]) => el('button', { class: 'btn', onclick: () => { pop.hidden = true; f(); } }, t))));
     pop.hidden = false;
   };
   $$('[data-open]').forEach(b => b.addEventListener('click', () => {
@@ -157,7 +160,7 @@ async function boot() {
     else if (what === 'sources') actions.openSources();
     else if (what === 'notes') actions.openNotes();
     else if (what === 'about') openAbout(D);
-    else if (what === 'stories') stories.openPicker();
+    else if (what === 'archive') openArchive();
     else if (what === 'analyse') { analysis.toggle(); $('#layers').classList.remove('sheet-open'); }
     else if (what === 'more') showMore(b);
   }));
@@ -193,7 +196,7 @@ async function boot() {
   document.body.classList.add('ready');
   $('#loading').classList.add('done');
   setTimeout(() => $('#loading').remove(), 700);
-  stories.fromHash();
+  // (v3) stories live on story.html; old #story= links are redirected by analyse.html's head script
 }
 
 boot().catch(err => {

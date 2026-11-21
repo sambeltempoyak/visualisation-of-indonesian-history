@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Indonesian peoples · Visualisation of Indonesian History</title>
+<meta name="description" content="Approximate homeland areas of 394 Indonesian ethnic groups, with the method and its limits stated.">
+<meta name="theme-color" content="#33393B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2712%27 fill=%27%2349546D%27 stroke=%27%23CCD6E6%27 stroke-width=%272.5%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="css/v3.css">
+<link rel="stylesheet" href="css/peoples.css">
+</head>
+<body class="peoples">
+<div id="map" aria-label="Map of the approximate homeland areas of Indonesian ethnic groups"></div>
+
+<header class="pbar glass-dark on-dark">
+  <a class="back" href="index.html"><span aria-hidden="true">←</span><span class="bt"> All modes</span></a>
+  <nav class="switch" aria-label="Modes">
+    <a href="story.html">Stories</a><a href="peoples.html" aria-current="page">Peoples</a><a href="analyse.html">Analyse</a>
+  </nav>
+</header>
+
+<aside id="panel" class="panel glass-light light" aria-label="Indonesian peoples">
+  <div class="p-head">
+    <h1 class="g-title on-light">Indonesian peoples</h1>
+    <button id="collapse" class="b round ghost" aria-expanded="true" aria-controls="pBody" aria-label="Collapse panel"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+  </div>
+  <div id="pBody" class="p-body">
+    <div class="method" id="method"><h2>How these areas were made</h2><p id="methodText">Loading…</p><p class="caveat">These are rough zones, not borders. Migrants, cities and mixed villages are not shown, and many boundaries are guesses.</p></div>
+    <div class="search"><input id="q" type="search" placeholder="Search a people or alias…" aria-label="Search a people by name or alias" autocomplete="off"><div id="results" class="results" hidden></div></div>
+    <div class="chips" id="islands" role="group" aria-label="Filter by island group"></div>
+    <div id="card" class="gcard" hidden></div>
+    <label class="toggle"><input type="checkbox" id="desaOn"><span class="sw"></span><span>Desa borders</span></label>
+    <p id="desaNote" class="soft small">Village boundaries load province by province when you zoom in to 9 or more.</p>
+    <details id="unmapped" class="unmapped"><summary>Not on the map (known only at island level)</summary><div id="unmappedBody"></div></details>
+    <p class="soft small foot">Sources: Ananta et al. (2014) for the list of groups; Glottolog for language locations; Badan Informasi Geospasial (generalised) for boundaries.</p>
+  </div>
+</aside>
+
+<script src="vendor/topojson-client.min.js"></script>
+<script src="vendor/leaflet.js"></script>
+<script type="module" src="js/peoples/main.js"></script>
+</body>
+</html>

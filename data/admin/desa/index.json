@@ -1,0 +1,458 @@
+[
+ {
+  "prov": "Aceh",
+  "slug": "aceh",
+  "n": 6511,
+  "bbox": [
+   94.972,
+   1.977,
+   98.287,
+   6.077
+  ],
+  "file": "data/admin/desa/aceh.topo.json"
+ },
+ {
+  "prov": "Bali",
+  "slug": "bali",
+  "n": 716,
+  "bbox": [
+   114.432,
+   -8.849,
+   115.712,
+   -8.062
+  ],
+  "file": "data/admin/desa/bali.topo.json"
+ },
+ {
+  "prov": "Banten",
+  "slug": "banten",
+  "n": 1552,
+  "bbox": [
+   105.1,
+   -7.016,
+   106.78,
+   -5.808
+  ],
+  "file": "data/admin/desa/banten.topo.json"
+ },
+ {
+  "prov": "Bengkulu",
+  "slug": "bengkulu",
+  "n": 1514,
+  "bbox": [
+   101.023,
+   -5.514,
+   103.79,
+   -2.29
+  ],
+  "file": "data/admin/desa/bengkulu.topo.json"
+ },
+ {
+  "prov": "Daerah Istimewa Yogyakarta",
+  "slug": "daerah-istimewa-yogyakarta",
+  "n": 438,
+  "bbox": [
+   110.004,
+   -8.206,
+   110.839,
+   -7.541
+  ],
+  "file": "data/admin/desa/daerah-istimewa-yogyakarta.topo.json"
+ },
+ {
+  "prov": "Daerah Khusus Ibukota Jakarta",
+  "slug": "daerah-khusus-ibukota-jakarta",
+  "n": 268,
+  "bbox": [
+   106.391,
+   -6.373,
+   106.973,
+   -5.203
+  ],
+  "file": "data/admin/desa/daerah-khusus-ibukota-jakarta.topo.json"
+ },
+ {
+  "prov": "Gorontalo",
+  "slug": "gorontalo",
+  "n": 748,
+  "bbox": [
+   121.162,
+   0.306,
+   123.552,
+   1.055
+  ],
+  "file": "data/admin/desa/gorontalo.topo.json"
+ },
+ {
+  "prov": "Jambi",
+  "slug": "jambi",
+  "n": 1585,
+  "bbox": [
+   101.132,
+   -2.77,
+   104.501,
+   -0.73
+  ],
+  "file": "data/admin/desa/jambi.topo.json"
+ },
+ {
+  "prov": "Jawa Barat",
+  "slug": "jawa-barat",
+  "n": 5958,
+  "bbox": [
+   106.371,
+   -7.821,
+   108.85,
+   -5.807
+  ],
+  "file": "data/admin/desa/jawa-barat.topo.json"
+ },
+ {
+  "prov": "Jawa Tengah",
+  "slug": "jawa-tengah",
+  "n": 8565,
+  "bbox": [
+   108.556,
+   -8.211,
+   111.691,
+   -5.726
+  ],
+  "file": "data/admin/desa/jawa-tengah.topo.json"
+ },
+ {
+  "prov": "Jawa Timur",
+  "slug": "jawa-timur",
+  "n": 8522,
+  "bbox": [
+   110.896,
+   -8.78,
+   116.27,
+   -5.043
+  ],
+  "file": "data/admin/desa/jawa-timur.topo.json"
+ },
+ {
+  "prov": "Kalimantan Barat",
+  "slug": "kalimantan-barat",
+  "n": 2160,
+  "bbox": [
+   108.6,
+   -3.068,
+   114.206,
+   2.082
+  ],
+  "file": "data/admin/desa/kalimantan-barat.topo.json"
+ },
+ {
+  "prov": "Kalimantan Selatan",
+  "slug": "kalimantan-selatan",
+  "n": 2033,
+  "bbox": [
+   114.347,
+   -4.942,
+   117.458,
+   -1.313
+  ],
+  "file": "data/admin/desa/kalimantan-selatan.topo.json"
+ },
+ {
+  "prov": "Kalimantan Tengah",
+  "slug": "kalimantan-tengah",
+  "n": 1571,
+  "bbox": [
+   110.733,
+   -3.543,
+   115.848,
+   0.791
+  ],
+  "file": "data/admin/desa/kalimantan-tengah.topo.json"
+ },
+ {
+  "prov": "Kalimantan Timur",
+  "slug": "kalimantan-timur",
+  "n": 1039,
+  "bbox": [
+   113.835,
+   -2.409,
+   119.037,
+   2.569
+  ],
+  "file": "data/admin/desa/kalimantan-timur.topo.json"
+ },
+ {
+  "prov": "Kalimantan Utara",
+  "slug": "kalimantan-utara",
+  "n": 485,
+  "bbox": [
+   114.565,
+   1.114,
+   117.988,
+   4.408
+  ],
+  "file": "data/admin/desa/kalimantan-utara.topo.json"
+ },
+ {
+  "prov": "Kepulauan Bangka Belitung",
+  "slug": "kepulauan-bangka-belitung",
+  "n": 411,
+  "bbox": [
+   105.109,
+   -3.802,
+   108.847,
+   -1.494
+  ],
+  "file": "data/admin/desa/kepulauan-bangka-belitung.topo.json"
+ },
+ {
+  "prov": "Kepulauan Riau",
+  "slug": "kepulauan-riau",
+  "n": 488,
+  "bbox": [
+   103.28,
+   -1.275,
+   109.167,
+   4.796
+  ],
+  "file": "data/admin/desa/kepulauan-riau.topo.json"
+ },
+ {
+  "prov": "Lampung",
+  "slug": "lampung",
+  "n": 2666,
+  "bbox": [
+   103.591,
+   -6.168,
+   106.281,
+   -3.724
+  ],
+  "file": "data/admin/desa/lampung.topo.json"
+ },
+ {
+  "prov": "Maluku",
+  "slug": "maluku",
+  "n": 1318,
+  "bbox": [
+   125.723,
+   -8.345,
+   134.908,
+   -2.726
+  ],
+  "file": "data/admin/desa/maluku.topo.json"
+ },
+ {
+  "prov": "Maluku Utara",
+  "slug": "maluku-utara",
+  "n": 1273,
+  "bbox": [
+   124.283,
+   -2.477,
+   129.923,
+   2.645
+  ],
+  "file": "data/admin/desa/maluku-utara.topo.json"
+ },
+ {
+  "prov": "Nusa Tenggara Barat",
+  "slug": "nusa-tenggara-barat",
+  "n": 1189,
+  "bbox": [
+   115.821,
+   -9.109,
+   119.345,
+   -8.081
+  ],
+  "file": "data/admin/desa/nusa-tenggara-barat.topo.json"
+ },
+ {
+  "prov": "Nusa Tenggara Timur",
+  "slug": "nusa-tenggara-timur",
+  "n": 3455,
+  "bbox": [
+   118.928,
+   -11.008,
+   125.193,
+   -7.778
+  ],
+  "file": "data/admin/desa/nusa-tenggara-timur.topo.json"
+ },
+ {
+  "prov": "Papua",
+  "slug": "papua",
+  "n": 1040,
+  "bbox": [
+   134.3,
+   -4.116,
+   141.005,
+   0.938
+  ],
+  "file": "data/admin/desa/papua.topo.json"
+ },
+ {
+  "prov": "Papua Barat",
+  "slug": "papua-barat",
+  "n": 890,
+  "bbox": [
+   131.577,
+   -4.33,
+   135.334,
+   -0.714
+  ],
+  "file": "data/admin/desa/papua-barat.topo.json"
+ },
+ {
+  "prov": "Papua Barat Daya",
+  "slug": "papua-barat-daya",
+  "n": 1043,
+  "bbox": [
+   129.3,
+   -2.284,
+   133.494,
+   1.081
+  ],
+  "file": "data/admin/desa/papua-barat-daya.topo.json"
+ },
+ {
+  "prov": "Papua Pegunungan",
+  "slug": "papua-pegunungan",
+  "n": 2458,
+  "bbox": [
+   137.827,
+   -5.265,
+   141.002,
+   -2.885
+  ],
+  "file": "data/admin/desa/papua-pegunungan.topo.json"
+ },
+ {
+  "prov": "Papua Selatan",
+  "slug": "papua-selatan",
+  "n": 684,
+  "bbox": [
+   137.495,
+   -9.127,
+   141.02,
+   -4.542
+  ],
+  "file": "data/admin/desa/papua-selatan.topo.json"
+ },
+ {
+  "prov": "Papua Tengah",
+  "slug": "papua-tengah",
+  "n": 1183,
+  "bbox": [
+   134.585,
+   -5.147,
+   138.354,
+   -2.275
+  ],
+  "file": "data/admin/desa/papua-tengah.topo.json"
+ },
+ {
+  "prov": "Riau",
+  "slug": "riau",
+  "n": 1875,
+  "bbox": [
+   100.05,
+   -1.127,
+   103.814,
+   2.885
+  ],
+  "file": "data/admin/desa/riau.topo.json"
+ },
+ {
+  "prov": "Sulawesi Barat",
+  "slug": "sulawesi-barat",
+  "n": 668,
+  "bbox": [
+   117.061,
+   -3.571,
+   119.875,
+   -0.85
+  ],
+  "file": "data/admin/desa/sulawesi-barat.topo.json"
+ },
+ {
+  "prov": "Sulawesi Selatan",
+  "slug": "sulawesi-selatan",
+  "n": 3092,
+  "bbox": [
+   117.039,
+   -7.759,
+   122.222,
+   -1.948
+  ],
+  "file": "data/admin/desa/sulawesi-selatan.topo.json"
+ },
+ {
+  "prov": "Sulawesi Tengah",
+  "slug": "sulawesi-tengah",
+  "n": 2114,
+  "bbox": [
+   119.427,
+   -3.64,
+   124.181,
+   1.374
+  ],
+  "file": "data/admin/desa/sulawesi-tengah.topo.json"
+ },
+ {
+  "prov": "Sulawesi Tenggara",
+  "slug": "sulawesi-tenggara",
+  "n": 2456,
+  "bbox": [
+   120.865,
+   -6.213,
+   124.617,
+   -2.773
+  ],
+  "file": "data/admin/desa/sulawesi-tenggara.topo.json"
+ },
+ {
+  "prov": "Sulawesi Utara",
+  "slug": "sulawesi-utara",
+  "n": 1866,
+  "bbox": [
+   123.105,
+   0.292,
+   127.163,
+   5.566
+  ],
+  "file": "data/admin/desa/sulawesi-utara.topo.json"
+ },
+ {
+  "prov": "Sumatera Barat",
+  "slug": "sumatera-barat",
+  "n": 1289,
+  "bbox": [
+   98.597,
+   -3.573,
+   101.893,
+   0.907
+  ],
+  "file": "data/admin/desa/sumatera-barat.topo.json"
+ },
+ {
+  "prov": "Sumatera Selatan",
+  "slug": "sumatera-selatan",
+  "n": 3258,
+  "bbox": [
+   102.064,
+   -4.924,
+   106.221,
+   -1.627
+  ],
+  "file": "data/admin/desa/sumatera-selatan.topo.json"
+ },
+ {
+  "prov": "Sumatera Utara",
+  "slug": "sumatera-utara",
+  "n": 6122,
+  "bbox": [
+   97.058,
+   -0.639,
+   100.434,
+   4.303
+  ],
+  "file": "data/admin/desa/sumatera-utara.topo.json"
+ }
+]

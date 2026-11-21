@@ -1,21 +1,27 @@
 [
  {
-  "id": "sumba",
-  "title": "Sumba: fixture story",
-  "subtitle": "Three-chapter development fixture",
+  "id": "demo",
+  "title": "Demo: Sumba in six slides",
+  "subtitle": "A fixture that exercises every symbol the player draws",
   "author": "Ejak (Reza Arlianda), with Claude",
-  "date": "2026-11-20",
-  "file": "sumba.json",
+  "date": "2026-11-21",
+  "cover": "Fixture for the story player.",
   "region": [
    [
-    -10.4,
-    118.8
+    -11.2,
+    103.0
    ],
    [
-    -9.0,
-    120.9
+    -5.5,
+    124.5
    ]
   ],
-  "chapters": 3
+  "basemap": "relief",
+  "file": "demo.json",
+  "slides": 6,
+  "span": [
+   -2000,
+   2018
+  ]
  }
 ]

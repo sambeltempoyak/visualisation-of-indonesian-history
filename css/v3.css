@@ -1,0 +1,84 @@
+/* v3.css — shared look of the light pages (landing, Stories, Peoples). Palette A (Ejak / Lushpin) only.
+   Forest River #33393B · Blue Indigo #49546D · Raindrops #B2ABB4 (on dark only) · Vaporous Gray #DFDDD7 · VG Var #F6F4EF
+   Dew #EEDED1 · Ancient Water #CCD6E6 · soft text on light #5B6264 · warning brown #8A4B3C (captivity/violence).
+   Rule: every surface declares its own color with its background (design rules §5.6). */
+:root {
+  --forest: #33393B; --indigo: #49546D; --rain: #B2ABB4; --vapor: #DFDDD7; --vgvar: #F6F4EF; --dew: #EEDED1; --water: #CCD6E6;
+  --soft: #5B6264; --brown: #8A4B3C;
+  --g-dusk: linear-gradient(160deg, #33393B 0%, #49546D 100%);
+  --g-mist: linear-gradient(165deg, #F6F4EF 0%, #EEDED1 55%, #CCD6E6 100%);
+  --g-rain: linear-gradient(135deg, #CCD6E6 0%, #DFDDD7 100%);
+  --g-head-dark: linear-gradient(90deg, #F6F4EF, #CCD6E6);
+  --g-head-light: linear-gradient(90deg, #33393B, #49546D);
+  --serif: 'Newsreader', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --sh: 0 1px 2px rgba(51, 57, 59, .08), 0 10px 30px rgba(73, 84, 109, .18);
+  --sh-dark: 0 2px 6px rgba(0, 0, 0, .25), 0 14px 40px rgba(0, 0, 0, .35);
+  --r-card: 18px; --r-btn: 12px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; font-family: var(--sans); font-size: 15px; -webkit-font-smoothing: antialiased; background: #33393B; color: #F6F4EF; }
+button { font: inherit; cursor: pointer; }
+a { color: inherit; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px solid #CCD6E6; outline-offset: 2px; }
+.light :focus-visible { outline-color: #49546D; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+
+/* ---- gradient headings ---- */
+.g-title { font-family: var(--serif); font-weight: 500; letter-spacing: .003em; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.on-dark .g-title, .g-title.on-dark { background-image: var(--g-head-dark); color: #F6F4EF; }
+.on-light .g-title, .g-title.on-light { background-image: var(--g-head-light); color: #33393B; }
+
+/* ---- surfaces ---- */
+.glass-dark { background: linear-gradient(160deg, rgba(51, 57, 59, .92), rgba(73, 84, 109, .88)); color: #F6F4EF; backdrop-filter: blur(14px) saturate(1.1); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(204, 214, 230, .16); box-shadow: var(--sh-dark); border-radius: var(--r-card); }
+.glass-light { background: rgba(246, 244, 239, .94); color: #33393B; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(223, 221, 215, .9); box-shadow: var(--sh); border-radius: var(--r-card); }
+.glass-light p, .glass-light li { color: #33393B; }
+.glass-light .soft { color: #5B6264; }
+.glass-dark .soft { color: #DFDDD7; }
+
+/* ---- buttons ---- */
+.b { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 40px; padding: 8px 16px; border-radius: var(--r-btn); border: 1px solid transparent; font-weight: 500; font-size: 14px; text-decoration: none; transition: transform .18s, filter .18s, box-shadow .18s; }
+.b:hover { transform: translateY(-1px); filter: brightness(1.06); }
+.b:disabled { opacity: .45; cursor: default; transform: none; }
+/* on dark surfaces: light buttons with dark ink */
+.on-dark .b, .glass-dark .b { background: linear-gradient(135deg, #F6F4EF, #CCD6E6); color: #33393B; }
+.on-dark .b.ghost, .glass-dark .b.ghost { background: rgba(246, 244, 239, .10); color: #F6F4EF; border-color: rgba(246, 244, 239, .3); }
+/* on light surfaces: dusk buttons with light ink */
+.on-light .b, .glass-light .b { background: var(--g-dusk); color: #F6F4EF; }
+.on-light .b.ghost, .glass-light .b.ghost { background: #EEDED1; color: #33393B; border-color: #DFDDD7; }
+.b.round { width: 44px; height: 44px; padding: 0; border-radius: 50%; }
+.b.sm { min-height: 32px; padding: 4px 12px; font-size: 13px; border-radius: 10px; }
+
+/* ---- chips & tier badges ---- */
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; font-size: 12.5px; line-height: 1.3; border: 1px solid transparent; text-decoration: none; }
+.glass-light .chip, .on-light .chip { background: #EEDED1; color: #33393B; border-color: #DFDDD7; }
+.glass-dark .chip, .on-dark .chip { background: rgba(246, 244, 239, .12); color: #F6F4EF; border-color: rgba(246, 244, 239, .26); }
+.tier { display: inline-grid; place-items: center; min-width: 18px; height: 18px; border-radius: 999px; font-size: 10.5px; font-weight: 600; padding: 0 5px; }
+.tier-pr { background: #49546D; color: #F6F4EF; }
+.tier-pri { background: #CCD6E6; color: #33393B; }
+.tier-o { background: #DFDDD7; color: #33393B; }
+.tier-x { background: #8A4B3C; color: #F6F4EF; }
+
+/* ---- place markers (core/symbols.js placeIcon) ---- */
+.vp-wrap { pointer-events: auto; }
+.vp { position: absolute; transform: translate(-15px, -50%); display: flex; align-items: center; gap: 6px; white-space: nowrap; animation: vp-in .5s cubic-bezier(.2, .9, .3, 1.2) both; animation-delay: var(--d, 0ms); }
+.vp-tok { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; }
+.vp.on-light .vp-tok { background: linear-gradient(135deg, #F6F4EF, #EEDED1); color: #33393B; box-shadow: 0 0 0 2px #49546D, 0 4px 12px rgba(51, 57, 59, .3); }
+.vp.on-dark .vp-tok { background: linear-gradient(135deg, #F6F4EF, #CCD6E6); color: #33393B; box-shadow: 0 0 0 2px rgba(246, 244, 239, .55), 0 4px 14px rgba(0, 0, 0, .45); }
+.vp-lab { font: 600 12.5px var(--sans); padding: 3px 9px; border-radius: 999px; }
+.vp.on-light .vp-lab { background: rgba(246, 244, 239, .92); color: #33393B; }
+.vp.on-dark .vp-lab { background: rgba(51, 57, 59, .82); color: #F6F4EF; }
+@keyframes vp-in { from { opacity: 0; transform: translate(-15px, -30%) scale(.6); } to { opacity: 1; transform: translate(-15px, -50%) scale(1); } }
+
+/* ---- flow labels ---- */
+.vf-label { font: 600 12px var(--sans); padding: 3px 9px; border-radius: 999px; white-space: nowrap; transform: translate(-50%, -50%); position: absolute; }
+.base-dark .vf-label { background: rgba(51, 57, 59, .82); color: #F6F4EF; }
+.vf-label { background: rgba(246, 244, 239, .92); color: #33393B; }
+
+/* ---- leaflet chrome ---- */
+.leaflet-container { font-family: var(--sans); background: #CCD6E6; }
+.base-dark.leaflet-container { background: #262B2D; }
+.leaflet-control-attribution { background: rgba(246, 244, 239, .78) !important; color: #33393B !important; border-radius: 10px 0 0 0; font-size: 10.5px; }
+.leaflet-control-attribution a { color: #49546D !important; }
+.leaflet-bar a { background: #F6F4EF; color: #33393B; border-color: #DFDDD7; }

@@ -2,7 +2,7 @@
 // Every layer owns a Leaflet pane, so opacity = pane opacity and z-order = pane z-index, for any layer type.
 import { clamp } from './util.js';
 
-export const GROUPS = ['Historical', 'Ethnicity & language', 'Reference', 'User layers', 'Analysis results'];
+export const GROUPS = ['Historical', 'Ethnicity & language', 'Administrative boundaries (BIG)', 'Reference', 'User layers', 'Analysis results'];
 const Z0 = 210, ZSTEP = 2;
 
 export function createRegistry({ map }) {

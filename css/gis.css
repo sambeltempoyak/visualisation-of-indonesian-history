@@ -278,3 +278,15 @@ body.story-mode .leaflet-top.leaflet-left { left: 436px; }
 .vih-dim { opacity: .1; pointer-events: none !important; transition: opacity .2s; }
 .vb { transition: transform .18s cubic-bezier(.34, 1.56, .64, 1), top .2s; }
 .vc { position: relative; top: var(--dy, 0px); }
+
+/* ---- v3: Analyse page chrome (modes link, page links in the top bar, archive panel) ---- */
+.modes-link { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 6px 14px; border-radius: 999px; background: rgba(246, 244, 239, .12); color: #F6F4EF; border: 1px solid rgba(246, 244, 239, .28); font: 500 13px var(--sans, Inter, system-ui, sans-serif); text-decoration: none; white-space: nowrap; flex: 0 0 auto; transition: background .2s, transform .2s; }
+.modes-link:hover { background: rgba(246, 244, 239, .22); transform: translateX(-2px); }
+.topnav a.btn { text-decoration: none; display: inline-flex; align-items: center; }
+.tabbar a.tab-link { color: #F6F4EF; text-decoration: none; font-size: 10.5px; display: grid; place-items: center; align-content: center; gap: 1px; min-height: 44px; } .tabbar a.tab-link span { font-size: 16px; font-family: var(--serif); }
+.archive-panel .arch-filter { width: 100%; min-height: 44px; padding: 8px 14px; border-radius: 12px; border: 1px solid #DFDDD7; background: #F6F4EF; color: #33393B; font: 14px var(--sans, Inter, system-ui, sans-serif); }
+.arch-list { margin-top: 8px; border-radius: 14px; background: #F6F4EF; color: #33393B; border: 1px solid #DFDDD7; max-height: 50vh; overflow: auto; }
+.arch-row { display: flex; justify-content: space-between; gap: 12px; padding: 8px 14px; border-bottom: 1px solid #DFDDD7; font-size: 13px; color: #33393B; }
+.arch-size { color: #5B6264; white-space: nowrap; }
+@media (max-width: 720px) { .modes-link { min-height: 44px; padding: 8px 12px; } .topbar { gap: 6px; } }
+@media (max-width: 759px) { .modes-link { width: 44px; min-height: 44px; padding: 0; justify-content: center; font-size: 0; gap: 0; } .modes-link span { font-size: 18px; } .brand { flex: 1 1 55%; } }

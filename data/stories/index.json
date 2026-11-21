@@ -1,21 +1,52 @@
 [
  {
-  "id": "sumba",
-  "title": "Sandalwood Island: Sumba through time",
-  "subtitle": "From Majapahit's claims to the sugarcane permits, in 22 chapters drawn from 120 canvas events",
+  "id": "sea-slave-network",
+  "title": "Bonds across the water",
+  "subtitle": "The Southeast Asian slave network, c. 1500–1900",
   "author": "Ejak (Reza Arlianda), with Claude",
-  "date": "2026-11-20",
-  "file": "sumba.json",
+  "date": "2026-11-21",
+  "cover": "Captives, debtors and the ports that wanted them: four centuries of forced movement.",
   "region": [
    [
-    -10.4,
+    -12,
+    94
+   ],
+   [
+    20,
+    141
+   ]
+  ],
+  "basemap": "dusk",
+  "file": "sea-slave-network.json",
+  "slides": 20,
+  "span": [
+   1500,
+   1910
+  ]
+ },
+ {
+  "id": "sumba",
+  "title": "Sandalwood Island",
+  "subtitle": "Sumba through time, c. 1500–2018",
+  "author": "Ejak (Reza Arlianda), with Claude",
+  "date": "2026-11-21",
+  "cover": "One island, five centuries of being claimed, bought, taxed and converted.",
+  "region": [
+   [
+    -10.6,
     118.8
    ],
    [
     -9.0,
-    120.9
+    121.2
    ]
   ],
-  "chapters": 22
+  "basemap": "relief",
+  "file": "sumba.json",
+  "slides": 20,
+  "span": [
+   1500,
+   2018
+  ]
  }
 ]

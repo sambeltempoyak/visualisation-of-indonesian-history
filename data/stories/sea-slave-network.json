@@ -1,0 +1,2169 @@
+{
+ "id": "sea-slave-network",
+ "title": "Bonds across the water",
+ "subtitle": "The Southeast Asian slave network, c. 1500–1900",
+ "author": "Ejak (Reza Arlianda), with Claude",
+ "date": "2026-11-21",
+ "region": [
+  [
+   -12,
+   94
+  ],
+  [
+   20,
+   141
+  ]
+ ],
+ "basemap": "dusk",
+ "geo": [
+  "indonesia-prov"
+ ],
+ "cover": "Captives, debtors and the ports that wanted them: four centuries of forced movement.",
+ "intro": "For four centuries people were raided, sold, pledged for debt and shipped across the waters of the archipelago. Some stayed near home; some were carried past the edge of this map to Ceylon, the Cape or the Mascarene islands. This story follows the routes historians have been able to reconstruct, says where their numbers are guesses, and tries to remember that every line on the map was a person.",
+ "slides": [
+  {
+   "id": "s01",
+   "label": "Early 1500s",
+   "title": "Bondage before the trade",
+   "text": "Anthony Reid argued that slaves were everywhere in the great trading cities. Remco Raben re-reads the thin evidence, mostly Tomé Pires in the 1510s, and finds the numbers modest. Melaka's private slaves on the eve of 1511 were a few thousand, probably under a tenth of the city. Ten to twelve Palembang junks a year carried people alongside rice.",
+   "more": "Raben stresses that bondage took many forms: debt, punishment, war capture and trade, all blurring into each other. Most bonded labourers worked close to where they were born. Long-distance traffic existed, but it fed courts and elites more than it filled whole cities.",
+   "year": [
+    1500,
+    1520
+   ],
+   "camera": [
+    -1.0,
+    103.5,
+    5
+   ],
+   "places": [
+    {
+     "name": "Melaka",
+     "lat": 2.19,
+     "lon": 102.25,
+     "kind": "port",
+     "note": "Emporium taken by the Portuguese in 1511"
+    },
+    {
+     "name": "Palembang",
+     "lat": -2.99,
+     "lon": 104.76,
+     "kind": "port",
+     "note": "Supplier of people and rice to Melaka"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "slave",
+     "path": [
+      [
+       104.76,
+       -2.99
+      ],
+      [
+       104.0,
+       -1.0
+      ],
+      [
+       102.25,
+       2.19
+      ]
+     ],
+     "label": "Junks from Palembang",
+     "weight": 1
+    },
+    {
+     "kind": "trade",
+     "path": [
+      [
+       104.76,
+       -2.99
+      ],
+      [
+       103.9,
+       -1.2
+      ],
+      [
+       102.25,
+       2.19
+      ]
+     ],
+     "label": "Rice, the main cargo",
+     "weight": 2
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Sumatera Selatan",
+     "role": "focus",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "raben2008",
+     "pages": "pp. 119–122",
+     "tier": "peer-reviewed",
+     "cite": "Raben 2008, pp. 119–122"
+    },
+    {
+     "id": "reid1983",
+     "pages": "pp. 13–14, as cited by Raben 2008",
+     "tier": "peer-reviewed",
+     "cite": "Reid 1983, pp. 13–14, as cited by Raben 2008"
+    }
+   ],
+   "evidence": "contested"
+  },
+  {
+   "id": "s02",
+   "label": "Mid-1500s–1610s",
+   "title": "Captives raised the forts",
+   "text": "Raben describes mass enslavement as a tool of ambitious rulers rather than of ordinary commerce. In mid-sixteenth-century South Sulawesi, Gowa's ruler Tunipalangga set captives to building his forts. In the 1610s Aceh's Iskandar Muda deported thousands of men from wars on the Malay peninsula. Raben calls such hunger for manpower exceptional, and notes it needed raiding, not purchase.",
+   "more": "",
+   "year": [
+    1545,
+    1615
+   ],
+   "camera": [
+    0.0,
+    107.0,
+    4
+   ],
+   "places": [
+    {
+     "name": "Gowa (Makassar)",
+     "lat": -5.14,
+     "lon": 119.42,
+     "kind": "kingdom",
+     "note": "Tunipalangga used captives to build forts"
+    },
+    {
+     "name": "Aceh",
+     "lat": 5.55,
+     "lon": 95.32,
+     "kind": "kingdom",
+     "note": "Iskandar Muda's campaigns on the Malay peninsula"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "military",
+     "path": [
+      [
+       95.32,
+       5.55
+      ],
+      [
+       98.0,
+       4.5
+      ],
+      [
+       102.25,
+       2.19
+      ]
+     ],
+     "label": "Aceh's campaigns on the peninsula",
+     "weight": 2
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       102.25,
+       2.19
+      ],
+      [
+       98.5,
+       4.2
+      ],
+      [
+       95.32,
+       5.55
+      ]
+     ],
+     "label": "Deported warriors to Aceh",
+     "weight": 2
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Sulawesi Selatan",
+     "role": "focus",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Aceh",
+     "role": "focus",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "raben2008",
+     "pages": "pp. 124–125, 132",
+     "tier": "peer-reviewed",
+     "cite": "Raben 2008, pp. 124–125, 132"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s03",
+   "label": "1620s–1660s",
+   "title": "Batavia looks abroad",
+   "text": "Raben shows the Dutch Company struggled to buy slaves locally, so it shipped them from India. Famine, not routine trade, drove the Coromandel supply: about a thousand mostly women and children in 1622, over two thousand in 1646. Arakan became another source until 1666. Vink argues such Dutch slavery must be understood region by region, not as one uniform system.",
+   "more": "",
+   "year": [
+    1622,
+    1666
+   ],
+   "camera": [
+    8.0,
+    98.0,
+    3
+   ],
+   "places": [
+    {
+     "name": "Batavia",
+     "lat": -6.13,
+     "lon": 106.81,
+     "kind": "city",
+     "note": "VOC headquarters, founded 1619"
+    },
+    {
+     "name": "Mrauk U (Arakan)",
+     "lat": 20.6,
+     "lon": 93.2,
+     "kind": "port",
+     "note": ""
+    }
+   ],
+   "flows": [
+    {
+     "kind": "colonial",
+     "path": [
+      [
+       80.3,
+       13.1
+      ],
+      [
+       90.0,
+       6.0
+      ],
+      [
+       98.0,
+       0.0
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Famine captives from Coromandel",
+     "weight": 3
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       93.2,
+       20.6
+      ],
+      [
+       96.0,
+       8.0
+      ],
+      [
+       103.0,
+       1.0
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Arakan purchases, 1625–1666",
+     "weight": 2
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       119.42,
+       -5.14
+      ],
+      [
+       113.0,
+       -7.5
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Small private imports from the islands",
+     "weight": 1
+    }
+   ],
+   "areas": [],
+   "sources": [
+    {
+     "id": "raben2008",
+     "pages": "pp. 125–126",
+     "tier": "peer-reviewed",
+     "cite": "Raben 2008, pp. 125–126"
+    },
+    {
+     "id": "vink2003",
+     "pages": "pp. 131–177 (article abstract; p. 141 as cited by Raben)",
+     "tier": "peer-reviewed",
+     "cite": "Vink 2003, pp. 131–177 (article abstract; p. 141 as cited by Raben)"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s04",
+   "label": "1667–1669",
+   "title": "The fall of Makassar",
+   "text": "Raben links the Company's campaigns in South Sulawesi in 1667–69 to a sudden jump in Batavia's slave imports, peaking at 1,584 in 1671. Many Sulawesi people were enslaved as war prizes. Raben argues the conquest also redirected Makassar's existing network towards Dutch Batavia, and encouraged further raiding. Sutherland has studied the region's slave trade in the same period.",
+   "more": "",
+   "year": [
+    1667,
+    1669
+   ],
+   "camera": [
+    -6.0,
+    113.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Makassar",
+     "lat": -5.14,
+     "lon": 119.42,
+     "kind": "battle",
+     "note": "Conquered by the VOC and its allies"
+    },
+    {
+     "name": "Batavia",
+     "lat": -6.13,
+     "lon": 106.81,
+     "kind": "city",
+     "note": ""
+    }
+   ],
+   "flows": [
+    {
+     "kind": "military",
+     "path": [
+      [
+       106.81,
+       -6.13
+      ],
+      [
+       113.0,
+       -6.8
+      ],
+      [
+       119.42,
+       -5.14
+      ]
+     ],
+     "label": "VOC and allied campaigns",
+     "weight": 3
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       119.42,
+       -5.14
+      ],
+      [
+       113.0,
+       -6.4
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Prizes of war to Batavia",
+     "weight": 3
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Sulawesi Selatan",
+     "role": "focus",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "raben2008",
+     "pages": "pp. 127, 133",
+     "tier": "peer-reviewed",
+     "cite": "Raben 2008, pp. 127, 133"
+    },
+    {
+     "id": "sutherland1983",
+     "pages": "p. 267, as cited by Raben 2008",
+     "tier": "peer-reviewed",
+     "cite": "Sutherland 1983, p. 267, as cited by Raben 2008"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s05",
+   "label": "1670",
+   "title": "What Makassar's traders knew",
+   "text": "Raben uses Cornelis Speelman's 1670 note on Makassar's trade to map where captives came from: Manggarai, Timor, Tanimbar, Alor, Butung, Mindanao and Brunei. From Makassar they were sold on to Banjarmasin, Batavia, Palembang, Jambi, Aceh and Johor. Raben notes that supply areas stayed broadly the same through the seventeenth and eighteenth centuries: eastern, non-Muslim and politically fragmented.",
+   "more": "",
+   "year": [
+    1670,
+    1670
+   ],
+   "camera": [
+    -4.0,
+    118.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Makassar",
+     "lat": -5.14,
+     "lon": 119.42,
+     "kind": "market",
+     "note": ""
+    },
+    {
+     "name": "Buton",
+     "lat": -5.47,
+     "lon": 122.6,
+     "kind": "kingdom",
+     "note": ""
+    },
+    {
+     "name": "Banjarmasin",
+     "lat": -3.32,
+     "lon": 114.59,
+     "kind": "port",
+     "note": "Slaves worked its pepper gardens"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "slave",
+     "path": [
+      [
+       122.6,
+       -5.47
+      ],
+      [
+       121.0,
+       -5.0
+      ],
+      [
+       119.42,
+       -5.14
+      ]
+     ],
+     "label": "Buton",
+     "weight": 2
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       123.6,
+       -10.16
+      ],
+      [
+       121.5,
+       -8.0
+      ],
+      [
+       119.42,
+       -5.14
+      ]
+     ],
+     "label": "Timor, Alor, Manggarai",
+     "weight": 2
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       119.42,
+       -5.14
+      ],
+      [
+       117.0,
+       -4.3
+      ],
+      [
+       114.59,
+       -3.32
+      ]
+     ],
+     "label": "To Banjarmasin pepper",
+     "weight": 1
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       119.42,
+       -5.14
+      ],
+      [
+       108.0,
+       -2.0
+      ],
+      [
+       101.0,
+       2.0
+      ],
+      [
+       95.32,
+       5.55
+      ]
+     ],
+     "label": "To Jambi, Johor, Aceh",
+     "weight": 1
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Nusa Tenggara Timur",
+     "role": "focus",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Sulawesi Tenggara",
+     "role": "focus",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "raben2008",
+     "pages": "p. 132",
+     "tier": "peer-reviewed",
+     "cite": "Raben 2008, p. 132"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s06",
+   "label": "1663–1682",
+   "title": "Counting Batavia's imports",
+   "text": "Raben counted Batavia's harbour diaries: 9,809 slaves arrived on Indonesian vessels over twenty years, about 490 a year. Almost a quarter came from Bali, over two-fifths from Makassar, around twelve per cent from Butung. Raben warns the figures are incomplete: many people were smuggled, the Company imported separately, and ports were often only transit points.",
+   "more": "",
+   "year": [
+    1663,
+    1682
+   ],
+   "camera": [
+    -6.5,
+    113.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Batavia",
+     "lat": -6.13,
+     "lon": 106.81,
+     "kind": "city",
+     "note": ""
+    },
+    {
+     "name": "Bali",
+     "lat": -8.11,
+     "lon": 115.09,
+     "kind": "market",
+     "note": ""
+    },
+    {
+     "name": "Buton",
+     "lat": -5.47,
+     "lon": 122.6,
+     "kind": "market",
+     "note": ""
+    }
+   ],
+   "flows": [
+    {
+     "kind": "slave",
+     "path": [
+      [
+       119.42,
+       -5.14
+      ],
+      [
+       113.0,
+       -6.6
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Makassar, over two-fifths",
+     "weight": 4
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       115.09,
+       -8.11
+      ],
+      [
+       111.0,
+       -7.4
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Bali, almost a quarter",
+     "weight": 2
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       122.6,
+       -5.47
+      ],
+      [
+       114.0,
+       -6.5
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Buton, about 12%",
+     "weight": 1
+    }
+   ],
+   "areas": [],
+   "sources": [
+    {
+     "id": "raben2008",
+     "pages": "p. 127",
+     "tier": "peer-reviewed",
+     "cite": "Raben 2008, p. 127"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s07",
+   "label": "1650s–1700s",
+   "title": "Bali sells to buy iron",
+   "text": "Following Schulte Nordholt and Van der Kraan, Raben dates large-scale slave exports from Bali to after 1650, when internal wars broke the island's authority. Balinese states had little else to sell Batavia and relied on slaves to buy ironware. In 1688 Batavia banned Eastern slaves without permission and closed all Bali shipping, which Raben thinks hit Balinese revenues hard.",
+   "more": "",
+   "year": [
+    1650,
+    1700
+   ],
+   "camera": [
+    -8.1,
+    113.5,
+    6
+   ],
+   "places": [
+    {
+     "name": "Bali (Buleleng)",
+     "lat": -8.11,
+     "lon": 115.09,
+     "kind": "market",
+     "note": "Exports of people grew after internal wars from 1650"
+    },
+    {
+     "name": "Batavia",
+     "lat": -6.13,
+     "lon": 106.81,
+     "kind": "city",
+     "note": ""
+    }
+   ],
+   "flows": [
+    {
+     "kind": "slave",
+     "path": [
+      [
+       115.09,
+       -8.11
+      ],
+      [
+       111.0,
+       -7.4
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Balinese captives to Batavia",
+     "weight": 2
+    },
+    {
+     "kind": "trade",
+     "path": [
+      [
+       106.81,
+       -6.13
+      ],
+      [
+       111.0,
+       -7.0
+      ],
+      [
+       115.09,
+       -8.11
+      ]
+     ],
+     "label": "Ironware and foreign goods",
+     "weight": 1
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Bali",
+     "role": "focus",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "raben2008",
+     "pages": "pp. 127, 133, 135",
+     "tier": "peer-reviewed",
+     "cite": "Raben 2008, pp. 127, 133, 135"
+    },
+    {
+     "id": "vanderkraan1983",
+     "pages": "chapter, pp. 315–340",
+     "tier": "peer-reviewed",
+     "cite": "Van der Kraan 1983, chapter, pp. 315–340"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s08",
+   "label": "1688–1740s",
+   "title": "Bans, loopholes and boom",
+   "text": "Fearing slave unrest, Batavia restricted eastern imports after 1688, then bent its own rules. Buton's sultan, whose realm had almost nothing else to sell, won a quota of fifty or sixty people a year in 1701. Raben shows the bans were lifted in 1744 and 1752–58 when labour ran short after malaria and the 1740 massacre of Chinese residents.",
+   "more": "",
+   "year": [
+    1688,
+    1750
+   ],
+   "camera": [
+    -6.5,
+    114.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Batavia",
+     "lat": -6.13,
+     "lon": 106.81,
+     "kind": "city",
+     "note": "25,000–40,000 slaves at any time"
+    },
+    {
+     "name": "Buton",
+     "lat": -5.47,
+     "lon": 122.6,
+     "kind": "kingdom",
+     "note": "Sultan allowed 50–60 slaves a year from 1701"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "colonial",
+     "path": [
+      [
+       106.81,
+       -6.13
+      ],
+      [
+       111.0,
+       -7.0
+      ],
+      [
+       115.09,
+       -8.11
+      ]
+     ],
+     "label": "1688 ban on Bali traffic",
+     "weight": 1
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       122.6,
+       -5.47
+      ],
+      [
+       114.0,
+       -6.5
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Licensed Buton quota",
+     "weight": 1
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       119.42,
+       -5.14
+      ],
+      [
+       113.0,
+       -6.6
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Illicit and re-licensed imports",
+     "weight": 3
+    }
+   ],
+   "areas": [],
+   "sources": [
+    {
+     "id": "raben2008",
+     "pages": "pp. 127–129",
+     "tier": "peer-reviewed",
+     "cite": "Raben 2008, pp. 127–129"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s09",
+   "label": "1700s–1770s",
+   "title": "Batavia's slave city",
+   "text": "Batavia's registers show 25,000 to 40,000 slaves in the city and its surroundings. When freed in 1749–50, almost half came from Bali and Sulawesi. Raben reckons the true yearly import was several thousand, and cites a Dutch resident's claim of 4,000 in 1779, but he treats it cautiously. Vink likewise calls Dutch slave-trade volumes tentative.",
+   "more": "",
+   "year": [
+    1700,
+    1779
+   ],
+   "camera": [
+    -6.5,
+    112.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Batavia",
+     "lat": -6.13,
+     "lon": 106.81,
+     "kind": "city",
+     "note": "Slave population 25,000–40,000"
+    },
+    {
+     "name": "Banjarmasin",
+     "lat": -3.32,
+     "lon": 114.59,
+     "kind": "port",
+     "note": ""
+    }
+   ],
+   "flows": [
+    {
+     "kind": "slave",
+     "path": [
+      [
+       119.42,
+       -5.14
+      ],
+      [
+       113.0,
+       -6.6
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Makassar and Sulawesi",
+     "weight": 3
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       115.09,
+       -8.11
+      ],
+      [
+       111.0,
+       -7.4
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Bali",
+     "weight": 3
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       114.59,
+       -3.32
+      ],
+      [
+       110.5,
+       -4.5
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Kalimantan ports",
+     "weight": 1
+    },
+    {
+     "kind": "colonial",
+     "path": [
+      [
+       80.3,
+       13.1
+      ],
+      [
+       90.0,
+       6.0
+      ],
+      [
+       98.0,
+       0.0
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Company imports from India",
+     "weight": 2
+    }
+   ],
+   "areas": [],
+   "sources": [
+    {
+     "id": "raben2008",
+     "pages": "pp. 128–131",
+     "tier": "peer-reviewed",
+     "cite": "Raben 2008, pp. 128–131"
+    },
+    {
+     "id": "vink2003",
+     "pages": "pp. 131–177 (abstract only)",
+     "tier": "peer-reviewed",
+     "cite": "Vink 2003, pp. 131–177 (abstract only)"
+    }
+   ],
+   "evidence": "contested"
+  },
+  {
+   "id": "s10",
+   "label": "1700s",
+   "title": "Eastern Nusa Tenggara and the Savu Sea",
+   "text": "Raben notes that Timor and Bima shipped slaves to Batavia, and that many were bought on neighbouring Sumba, Flores (Ende) and Solor. Hoskins reports that early Dutch officials saw Sumba as torn by warfare and the slave trade, with raiders from Ende, and described Sumbanese warriors seizing women and children to sell. Needham's study of Sumba and the slave trade covers this ground.",
+   "more": "",
+   "year": [
+    1700,
+    1800
+   ],
+   "camera": [
+    -9.0,
+    121.5,
+    6
+   ],
+   "places": [
+    {
+     "name": "Ende",
+     "lat": -8.84,
+     "lon": 121.66,
+     "kind": "port",
+     "note": ""
+    },
+    {
+     "name": "Bima",
+     "lat": -8.46,
+     "lon": 118.73,
+     "kind": "kingdom",
+     "note": ""
+    },
+    {
+     "name": "Waingapu (Sumba)",
+     "lat": -9.65,
+     "lon": 120.26,
+     "kind": "village",
+     "note": ""
+    },
+    {
+     "name": "Kupang",
+     "lat": -10.16,
+     "lon": 123.6,
+     "kind": "fort",
+     "note": ""
+    }
+   ],
+   "flows": [
+    {
+     "kind": "slave",
+     "path": [
+      [
+       120.26,
+       -9.65
+      ],
+      [
+       121.0,
+       -9.4
+      ],
+      [
+       121.66,
+       -8.84
+      ]
+     ],
+     "label": "Sumba raided by Ende",
+     "weight": 2
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       120.26,
+       -9.65
+      ],
+      [
+       119.5,
+       -9.2
+      ],
+      [
+       118.73,
+       -8.46
+      ]
+     ],
+     "label": "Sumba to Bima",
+     "weight": 2
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       118.73,
+       -8.46
+      ],
+      [
+       112.0,
+       -7.6
+      ],
+      [
+       106.81,
+       -6.13
+      ]
+     ],
+     "label": "Bima and Sumbawa to Batavia",
+     "weight": 1
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       123.6,
+       -10.16
+      ],
+      [
+       121.5,
+       -8.0
+      ],
+      [
+       119.42,
+       -5.14
+      ]
+     ],
+     "label": "Timor captives",
+     "weight": 1
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Nusa Tenggara Timur",
+     "role": "focus",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Nusa Tenggara Barat",
+     "role": "contested",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "raben2008",
+     "pages": "p. 130",
+     "tier": "peer-reviewed",
+     "cite": "Raben 2008, p. 130"
+    },
+    {
+     "id": "hoskins1996",
+     "pages": "pp. 224–225",
+     "tier": "peer-reviewed",
+     "cite": "Hoskins 1996, pp. 224–225"
+    },
+    {
+     "id": "needham1983",
+     "pages": "passim, alongside the peer-reviewed sources",
+     "tier": "other",
+     "cite": "Needham 1983, passim, alongside the peer-reviewed sources"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s11",
+   "label": "1681–1700s",
+   "title": "Protecting the spice islands",
+   "text": "The Company controlled the spice islands, and Raben shows it shaped slaving there: Ambon banned slave imports from the south-east in 1681 to protect Banda's supply for nutmeg planters. The sultans of Ternate and Tidore were scolded for raids on Sulawesi and Butung coasts. Raben adds that slaves from Maluku, eastern Nusa Tenggara and Papua did not travel west in large numbers.",
+   "more": "",
+   "year": [
+    1681,
+    1710
+   ],
+   "camera": [
+    -3.0,
+    128.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Banda Neira",
+     "lat": -4.52,
+     "lon": 129.9,
+     "kind": "plantation",
+     "note": "Slaves on nutmeg estates"
+    },
+    {
+     "name": "Ambon",
+     "lat": -3.7,
+     "lon": 128.18,
+     "kind": "fort",
+     "note": ""
+    },
+    {
+     "name": "Tidore",
+     "lat": 0.68,
+     "lon": 127.4,
+     "kind": "kingdom",
+     "note": ""
+    }
+   ],
+   "flows": [
+    {
+     "kind": "colonial",
+     "path": [
+      [
+       128.18,
+       -3.7
+      ],
+      [
+       129.0,
+       -4.2
+      ],
+      [
+       129.9,
+       -4.52
+      ]
+     ],
+     "label": "Slaves for Banda nutmeg",
+     "weight": 2
+    },
+    {
+     "kind": "military",
+     "path": [
+      [
+       127.4,
+       0.68
+      ],
+      [
+       125.0,
+       -2.5
+      ],
+      [
+       122.6,
+       -5.47
+      ]
+     ],
+     "label": "Ternate and Tidore coast raids",
+     "weight": 1
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Maluku",
+     "role": "focus",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Maluku Utara",
+     "role": "focus",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "raben2008",
+     "pages": "pp. 133–134",
+     "tier": "peer-reviewed",
+     "cite": "Raben 2008, pp. 133–134"
+    },
+    {
+     "id": "bosma2020",
+     "pages": "p. 110",
+     "tier": "peer-reviewed",
+     "cite": "Bosma 2020, p. 110"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s12",
+   "label": "1770s–1870s",
+   "title": "The Sulu zone",
+   "text": "James Warren argues that China's demand for sea and forest goods drove organised Iranun and Balangingi raiding, feeding the Sulu sultanate with captives. Bosma reports his estimate of 200,000 to 300,000 people taken to Sulu between 1770 and 1870. Heather Sutherland's review finds Warren's picture of servility too uniform and his labour needs possibly overstated.",
+   "more": "",
+   "year": [
+    1770,
+    1870
+   ],
+   "camera": [
+    3.0,
+    118.0,
+    4
+   ],
+   "places": [
+    {
+     "name": "Jolo (Sulu)",
+     "lat": 6.05,
+     "lon": 121.0,
+     "kind": "market",
+     "note": "Slave market of the Sulu sultanate"
+    },
+    {
+     "name": "Balangingi",
+     "lat": 6.3,
+     "lon": 121.7,
+     "kind": "raid",
+     "note": "Raiding home base"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "military",
+     "path": [
+      [
+       121.7,
+       6.3
+      ],
+      [
+       117.0,
+       4.0
+      ],
+      [
+       109.0,
+       1.5
+      ]
+     ],
+     "label": "Balangingi fleets west",
+     "weight": 3
+    },
+    {
+     "kind": "military",
+     "path": [
+      [
+       121.0,
+       6.05
+      ],
+      [
+       121.5,
+       2.0
+      ],
+      [
+       122.0,
+       -2.0
+      ]
+     ],
+     "label": "Raids on Sulawesi coasts",
+     "weight": 2
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       109.0,
+       1.5
+      ],
+      [
+       117.0,
+       3.5
+      ],
+      [
+       121.0,
+       6.05
+      ]
+     ],
+     "label": "Captives to Jolo",
+     "weight": 3
+    },
+    {
+     "kind": "trade",
+     "path": [
+      [
+       121.0,
+       6.05
+      ],
+      [
+       119.5,
+       12.0
+      ],
+      [
+       118.0,
+       20.0
+      ]
+     ],
+     "label": "Pearls, trepang, to China",
+     "weight": 2
+    }
+   ],
+   "areas": [],
+   "sources": [
+    {
+     "id": "warren1981",
+     "pages": "whole book",
+     "tier": "peer-reviewed",
+     "cite": "Warren 1981, whole book"
+    },
+    {
+     "id": "warren2002",
+     "pages": "whole book",
+     "tier": "peer-reviewed",
+     "cite": "Warren 2002, whole book"
+    },
+    {
+     "id": "bosma2020",
+     "pages": "p. 110",
+     "tier": "peer-reviewed",
+     "cite": "Bosma 2020, p. 110"
+    },
+    {
+     "id": "sutherland2004",
+     "pages": "pp. 133–157 (abstract only)",
+     "tier": "peer-reviewed",
+     "cite": "Sutherland 2004, pp. 133–157 (abstract only)"
+    }
+   ],
+   "evidence": "contested"
+  },
+  {
+   "id": "s13",
+   "label": "1780s–1860s",
+   "title": "Raiding in Indonesian waters",
+   "text": "Bosma says raiding intensified in Indonesian waters from the 1780s, helped by firearms traded through Singapore. Most captives were seized at sea. Kalunea, a sailor from Gorontalo, was sold at Jolo and escaped to Zamboanga after seven years. Dandajoe, taken from Siasi and sold in Bulungan, married as a free woman, though Bosma doubts the record tells everything.",
+   "more": "",
+   "year": [
+    1780,
+    1862
+   ],
+   "camera": [
+    1.0,
+    117.0,
+    4
+   ],
+   "places": [
+    {
+     "name": "Gorontalo",
+     "lat": 0.54,
+     "lon": 123.06,
+     "kind": "port",
+     "note": ""
+    },
+    {
+     "name": "Zamboanga",
+     "lat": 6.91,
+     "lon": 122.07,
+     "kind": "fort",
+     "note": "Spanish post where escapees sought safety"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "slave",
+     "path": [
+      [
+       123.06,
+       0.54
+      ],
+      [
+       122.5,
+       3.5
+      ],
+      [
+       121.0,
+       6.05
+      ]
+     ],
+     "label": "Kalunea, seized at sea, sold at Jolo",
+     "weight": 1
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       120.8,
+       5.55
+      ],
+      [
+       119.0,
+       4.0
+      ],
+      [
+       117.37,
+       2.84
+      ]
+     ],
+     "label": "Dandajoe, taken from Siasi",
+     "weight": 1
+    },
+    {
+     "kind": "military",
+     "path": [
+      [
+       121.7,
+       6.3
+      ],
+      [
+       119.0,
+       1.5
+      ],
+      [
+       116.0,
+       -3.0
+      ]
+     ],
+     "label": "Raids in Java Sea and Borneo waters",
+     "weight": 2
+    }
+   ],
+   "areas": [],
+   "sources": [
+    {
+     "id": "bosma2020",
+     "pages": "pp. 111, 113, 116–117",
+     "tier": "peer-reviewed",
+     "cite": "Bosma 2020, pp. 111, 113, 116–117"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s14",
+   "label": "1800s",
+   "title": "Debt as well as capture",
+   "text": "Reid's distinction between slavery, bondage and dependency matters here. Bosma argues that nineteenth-century commerce turned debt into a trap: interest could reach 30 to 100 per cent, fines and invented debts bound people, and Bugis traders staged gambling to indebt Toraja. In 1870 four Pontianak ships loaded slaves in Sulawesi, while Dutch authorities hesitated to intervene.",
+   "more": "",
+   "year": [
+    1800,
+    1880
+   ],
+   "camera": [
+    -2.5,
+    113.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Pontianak",
+     "lat": -0.03,
+     "lon": 109.33,
+     "kind": "port",
+     "note": ""
+    }
+   ],
+   "flows": [
+    {
+     "kind": "slave",
+     "path": [
+      [
+       119.42,
+       -5.14
+      ],
+      [
+       114.0,
+       -3.5
+      ],
+      [
+       109.33,
+       -0.03
+      ]
+     ],
+     "label": "Debt slaves to coconut estates, 1870",
+     "weight": 2
+    },
+    {
+     "kind": "labour",
+     "path": [
+      [
+       119.42,
+       -5.14
+      ],
+      [
+       118.0,
+       -2.5
+      ],
+      [
+       117.0,
+       0.0
+      ]
+     ],
+     "label": "Sulawesi to East Kalimantan forests",
+     "weight": 2
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Sulawesi Selatan",
+     "role": "focus",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Kalimantan Barat",
+     "role": "focus",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "bosma2020",
+     "pages": "pp. 111–113",
+     "tier": "peer-reviewed",
+     "cite": "Bosma 2020, pp. 111–113"
+    },
+    {
+     "id": "reid1983",
+     "pages": "volume on bondage and dependency",
+     "tier": "peer-reviewed",
+     "cite": "Reid 1983, volume on bondage and dependency"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s15",
+   "label": "1800s–1860s",
+   "title": "The Mascarene route",
+   "text": "Bosma reports estimates of 500 to 1,200 people sold yearly from Bali in the early 1800s despite British and Dutch patrols, and says thousands from Bali and the islands east of it were carried by French ships to Bourbon and Mauritius. Richard Allen's wider study of European slave trading in the Indian Ocean treats Asian captives as part of this system.",
+   "more": "",
+   "year": [
+    1800,
+    1830
+   ],
+   "camera": [
+    -9.0,
+    112.0,
+    4
+   ],
+   "places": [
+    {
+     "name": "Bali",
+     "lat": -8.11,
+     "lon": 115.09,
+     "kind": "market",
+     "note": "500–1,200 sold yearly in the early 1800s (estimates)"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "slave",
+     "path": [
+      [
+       115.09,
+       -8.11
+      ],
+      [
+       108.0,
+       -12.0
+      ],
+      [
+       80.0,
+       -17.0
+      ],
+      [
+       57.5,
+       -20.2
+      ]
+     ],
+     "label": "French ships to Bourbon and Mauritius",
+     "weight": 2
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       118.73,
+       -8.46
+      ],
+      [
+       108.0,
+       -12.5
+      ],
+      [
+       80.0,
+       -17.5
+      ],
+      [
+       57.5,
+       -20.2
+      ]
+     ],
+     "label": "From the Nusa Tenggara islands",
+     "weight": 1
+    }
+   ],
+   "areas": [],
+   "sources": [
+    {
+     "id": "bosma2020",
+     "pages": "p. 113",
+     "tier": "peer-reviewed",
+     "cite": "Bosma 2020, p. 113"
+    },
+    {
+     "id": "allen2015",
+     "pages": "book (known only through Bennett's 2016 review)",
+     "tier": "peer-reviewed",
+     "cite": "Allen 2015, book (known only through Bennett's 2016 review)"
+    }
+   ],
+   "evidence": "contested"
+  },
+  {
+   "id": "s16",
+   "label": "1820s–1850s",
+   "title": "Slaves for global goods",
+   "text": "Bosma argues slavery grew with global demand for pepper, nutmeg, rice, trepang, bird's nests and forest goods. He puts Nias at around 1,500 a year before 1863, most going to Aceh, and 500 to 1,000 a year for each major Savu Sea island. His estimate of seven to nine thousand people carried yearly mid-century is, he admits, tentative.",
+   "more": "",
+   "year": [
+    1820,
+    1855
+   ],
+   "camera": [
+    -1.5,
+    108.0,
+    4
+   ],
+   "places": [
+    {
+     "name": "Nias",
+     "lat": -1.1,
+     "lon": 97.6,
+     "kind": "market",
+     "note": ""
+    },
+    {
+     "name": "Banda Neira",
+     "lat": -4.52,
+     "lon": 129.9,
+     "kind": "plantation",
+     "note": ""
+    }
+   ],
+   "flows": [
+    {
+     "kind": "slave",
+     "path": [
+      [
+       97.6,
+       -1.1
+      ],
+      [
+       96.0,
+       2.0
+      ],
+      [
+       95.32,
+       5.55
+      ]
+     ],
+     "label": "Nias to Aceh, c. 1,500 a year",
+     "weight": 3
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       120.26,
+       -9.65
+      ],
+      [
+       118.0,
+       -9.5
+      ],
+      [
+       115.09,
+       -8.11
+      ]
+     ],
+     "label": "Savu Sea to Bali and Lombok",
+     "weight": 2
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       132.3,
+       -2.9
+      ],
+      [
+       130.0,
+       -1.5
+      ],
+      [
+       127.4,
+       0.68
+      ]
+     ],
+     "label": "From New Guinea (no figures)",
+     "weight": 1
+    },
+    {
+     "kind": "slave",
+     "path": [
+      [
+       119.42,
+       -5.14
+      ],
+      [
+       117.5,
+       -3.5
+      ],
+      [
+       116.0,
+       -2.0
+      ]
+     ],
+     "label": "Sulawesi to Kalimantan",
+     "weight": 2
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Sumatera Utara",
+     "role": "focus",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Aceh",
+     "role": "focus",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "bosma2020",
+     "pages": "pp. 110, 113–115",
+     "tier": "peer-reviewed",
+     "cite": "Bosma 2020, pp. 110, 113–115"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s17",
+   "label": "1860–1863",
+   "title": "Abolition and the Nias expedition",
+   "text": "Bosma says a comprehensive ban on slavery in the Netherlands Indies came only in 1860, and that abolition had not been a priority before. Where slaving was entrenched, enforcement could be violent: on Nias in 1863 the colonial government sent an expedition that destroyed villages and killed about seven hundred people. Abolition arrived as law, and as force.",
+   "more": "",
+   "year": [
+    1860,
+    1863
+   ],
+   "camera": [
+    -1.0,
+    100.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Nias",
+     "lat": -1.1,
+     "lon": 97.6,
+     "kind": "battle",
+     "note": "1863 expedition against slaving villages"
+    },
+    {
+     "name": "Batavia",
+     "lat": -6.13,
+     "lon": 106.81,
+     "kind": "city",
+     "note": ""
+    }
+   ],
+   "flows": [
+    {
+     "kind": "colonial",
+     "path": [
+      [
+       106.81,
+       -6.13
+      ],
+      [
+       101.0,
+       -3.8
+      ],
+      [
+       97.6,
+       -1.1
+      ]
+     ],
+     "label": "1863 military expedition",
+     "weight": 2
+    }
+   ],
+   "areas": [],
+   "sources": [
+    {
+     "id": "bosma2020",
+     "pages": "pp. 117–118",
+     "tier": "peer-reviewed",
+     "cite": "Bosma 2020, pp. 117–118"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s18",
+   "label": "1870s–1906",
+   "title": "Registration, peonage, restraint",
+   "text": "In South Sulawesi, Bosma explains, registration began in the 1870s, meant to lead to emancipation, with slaves becoming peons who still worked for their masters. About ten thousand were registered, and then nothing more happened. After war began in Aceh in 1873, Batavia chose restraint; in 1878 officials in Timor and Kalimantan were told not to enforce abolition.",
+   "more": "",
+   "year": [
+    1870,
+    1906
+   ],
+   "camera": [
+    -5.0,
+    118.0,
+    5
+   ],
+   "places": [
+    {
+     "name": "Makassar",
+     "lat": -5.14,
+     "lon": 119.42,
+     "kind": "city",
+     "note": "Ten thousand slaves registered in the early 1870s"
+    },
+    {
+     "name": "Aceh",
+     "lat": 5.55,
+     "lon": 95.32,
+     "kind": "battle",
+     "note": "War from 1873 absorbed Dutch forces"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "colonial",
+     "path": [
+      [
+       106.81,
+       -6.13
+      ],
+      [
+       113.0,
+       -6.6
+      ],
+      [
+       119.42,
+       -5.14
+      ]
+     ],
+     "label": "Registration of slaves",
+     "weight": 1
+    },
+    {
+     "kind": "military",
+     "path": [
+      [
+       106.81,
+       -6.13
+      ],
+      [
+       100.0,
+       -1.0
+      ],
+      [
+       95.32,
+       5.55
+      ]
+     ],
+     "label": "Aceh War diverts force",
+     "weight": 3
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Sulawesi Selatan",
+     "role": "focus",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Nusa Tenggara Timur",
+     "role": "contested",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "bosma2020",
+     "pages": "pp. 117–118",
+     "tier": "peer-reviewed",
+     "cite": "Bosma 2020, pp. 117–118"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s19",
+   "label": "1890s–1900s",
+   "title": "Afterlives",
+   "text": "Bosma shows that trafficking embarrassed colonial officials into the 1890s and lingered into the twentieth century. Lombok's rulers refused naval inspections of their ports in 1888, and kidnapping in Central Sulawesi was described as epidemic. After the Aceh War ended in 1906, expeditions went to Sulawesi and Bali. Bosma adds that colonial narratives largely forgot this history.",
+   "more": "",
+   "year": [
+    1890,
+    1910
+   ],
+   "camera": [
+    -2.0,
+    118.0,
+    4
+   ],
+   "places": [
+    {
+     "name": "Central Sulawesi",
+     "lat": -1.4,
+     "lon": 120.0,
+     "kind": "village",
+     "note": "Kidnapping and slave trading reported as epidemic by the 1890s"
+    },
+    {
+     "name": "Lombok",
+     "lat": -8.6,
+     "lon": 116.3,
+     "kind": "kingdom",
+     "note": "Rulers objected to naval inspections in 1888"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "slave",
+     "path": [
+      [
+       120.0,
+       -1.4
+      ],
+      [
+       118.5,
+       -0.7
+      ],
+      [
+       117.0,
+       0.0
+      ]
+     ],
+     "label": "Central Sulawesi captives",
+     "weight": 1
+    },
+    {
+     "kind": "colonial",
+     "path": [
+      [
+       106.81,
+       -6.13
+      ],
+      [
+       111.5,
+       -7.6
+      ],
+      [
+       116.3,
+       -8.6
+      ]
+     ],
+     "label": "Naval inspection ordered",
+     "weight": 1
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Sulawesi Tengah",
+     "role": "focus",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Bali",
+     "role": "focus",
+     "label": ""
+    },
+    {
+     "pack": "indonesia-prov",
+     "key": "Nusa Tenggara Timur",
+     "role": "focus",
+     "label": ""
+    }
+   ],
+   "sources": [
+    {
+     "id": "bosma2020",
+     "pages": "pp. 112–113, 118–119",
+     "tier": "peer-reviewed",
+     "cite": "Bosma 2020, pp. 112–113, 118–119"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  },
+  {
+   "id": "s20",
+   "label": "1652–1808",
+   "title": "Beyond the frame: the Cape",
+   "text": "The Company's network reached past this map. Worden notes that the Cape's slaves came from South and Southeast Asia, Madagascar and south-eastern Africa, including Bugis people from eastern Indonesia and others arriving from Batavia; there were almost 17,000 by 1795. Ward's study treats such forced movement, including exile of political prisoners from Java, as a core part of the Company's empire.",
+   "more": "",
+   "year": [
+    1652,
+    1808
+   ],
+   "camera": [
+    -6.0,
+    106.0,
+    3
+   ],
+   "places": [
+    {
+     "name": "Batavia",
+     "lat": -6.13,
+     "lon": 106.81,
+     "kind": "city",
+     "note": ""
+    }
+   ],
+   "flows": [
+    {
+     "kind": "slave",
+     "path": [
+      [
+       106.81,
+       -6.13
+      ],
+      [
+       90.0,
+       -14.0
+      ],
+      [
+       55.0,
+       -30.0
+      ],
+      [
+       18.42,
+       -33.92
+      ]
+     ],
+     "label": "To Cape Town (leaves the frame)",
+     "weight": 1
+    },
+    {
+     "kind": "colonial",
+     "path": [
+      [
+       106.81,
+       -6.13
+      ],
+      [
+       93.0,
+       -2.0
+      ],
+      [
+       79.85,
+       6.93
+      ]
+     ],
+     "label": "Company networks to Ceylon",
+     "weight": 1
+    }
+   ],
+   "areas": [],
+   "sources": [
+    {
+     "id": "worden2018",
+     "pages": "section on the origins of Cape slaves",
+     "tier": "peer-reviewed",
+     "cite": "Worden 2018, section on the origins of Cape slaves"
+    },
+    {
+     "id": "ward2009",
+     "pages": "book description (chs 4–6)",
+     "tier": "peer-reviewed",
+     "cite": "Ward 2009, book description (chs 4–6)"
+    }
+   ],
+   "evidence": "peer-reviewed"
+  }
+ ]
+}

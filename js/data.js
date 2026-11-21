@@ -1,7 +1,7 @@
 // data.js — load every JSON file (data/… with fallback to dev-fixtures/…), index, and validate.
 import { rng } from './util.js';
 
-const FILES = ['eras', 'themes', 'languages', 'events', 'routes', 'peoples', 'sources', 'notes'];
+const FILES = ['eras', 'themes', 'events', 'routes', 'peoples', 'sources', 'notes'];
 const GEO = ['countries', 'rivers'];
 
 async function getJSON(path, fallbackPath) {
@@ -28,17 +28,24 @@ export async function loadAll() {
   const jobs = [
     ...FILES.map(n => getJSON(`data/${n}.json`, `dev-fixtures/${n}.json`).then(r => { out[n] = r.json; out._from[n] = r.from; }).catch(e => {
       // notes.json may legitimately be absent; everything else gets an empty list and a warning
-      console.warn(`[data] could not load ${n}.json`, e.message); out[n] = n === 'languages' ? { families: {}, cols: [], rows: [] } : []; })),
+      console.warn(`[data] could not load ${n}.json`, e.message); out[n] = []; })),
     ...GEO.map(n => getJSON(`data/geo/${n}.topo.json`).then(r => { out[n] = r.json; }))
   ];
   jobs.push(
-    optional('data/ethnic-groups.json', 'dev-fixtures/ethnic-groups.json').then(j => { out.ethnic = j; }),
-    optional('data/wikimedia-suku-labels.json').then(j => { out.suku = j; }),
     optional('data/layers.json').then(j => { out.catalogue = j || []; }),
     optional('data/sources-mendeley.json').then(j => { out.sourcesMendeley = j; }),
     optional('data/stories/index.json', 'dev-fixtures/stories/index.json').then(j => { out.stories = j || []; })
   );
   await Promise.all(jobs);
+  // v3: the heavy ethnicity / language files are NOT fetched at boot (RAM). Each loads once, on first use
+  // (layer switched on, or first search focus) via D.load.<name>() which also fills D.<name>.
+  const lazy = (name, key, path, fb, empty) => { let pr; return () => pr || (pr = optional(path, fb).then(j => (out[key] = j || empty))); };
+  out.load = {
+    ethnic: lazy('ethnic', 'ethnic', 'data/ethnic-groups.json', 'dev-fixtures/ethnic-groups.json', null),
+    suku: lazy('suku', 'suku', 'data/wikimedia-suku-labels.json', null, null),
+    languages: lazy('languages', 'languages', 'data/languages.json', 'dev-fixtures/languages.json', { families: {}, cols: [], rows: [] })
+  };
+  out.ethnic = null; out.suku = null; out.languages = null;
   // merge Mendeley bibliography ("Ejak's library"); entries already in sources.json win but get the badge
   if (Array.isArray(out.sourcesMendeley)) {
     const have = new Map(out.sources.map(s => [s.id, s]));

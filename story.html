@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stories · Visualisation of Indonesian History</title>
+<meta name="description" content="Indonesian history as a slide-by-slide animated map: a moving camera, a year counter, flows and territories, every slide citing its sources.">
+<meta name="theme-color" content="#33393B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2712%27 fill=%27%2349546D%27 stroke=%27%23CCD6E6%27 stroke-width=%272.5%27/%3E%3Cpath d=%27M8 18c4-8 12-8 16-2%27 fill=%27none%27 stroke=%27%23EEDED1%27 stroke-width=%272%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="css/v3.css">
+<link rel="stylesheet" href="css/story.css">
+</head>
+<body>
+<div id="app" class="vs is-loading">
+  <div id="map" aria-label="Story map"></div>
+  <div id="ui"></div>
+  <div class="vs-boot" aria-hidden="true"><span class="vs-boot-dot"></span>Raising the map…</div>
+</div>
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/topojson-client.min.js"></script>
+<script type="module" src="js/story/main.js"></script>
+</body>
+</html>

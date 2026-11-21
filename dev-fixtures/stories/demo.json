@@ -1,0 +1,516 @@
+{
+ "id": "demo",
+ "title": "Demo: Sumba in six slides",
+ "subtitle": "A fixture that exercises every symbol the player draws",
+ "author": "Ejak (Reza Arlianda), with Claude",
+ "date": "2026-11-21",
+ "region": [
+  [
+   -11.2,
+   103.0
+  ],
+  [
+   -5.5,
+   124.5
+  ]
+ ],
+ "basemap": "relief",
+ "geo": [
+  "sumba-kab",
+  "sumba-kec",
+  "indonesia-prov"
+ ],
+ "cover": "Fixture for the story player.",
+ "intro": "A development fixture: six slides covering a prehistoric tradition, a span of years, colonial contact, a campaign, labour and a modern concession. Text is placeholder wording, not a finished story.\n\nIt uses every flow kind, area role and several place kinds so the legend, symbols and animation can be checked.",
+ "slides": [
+  {
+   "id": "s1",
+   "label": "c. 2000 BCE",
+   "title": "First landfalls, told as origin stories",
+   "year": -2000,
+   "camera": [
+    -9.9,
+    120.3,
+    8
+   ],
+   "text": "Soelarto's survey opens Sumba's past with arrivals rather than dates. He relays a hypothesis that the society of Umalulu, in the east, was still Neolithic, and a tradition of settlers from the Malay Peninsula who landed at Kambaniru. Urn burials are offered as the material trace. Treat the numbers on this slide as placeholders for 'prehistoric'.",
+   "more": "The Neolithic label is van der Hoop's hypothesis as relayed by Soelarto, not a settled finding. Later waves, he says, came from Sulawesi and from the islands now grouped as Nusa Tenggara, many landing first at Tanjung Sasar before moving inland.\n\nNo calendar dates are given; the -2000 here only keeps the slide in order.",
+   "places": [
+    {
+     "name": "Kambaniru",
+     "lat": -9.69,
+     "lon": 120.3,
+     "kind": "village",
+     "note": "Landing place named in the origin tradition (approximate)"
+    },
+    {
+     "name": "Umalulu",
+     "lat": -9.99,
+     "lon": 120.66,
+     "kind": "grave",
+     "note": "Urn burials and the Neolithic hypothesis (approximate)"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "migration",
+     "path": [
+      [
+       103.8,
+       1.4
+      ],
+      [
+       112,
+       -4
+      ],
+      [
+       117,
+       -8.2
+      ],
+      [
+       120.3,
+       -9.7
+      ]
+     ],
+     "label": "Settlers from the Malay Peninsula (tradition)",
+     "weight": 2
+    }
+   ],
+   "areas": [
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Timur",
+     "role": "focus",
+     "label": "Sumba Timur"
+    }
+   ],
+   "sources": [
+    {
+     "id": "soelarto1980",
+     "pages": "p. 19",
+     "tier": "other",
+     "cite": "Soelarto 1980, p. 19"
+    },
+    {
+     "id": "vel2008",
+     "pages": "p. 30",
+     "tier": "peer-reviewed",
+     "cite": "Vel 2008, p. 30"
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "label": "1750s–1780",
+   "title": "Slaves and sandalwood",
+   "year": [
+    1750,
+    1780
+   ],
+   "camera": [
+    -9.5,
+    120.9,
+    7.5
+   ],
+   "text": "By the mid-eighteenth century Sumba supplied captives and sandalwood to the Timor-linked trade. Makassarese and Endenese raiders carried people east and north, while the VOC tried to forbid trade with Makassar. The Company's own survey saw the island mainly as a source of slaves. The sources disagree on who held overlordship, so two districts are drawn with different outlines.",
+   "places": [
+    {
+     "name": "Waingapu",
+     "lat": -9.6567,
+     "lon": 120.2641,
+     "kind": "port",
+     "note": "Harbour of the east coast"
+    },
+    {
+     "name": "Ende",
+     "lat": -8.8433,
+     "lon": 121.6638,
+     "kind": "raid",
+     "note": "Home port of the raiders"
+    },
+    {
+     "name": "Kupang",
+     "lat": -10.17,
+     "lon": 123.58,
+     "kind": "market",
+     "note": "VOC post on Timor"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "slave",
+     "path": [
+      [
+       120.26,
+       -9.65
+      ],
+      [
+       121.0,
+       -9.3
+      ],
+      [
+       121.66,
+       -8.84
+      ]
+     ],
+     "label": "Captives to Ende",
+     "weight": 3
+    },
+    {
+     "kind": "trade",
+     "from": [
+      120.26,
+      -9.65
+     ],
+     "to": [
+      123.58,
+      -10.17
+     ],
+     "label": "Sandalwood and cloth",
+     "weight": 2
+    }
+   ],
+   "areas": [
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat",
+     "role": "claim",
+     "label": "Claimed by Bima"
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Timur",
+     "role": "contested"
+    }
+   ],
+   "sources": [
+    {
+     "id": "leupe1879",
+     "pages": "p. 225",
+     "tier": "primary",
+     "cite": "Leupe 1879, p. 225"
+    },
+    {
+     "id": "vel2008",
+     "pages": "p. 30",
+     "tier": "peer-reviewed",
+     "cite": "Vel 2008, p. 30"
+    },
+    {
+     "id": "soelarto1980",
+     "pages": "p. 30",
+     "tier": "other",
+     "cite": "Soelarto 1980, p. 30"
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "label": "1866",
+   "title": "The first official and the first mission",
+   "year": 1866,
+   "text": "Vel names Controleur S. Roos as the first government official on Sumba, appointed in 1866 and posted near Waingapu. Soelarto reports a Jesuit church and school at Loura the same year. Government claims and mission schooling arrived together, and each took the other's presence for granted.",
+   "places": [
+    {
+     "name": "Kambaniru",
+     "lat": -9.69,
+     "lon": 120.3,
+     "kind": "fort",
+     "note": "Seat of the first controleur"
+    },
+    {
+     "name": "Loura",
+     "lat": -9.52,
+     "lon": 119.17,
+     "kind": "school",
+     "note": "Jesuit church and school, 1866"
+    },
+    {
+     "name": "Rindi",
+     "lat": -10.0,
+     "lon": 120.4,
+     "kind": "mission",
+     "note": "Mission visits in the east"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "colonial",
+     "from": [
+      123.58,
+      -10.17
+     ],
+     "to": [
+      120.3,
+      -9.69
+     ],
+     "label": "Residency of Timor",
+     "weight": 2
+    },
+    {
+     "kind": "mission",
+     "from": [
+      121.9,
+      -8.9
+     ],
+     "to": [
+      119.17,
+      -9.52
+     ],
+     "via": [
+      [
+       120.5,
+       -8.6
+      ]
+     ],
+     "label": "Jesuit mission",
+     "weight": 1
+    }
+   ],
+   "areas": [
+    {
+     "pack": "sumba-kec",
+     "key": "Umalulu",
+     "role": "focus"
+    },
+    {
+     "pack": "sumba-kec",
+     "key": "Kodi",
+     "role": "adat",
+     "label": "Kodi (adat)"
+    }
+   ],
+   "sources": [
+    {
+     "id": "vel2008",
+     "pages": "p. 31",
+     "tier": "peer-reviewed",
+     "cite": "Vel 2008, p. 31"
+    },
+    {
+     "id": "soelarto1980",
+     "pages": "p. 31",
+     "tier": "other",
+     "cite": "Soelarto 1980, p. 31"
+    },
+    {
+     "id": "missing-demo-id",
+     "pages": "p. 1",
+     "tier": "other",
+     "cite": "Unknown source (fixture)"
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "label": "1901",
+   "title": "A rumour at Waingapu and the pacification",
+   "year": 1901,
+   "text": "Vel traces the end of Dutch non-interference to 1901, when a rumour spread that the raja of Lewa-Kambera would capture Waingapu. Reinforcements came from Kupang by ship and the colonial government established its authority through a violent campaign. In the west, villages such as Kodi resisted until about 1912. Even the start date of the pacification is disputed.",
+   "places": [
+    {
+     "name": "Waingapu",
+     "lat": -9.6567,
+     "lon": 120.2641,
+     "kind": "battle",
+     "note": "Rumoured target of attack"
+    },
+    {
+     "name": "Bongu (Kodi)",
+     "lat": -9.6,
+     "lon": 119.06,
+     "kind": "raid",
+     "note": "Headhunting clan of Wona Kaka (approximate)"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "military",
+     "from": [
+      123.58,
+      -10.17
+     ],
+     "to": [
+      120.26,
+      -9.65
+     ],
+     "label": "Reinforcements from Kupang",
+     "weight": 3
+    }
+   ],
+   "areas": [
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Barat",
+     "role": "lost",
+     "label": "West: resisted until 1912"
+    }
+   ],
+   "sources": [
+    {
+     "id": "vel2008",
+     "pages": "pp. 31–32",
+     "tier": "peer-reviewed",
+     "cite": "Vel 2008, pp. 31–32"
+    },
+    {
+     "id": "soelarto1980",
+     "pages": "p. 32",
+     "tier": "other",
+     "cite": "Soelarto 1980, p. 32"
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "label": "1920s–1930s",
+   "title": "Savunese settlers and contract labour",
+   "year": [
+    1920,
+    1938
+   ],
+   "camera": [
+    -10.0,
+    121.0,
+    8
+   ],
+   "text": "Under indirect rule the government moved Savunese settlers to the coasts and recruited labour for roads and ports. Nooteboom speaks of Savunese settlement increasing greatly in the later nineteenth century at the Government's urging, on top of older spontaneous migration.",
+   "places": [
+    {
+     "name": "Savu",
+     "lat": -10.52,
+     "lon": 121.85,
+     "kind": "village",
+     "note": "Source of the Savunese settlers (approximate)"
+    },
+    {
+     "name": "Melolo",
+     "lat": -9.92,
+     "lon": 120.72,
+     "kind": "school",
+     "note": "Mission primary school"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "labour",
+     "from": [
+      121.85,
+      -10.52
+     ],
+     "to": [
+      120.7,
+      -9.9
+     ],
+     "label": "Savunese labour",
+     "weight": 2
+    }
+   ],
+   "areas": [],
+   "sources": [
+    {
+     "id": "vel2008",
+     "pages": "p. 32",
+     "tier": "peer-reviewed",
+     "cite": "Vel 2008, p. 32"
+    },
+    {
+     "id": "soelarto1980",
+     "pages": "p. 33",
+     "tier": "other",
+     "cite": "Soelarto 1980, p. 33"
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "label": "2018",
+   "title": "Sugarcane permits and a resort coast",
+   "year": 2018,
+   "text": "In the 2010s concession permits and tourism investment reached the island, drawing capital from Jakarta and abroad. The island sits inside Nusa Tenggara Timur, whose boundary is drawn here with a customary hatch where adat claims overlap permits. The slide has no camera, so the map fits what it draws.",
+   "places": [
+    {
+     "name": "Waingapu",
+     "lat": -9.6567,
+     "lon": 120.2641,
+     "kind": "city",
+     "note": "Provincial gateway"
+    },
+    {
+     "name": "Nihiwatu coast",
+     "lat": -9.74,
+     "lon": 119.0,
+     "kind": "resort",
+     "note": "Tourism coast in the south-west (approximate)"
+    },
+    {
+     "name": "Cane fields",
+     "lat": -9.9,
+     "lon": 120.55,
+     "kind": "plantation",
+     "note": "Sugarcane permits (approximate)"
+    },
+    {
+     "name": "Marapu stones",
+     "lat": -9.8,
+     "lon": 119.7,
+     "kind": "adat",
+     "note": "Customary ritual sites"
+    }
+   ],
+   "flows": [
+    {
+     "kind": "capital",
+     "from": [
+      106.85,
+      -6.2
+     ],
+     "to": [
+      120.26,
+      -9.65
+     ],
+     "via": [
+      [
+       113,
+       -8.2
+      ]
+     ],
+     "label": "Investment from Jakarta",
+     "weight": 3
+    }
+   ],
+   "areas": [
+    {
+     "pack": "indonesia-prov",
+     "key": "Nusa Tenggara Timur",
+     "role": "concession",
+     "label": "Nusa Tenggara Timur"
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Sumba Timur",
+     "role": "adat"
+    },
+    {
+     "pack": "sumba-kab",
+     "key": "Not A Real Place",
+     "role": "focus"
+    }
+   ],
+   "sources": [
+    {
+     "id": "vel2008",
+     "pages": "p. 43",
+     "tier": "peer-reviewed",
+     "cite": "Vel 2008, p. 43"
+    },
+    {
+     "id": "soelarto1980",
+     "pages": "p. 40",
+     "tier": "other",
+     "cite": "Soelarto 1980, p. 40"
+    }
+   ]
+  }
+ ]
+}
