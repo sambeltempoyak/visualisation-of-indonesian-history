@@ -91,7 +91,7 @@ export function loadSources() {
   return srcPromise;
 }
 export function tierOf(src, entry) {
-  if (entry?.tier && ['peer-reviewed', 'primary', 'other'].includes(entry.tier)) return entry.tier;
-  if (src) return src.peer_reviewed ? 'peer-reviewed' : src.type === 'primary' ? 'primary' : 'other';
+  if (entry?.tier && ['peer-reviewed', 'academic', 'primary', 'other'].includes(entry.tier)) return entry.tier;
+  if (src) return src.type === 'primary' ? 'primary' : src.peer_reviewed ? 'peer-reviewed' : (src.academic || src.type === 'thesis') ? 'academic' : 'other';
   return entry?.tier || 'other';
 }

@@ -22,7 +22,8 @@
   "peer_reviewed": false,
   "open_access": false,
   "note": "Reads VOC letters on Bima's claim over Sumba; first name and institution not in the library catalogue.",
-  "library": "mendeley"
+  "library": "mendeley",
+  "academic": true
  },
  {
   "id": "hoskins1996",

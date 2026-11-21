@@ -64,14 +64,18 @@ Short slide text: **40–90 words**, Claude's own words (no verbatim quotes in p
 
 ## Source rule (the point of the whole app)
 Every slide cites at least one source from `data/sources.json`. The build accepts a slide when:
-1. at least one cited source has `"peer_reviewed": true` (journal article, university/academic press monograph,
-   refereed edited volume) — **default requirement**; or
+1. at least one cited source is **peer-reviewed** (`"peer_reviewed": true`: journal article, university/academic press
+   monograph, refereed edited volume) or **academic** (`"academic": true` or type `thesis`: a defensible scholarly work
+   that is not formally peer reviewed — a university thesis, a university or research-institute publication). Ejak,
+   21 Nov 2026: "it's okay for a non peer reviewed article as long as it can be defended (such as Pietrow's thesis or
+   any publication that comes from university)"; or
 2. the slide says `evidence: primary` and cites a source of type `primary` (archival report, colonial gazette, census) — the
    text must say it is a contemporary/colonial record; or
-3. the slide says `evidence: contested` and cites ≥2 sources, at least one peer-reviewed.
+3. the slide says `evidence: contested` and cites ≥2 sources, at least one peer-reviewed or academic.
 
-Sources that are not peer reviewed (regional surveys such as Soelarto 1980, theses, websites) may be cited **alongside** a
-peer-reviewed one, never alone. The app shows each citation's tier as a badge (peer-reviewed · primary · other).
+Other sources (government regional surveys such as Soelarto 1980, websites, journalism) may be cited **alongside** a
+peer-reviewed or academic one, never alone. Mark `academic` only when the work can be defended: an identifiable author,
+institution and method. The app shows each citation's tier as a badge (✓ peer-reviewed · A academic · ◆ primary · ○ other).
 
 New sources: add the entry to `data/sources.json` (`tools/data-build/core/sources.py` if rebuilding) with `peer_reviewed`
 set honestly, a DOI/ISBN only when verified, and `"library":"mendeley"` when it is in Ejak's Mendeley library. Prefer, in order:

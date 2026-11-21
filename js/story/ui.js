@@ -97,7 +97,7 @@ export class Hud {
       el('div', { class: 'tt-meta' }, el('span', { class: 'chip' }, `${n} slides`), sp[0] !== sp[1] && el('span', { class: 'chip' }, yearText(sp))),
       el('div', { class: 'tt-act' }, el('button', { class: 'b tt-begin', type: 'button', onclick: () => this.h.go(1, true) }, 'Begin ▶'),
         el('span', { class: 'tt-hint hm' }, '← → keys or swipe · Space plays')),
-      el('p', { class: 'tt-foot' }, 'Every slide cites its sources; ✓ marks peer-reviewed work.'));
+      el('p', { class: 'tt-foot' }, 'Every slide cites its sources: ✓ peer-reviewed · A academic (thesis, university) · ◆ primary record.'));
     return p;
   }
 

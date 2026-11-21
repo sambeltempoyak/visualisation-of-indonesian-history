@@ -849,7 +849,8 @@
   "peer_reviewed": true,
   "open_access": false,
   "publisher": "Leiden University",
-  "url": "https://hdl.handle.net/1887/37853"
+  "url": "https://hdl.handle.net/1887/37853",
+  "academic": true
  },
  {
   "id": "bosma2008",
@@ -1533,7 +1534,8 @@
   "open_access": true,
   "publisher": "ANU, Canberra",
   "url": "https://openresearch-repository.anu.edu.au/handle/1885/49345",
-  "note": "Ethnography of the Orang Rimba of Bukit Duabelas."
+  "note": "Ethnography of the Orang Rimba of Bukit Duabelas.",
+  "academic": true
  },
  {
   "id": "king1993",

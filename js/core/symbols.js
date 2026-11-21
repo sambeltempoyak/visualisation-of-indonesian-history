@@ -66,4 +66,4 @@ export function placeIcon(p, { dark = false, delay = 0 } = {}) {
 }
 
 /** Source tier → badge text + class. */
-export const TIER = { 'peer-reviewed': { t: 'peer-reviewed', c: 'tier-pr', g: '✓' }, primary: { t: 'primary record', c: 'tier-pri', g: '◆' }, other: { t: 'other', c: 'tier-o', g: '○' }, missing: { t: 'missing', c: 'tier-x', g: '!' } };
+export const TIER = { 'peer-reviewed': { t: 'peer-reviewed', c: 'tier-pr', g: '✓' }, academic: { t: 'academic (thesis / university)', c: 'tier-ac', g: 'A' }, primary: { t: 'primary record', c: 'tier-pri', g: '◆' }, other: { t: 'other', c: 'tier-o', g: '○' }, missing: { t: 'missing', c: 'tier-x', g: '!' } };

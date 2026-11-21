@@ -1,5 +1,6 @@
 {
- "endpoint": null,
+ "endpoint": "https://script.google.com/macros/s/AKfycbyyHDUNhhQ-OTVzKxwxmo0kEK_AODEhXoPobWhqAxj4_QMEkia81Hlm0eBihDI-TOTnZQ/exec",
  "driveFolder": "1eA_Zv8Y_nDcd-ECL-WLxsjzJcGHT2BxY",
- "note": "Set endpoint to the Apps Script web app URL (…/exec) once tools/archive/Code.gs is deployed."
+ "account": "sokola.org Google Workspace",
+ "linked": "2026-11-21"
 }

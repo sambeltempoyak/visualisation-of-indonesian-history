@@ -28,7 +28,10 @@ def load_sources():
 def tier(s):
     if not s: return 'missing'
     if s.get('type') == 'primary': return 'primary'
-    return 'peer-reviewed' if s.get('peer_reviewed') else 'other'
+    if s.get('peer_reviewed'): return 'peer-reviewed'
+    # defensible academic work that is not formally peer reviewed: theses, university / research-institute publications
+    if s.get('academic') or s.get('type') == 'thesis': return 'academic'
+    return 'other'
 
 
 def parse(md_path, src, errors):
@@ -99,9 +102,9 @@ def parse(md_path, src, errors):
         elif ev == 'primary':
             if 'primary' not in tiers: errors.append(f'{where}: evidence primary needs a primary source')
         elif ev == 'contested':
-            if len(cites) < 2 or 'peer-reviewed' not in tiers: errors.append(f'{where}: contested needs ≥2 sources incl. one peer-reviewed')
-        elif 'peer-reviewed' not in tiers:
-            errors.append(f'{where}: needs a peer-reviewed source (has: {", ".join(c["id"] + "=" + c["tier"] for c in cites)})')
+            if len(cites) < 2 or not {'peer-reviewed', 'academic'} & set(tiers): errors.append(f'{where}: contested needs ≥2 sources incl. one peer-reviewed or academic')
+        elif not {'peer-reviewed', 'academic'} & set(tiers):
+            errors.append(f'{where}: needs a peer-reviewed or academic source (has: {", ".join(c["id"] + "=" + c["tier"] for c in cites)})')
         words = len(slide['text'].split())
         if words > 120: errors.append(f'{where}: text {words} words (max ~90)')
         slides.append(slide)
