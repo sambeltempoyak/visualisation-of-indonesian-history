@@ -25,6 +25,31 @@
   ]
  },
  {
+  "id": "europeans-in-sumba",
+  "title": "Strangers on the Shore",
+  "subtitle": "Europeans in Sumba: ships, contracts, officials, schools and ethnographers, c. 1512–1990",
+  "author": "Ejak (Reza Arlianda), with Claude",
+  "date": "2026-11-22",
+  "cover": "Who came to Sumba from Europe, when, where they landed, and what they wrote down.",
+  "region": [
+   [
+    -10.6,
+    118.6
+   ],
+   [
+    -9.0,
+    121.4
+   ]
+  ],
+  "basemap": "paper",
+  "file": "europeans-in-sumba.json",
+  "slides": 20,
+  "span": [
+   1512,
+   1990
+  ]
+ },
+ {
   "id": "sea-slave-network",
   "title": "Bonds across the water",
   "subtitle": "The Southeast Asian slave network, c. 1500–1900",

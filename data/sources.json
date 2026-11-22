@@ -2154,5 +2154,57 @@
   "peer_reviewed": false,
   "open_access": false,
   "note": "Colonial government census, cited here ONLY as reported by NIDI 2002 (Table 3.1, p. 25), Castles 1967 (p. 166, citing vol. VI p. 264) and Locher-Scholten 2000. The volume itself was not opened; publisher and printing year were not verified. A catalogue record exists (CiNii: 'Europeanen in Nederlandsch-Indië') but was not opened."
+ },
+ {
+  "id": "swellengrebel1978",
+  "type": "book",
+  "authors": "Swellengrebel, J. L.",
+  "year": 1978,
+  "title": "In Leijdeckers voetspoor: anderhalve eeuw bijbelvertaling en taalkunde in de Indonesische talen, II: 1900–1970",
+  "container": "Verhandelingen van het KITLV 82",
+  "peer_reviewed": true,
+  "open_access": true,
+  "publisher": "Martinus Nijhoff, 's-Gravenhage",
+  "url": "https://library.oapen.org/handle/20.500.12657/32291",
+  "note": "Ch. IX 'Soembaas' (pp. 182–215): L. Onvlee from 1926; Karuni, Laoeli near Waikabubak; Umbu Hina Kapita from early 1929."
+ },
+ {
+  "id": "adams1970",
+  "type": "journal",
+  "authors": "Adams, Marie Jeanne",
+  "year": 1970,
+  "title": "Myths and Self-Image among the Kapunduk People of Sumba",
+  "container": "Indonesia 10: 81–106",
+  "peer_reviewed": true,
+  "open_access": true,
+  "publisher": "Cornell Southeast Asia Program",
+  "url": "https://hdl.handle.net/1813/53501",
+  "note": "Two years of fieldwork in East Sumba (fn. 1, p. 81); Kapunduk, north coast, capital Parai Bakul (p. 82). Exact years not stated."
+ },
+ {
+  "id": "needham1987",
+  "type": "book",
+  "authors": "Needham, Rodney",
+  "year": 1987,
+  "title": "Mamboru: History and Structure in a Domain of Northwestern Sumba",
+  "container": "Clarendon Press",
+  "peer_reviewed": true,
+  "open_access": false,
+  "publisher": "Clarendon Press, Oxford",
+  "isbn": "9780198234005",
+  "note": "Not read directly; cited only for its subject and date (fieldwork year to be checked in the preface)."
+ },
+ {
+  "id": "buttikofer1892",
+  "type": "primary",
+  "authors": "Büttikofer, J.",
+  "year": 1892,
+  "title": "On a collection of birds from the islands of Flores, Sumba and Rotti",
+  "container": "Notes from the Leyden Museum 14: 193–206",
+  "peer_reviewed": false,
+  "open_access": true,
+  "publisher": "Leyden Museum",
+  "url": "https://archive.org/details/biostor-98244",
+  "note": "Contemporary museum report: H. ten Kate the first to send zoological collections from Sumba (p. 196); shipped Sept and Nov 1891."
  }
 ]
